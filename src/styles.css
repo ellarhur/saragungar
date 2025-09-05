@@ -9,6 +9,17 @@ h1 {
     text-align: center;
 }
 
+h1 a {
+    color: #000;
+    text-decoration: none;
+}
+
+h1 a:hover {
+    color: #333;
+}
+
+/* Kod för navigering och header */
+
 header {
     width:500px;
     display: flex;
@@ -24,10 +35,11 @@ header {
     flex-direction: row;
     gap: 15px;
     list-style: none;
-    padding: 1px;
+    padding: 10px;
     margin: 0 auto;
     margin-top:10px;
     text-align: center;
+    border-bottom: #000 1px solid;
     
 }
 
@@ -44,8 +56,62 @@ header {
 
 .nav-link a:hover {
     color: #333;
+    font-style: italic
 }
 
 .nav-link a:active {
     color: #000;
+}
+/* Kod för sociala medier i vänster hörn */
+
+.social-links {
+    position: absolute;
+    left: 50px;
+    top: 70px;
+    display: flex;
+    flex-direction: row;
+    gap: 15px;
+    z-index: 10;
+}
+
+.youtube-icon {
+    width: 30px;
+    height: 30px;
+}
+
+.youtube-link:hover .youtube-icon {
+    opacity: 0.7;
+}
+
+.instagram-icon {
+    width: 25px;
+    height: 30px;
+}
+
+.instagram-link:hover .instagram-icon {
+    opacity: 0.7;
+}
+
+.facebook-icon {
+    width: 25px;
+    height: 30px;
+}
+
+.facebook-link:hover .facebook-icon {
+    opacity: 0.7;
+}
+
+/* Knapp för startsidan */
+
+.startpage-button {
+    background-color: #DEB9A2;
+    color:#000;
+    border-radius: 10px;
+    border: #000 1px solid;
+    padding: 10px 20px;
+    margin: 20px auto;
+    width: 300px;
+    text-align: center;
+    font-family: 'Outfit', sans-serif;
+    display: block;
 }
