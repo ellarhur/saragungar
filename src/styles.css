@@ -5,7 +5,7 @@ body {
     min-width: 100vw;
     display: flex;
     flex-direction: column;
-    margin: 0;
+    margin-bottom: 100px;
     padding: 0;
 }
 
@@ -27,14 +27,21 @@ h1 a:hover {
 /* Kod för navigering och header */
 
 header {
-    width:500px;
+    width: 100vw;
     display: flex;
     flex-direction: column;
     margin: 0 auto;
-    margin-top:10px;
-    padding:30px;
+    top: 0;
+    padding: 30px;
     gap: 15px;
+    z-index: 100;
+    background: #DED7A2;
+    position: fixed;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+    align-items: center;
+    justify-content: center;
 }
+
 
 .nav-links {
     display: flex;
@@ -111,7 +118,7 @@ header {
 
 .right-book-button {
 position: absolute;
-right: 50px;
+right: 100px;
 top: 70px;
 display: flex;
 justify-content: center;
@@ -327,7 +334,7 @@ color: #000;
 
 .infobox{
     width: 700px;
-    height:auto;
+    height: auto;
     margin: 0 auto;
     border-radius: 10px;
     overflow: hidden;
@@ -382,6 +389,14 @@ color: #000;
 }
 main {
     flex: 1;
+    min-height: 100vh;
+    min-width: 100vw;
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 100px;
+    padding: 0;
+    padding-top: 250px;
+
 }
 
 footer {
