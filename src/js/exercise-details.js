@@ -34,9 +34,7 @@ const displayExercise = (exercise) => {
             
             ${exercise.classroom
                 ? 'Övningen finns både som <b>video</b> och <b>online interaktiv</b>'
-                : 'Övningen är <b>endast online interaktiv</b>'}<br />
-            Genomsnittligt betyg: <b>${exercise.average}</b><br />
-            Kostnad: <b>${exercise.price}</b></p>
+                : 'Övningen är <b>endast online interaktiv</b>'}<br /></p>
             
             <button class="start-exercise-btn">Starta övning</button>
         </div>

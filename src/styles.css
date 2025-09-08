@@ -13,6 +13,8 @@ h1 {
     font-size: 2rem;
     font-weight: 400;
     text-align: center;
+    margin: 0 auto;
+    width: 100%;
 }
 
 h1 a {
@@ -30,9 +32,9 @@ header {
     width: 100vw;
     display: flex;
     flex-direction: column;
-    margin: 0 auto;
-    top: 0;
-    padding: 30px;
+    margin-top: 10px;
+    margin-bottom:30px;
+    padding: 0px;
     gap: 15px;
     z-index: 100;
     background: #DED7A2;
@@ -40,6 +42,7 @@ header {
     box-shadow: 0 2px 5px rgba(0,0,0,0.1);
     align-items: center;
     justify-content: center;
+    overflow: hidden;
 }
 
 
@@ -49,10 +52,9 @@ header {
     gap: 15px;
     list-style: none;
     padding: 10px;
-    margin: 0 auto;
+    margin: auto;
     margin-top:10px;
     text-align: center;
-    border-bottom: #000 1px solid;
     
 }
 
@@ -79,8 +81,9 @@ header {
 
 .social-links {
     position: absolute;
-    left: 50px;
-    top: 70px;
+    left: 20px;
+    top: 50%;
+    transform: translateY(-50%);
     display: flex;
     flex-direction: row;
     gap: 15px;
@@ -119,7 +122,8 @@ header {
 .right-book-button {
 position: absolute;
 right: 100px;
-top: 70px;
+top: 50%;
+transform: translateY(-50%);
 display: flex;
 justify-content: center;
 align-items: center;
@@ -140,7 +144,6 @@ color: #000;
     text-decoration: none;
     }
     
-
 /* Slideshow för inspiration */
 
 .inspiration-slideshow {
@@ -211,11 +214,13 @@ color: #000;
     background: #fff;
     border-radius: 10px;
     border: 1px solid #ddd;
-    margin: 15px;
     overflow: hidden;
     box-shadow: 0 2px 5px rgba(0,0,0,0.1);
     transition: transform 0.3s ease;
-    max-width: 300px;
+    height: 450px;
+    display: flex;
+    flex-direction: column;
+    width: 100%;
 }
 
 .exercisecard:hover {
@@ -231,6 +236,10 @@ color: #000;
 
 .exercisecard-body {
     padding: 15px;
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
 }
 
 .exercisecard-title {
@@ -246,11 +255,12 @@ color: #000;
 }
 
 #exercises {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
     gap: 20px;
     padding: 20px;
+    max-width: 1200px;
+    margin: 0 auto;
 }
 
 .exercise-details-container {
@@ -363,7 +373,6 @@ color: #000;
     margin-left: auto;
     margin-right: auto;
     border-radius: 10px;
-    overflow: hidden;
     padding: 10px;
     text-align: center;
 }
@@ -462,4 +471,13 @@ footer {
     padding: 10px;
     text-align: center;
     margin: 0 auto;
+  }
+
+  .interest-form-button {
+    background-color: #000;
+    color: #DEB9A2;
+    border-radius: 10px;
+    font-size: 1.2rem;
+    border: #000 1px solid;
+    padding: 10px 20px;
   }

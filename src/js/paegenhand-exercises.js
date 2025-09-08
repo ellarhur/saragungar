@@ -57,13 +57,9 @@ const displayExercises = (exercises) => {
             ? 'Övning finns både online och som video'
             : 'Endast online-övning'}`;
 
-        const ratingText = document.createElement('p');
-        ratingText.textContent = `Betyg: ${exercise.average}`;
-
         small.appendChild(difficultyText);
         small.appendChild(durationText);
         small.appendChild(availabilityText);
-        small.appendChild(ratingText);
 
         p.appendChild(small);
         exerciseCardBody.appendChild(heading);

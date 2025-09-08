@@ -30,9 +30,7 @@ const displayCourse = (course) => {
 
      ${course.classroom
         ? 'Kursen hålls på  <b>plats</b> & kan ses i  <b>efterhand online </b>'
-        : 'Kursen är  <b>endast online </b>'}<br />
-     Elever som går den här kursen får snittbetyget: <b>${course.average}</b><br />
-     Priset för kursen är <b>${course.price}</b></p>
+        : 'Kursen är  <b>endast online </b>'}<br /></p>
         </div>
     </div>
     `;
