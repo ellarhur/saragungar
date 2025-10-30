@@ -390,6 +390,21 @@ color: #000;
     color: #000;
     font-size: 1.0rem;
 
+
+}
+
+.newsletter-box{
+    width: 900px;
+    height:auto;
+    margin: 10px auto;
+    border-radius: 10px;
+    overflow: hidden;
+    padding: 20px;
+    text-align: center;
+    background-color: #DEB9A2;
+    border: #000 1px solid;
+    color: #000;
+    font-size: 1.0rem;
 }
 
 #interest-form {
