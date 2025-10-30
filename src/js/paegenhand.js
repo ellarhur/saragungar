@@ -1,6 +1,6 @@
 let courses = [];
 export const listCourses = async () => {
-    const url = 'http://localhost:3000/courses';
+    const url = 'http://localhost:3fff/courses';
     const result = await fetch(url);
     if (result.ok) {
         courses = (await result.json());

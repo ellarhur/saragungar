@@ -18,6 +18,7 @@ h1 {
     text-align: center;
     margin: 0 auto;
     width: 100%;
+    font-family: "Cardo", serif;
 }
 
 h1 a {
@@ -29,20 +30,29 @@ h1 a:hover {
     color: #333;
 }
 
+h2, h3, h4, h5, h6 {
+    font-family: "Cardo", serif;
+}
+
+p, li, a, button, input, textarea, label {
+    font-family: "Cardo", serif;
+}
+
 /* Kod för navigering och header */
 
 header {
     width: 100vw;
     display: flex;
     flex-direction: column;
-    margin-top: 10px;
-    margin-bottom:30px;
-    padding: 0px;
+    top: 0;
+    left: 0;
+    margin: 0;
+    padding: 15px 0;
     gap: 15px;
     z-index: 100;
     background: #822538;
     position: fixed;
-    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+    box-shadow: 0 10px 5px rgba(0,0,0,0.1);
     align-items: center;
     justify-content: center;
     overflow: hidden;
@@ -58,7 +68,7 @@ header {
     margin: auto;
     margin-top:10px;
     text-align: center;
-    
+    font-family: "Cardo", serif;
 }
 
 .nav-link {
@@ -78,7 +88,7 @@ header {
 }
 
 .nav-link a:active {
-    color: #000;
+    color: #fff;
 }
 /* Kod för sociala medier i vänster hörn */
 
@@ -133,18 +143,18 @@ justify-content: center;
 align-items: center;
 z-index: 10;
 border-radius: 10px;
-border: #000 1px solid;
+border: #fff 1px solid;
 padding: 5px;
-background-color: #DEB9A2;
+background-color: #310e10;
 width: 150px;
 height: 50px;
 font-size: 1.2rem;
 font-weight: 600;
-color: #000;
+color: #fff;
 }
 
 .right-book-button a {
-    color: #000;
+    color: #fff;
     text-decoration: none;
     }
     
@@ -169,7 +179,7 @@ color: #000;
     display: none;
     padding: 40px;
     text-align: center;
-    background: linear-gradient(135deg, #DEB9A2, #E8D5B7);
+    background: linear-gradient(135deg, #310e10, #E8D5B7);
     height: 100%;
     box-sizing: border-box;
 }
@@ -289,9 +299,9 @@ color: #000;
 }
 
 .start-exercise-btn {
-    background-color: #DEB9A2;
-    color: #000;
-    border: 1px solid #000;
+    background-color: #310e10;
+    color: #fff;
+    border: 1px solid #fff;
     border-radius: 8px;
     padding: 12px 24px;
     font-family: 'Outfit', sans-serif;
@@ -334,11 +344,11 @@ color: #000;
 /* Knapp för startsidan */
 
 .startpage-button {
-    background-color: #DEB9A2;
-    color:#000;
+    background-color: #310e10;
+    color:#fff;
     border-radius: 10px;
     font-size: 1.2rem;
-    border: #000 1px solid;
+    border: #fff 1px solid;
     padding: 10px 20px;
     margin: 20px auto;
     width: 400px;
@@ -389,9 +399,9 @@ color: #000;
     overflow: hidden;
     padding: 20px;
     text-align: center;
-    background-color: #DEB9A2;
-    border: #000 1px solid;
-    color: #000;
+    background-color: #310e10;
+    border: #fff 1px solid;
+    color: #fff;
     font-size: 1.0rem;
 
 
@@ -405,9 +415,9 @@ color: #000;
     overflow: hidden;
     padding: 20px;
     text-align: center;
-    background-color: #DEB9A2;
-    border: #000 1px solid;
-    color: #000;
+    background-color: #310e10;
+    border: #fff 1px solid;
+    color: #fff;
     font-size: 1.0rem;
 }
 
@@ -449,18 +459,96 @@ main {
     flex-direction: column;
     margin-bottom: 100px;
     padding: 0;
-    padding-top: 250px;
-
+    padding-top: 140px;
+    font-family: "Cardo", serif;
 }
 
-/* Mindre padding för schemasidan */
+/* Container för schemasidan - två kolumner */
+
+.schedule-header{
+    text-align: center;
+    background: #822538;
+    color: #e7e4d8;
+    font-size: 2.5rem;
+    font-family: "Cardo", serif;
+    font-weight: 400;
+    font-style: normal;
+    padding: 5px;
+    margin-bottom: 0px;
+}
+
+
+.schedule-container {
+    display: flex;
+    gap: 40px;
+    max-width: 2000px;
+    margin: 0px auto;
+    margin-top: -20px;
+    padding: 20px;
+    align-items: flex-start;
+}
+
+/* Informationskolumn till vänster */
+.schedule-info {
+    flex: 1;
+    background-color: #310e10;
+    color: #e7e4d8;
+    font-family: "Cardo", serif;
+    font-weight: 400;
+    padding: 30px;
+    border-radius: 10px;
+    border: 1px solid #fff;
+    max-width: 700px;
+    margin-top:90px;
+}
+
+.schedule-info h3 {
+    color: #fff;
+    margin-top: 0;
+    font-size: 1.5rem;
+}
+
+.schedule-info h4 {
+    color: #fff;
+    margin-top: 20px;
+    margin-bottom: 10px;
+    font-size: 1.2rem;
+}
+
+.schedule-info ul {
+    list-style-position: inside;
+    padding-left: 0;
+}
+
+.schedule-info li {
+    margin-bottom: 8px;
+}
+
+.schedule-info a {
+    color: #822538;
+    text-decoration: underline;
+}
+
+.schedule-info a:hover {
+    color: #fff;
+}
+
+/* Widget-kolumn till höger */
 .schedule-main {
-    padding-top: 120px;
+    flex: 1.5;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    overflow: hidden;
+    width: 700px;
 }
 
 /* Ta bort vitt utrymme från schemawidgeten */
 .schedule-main iframe {
+    width: 100%;
     margin: 0 !important;
+    margin-top: -100px !important;
     padding: 0 !important;
     display: block;
 }
@@ -473,8 +561,9 @@ main {
 footer {
     flex-direction: column;
     padding: 20px;
-    border-top: solid 1px #000;
+    border-top: solid 1px #fff;
     margin-top: auto;
+    font-family: "Cardo", serif;
 }
   
   .footer-wrapper {
@@ -507,13 +596,15 @@ footer {
     padding: 10px;
     text-align: center;
     margin: 0 auto;
+    font-family: "Cardo", serif;
   }
 
   .interest-form-button {
-    background-color: #000;
-    color: #DEB9A2;
+    background-color: #fff;
+    color: #310e10;
     border-radius: 10px;
     font-size: 1.2rem;
-    border: #000 1px solid;
+    border: #fff 1px solid;
     padding: 10px 20px;
+    font-family: "Cardo", serif;
   }
