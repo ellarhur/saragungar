@@ -33,11 +33,9 @@ const displayExercises = (exercises) => {
         const small = document.createElement('small');
 
         div.classList.add('exercisecard');
-        imageAnchor.href = `/src/pages/exercise-details.html?id=${exercise.id}`;
+        imageAnchor.href = `./exercise-details.html?id=${exercise.id}`;
         image.alt = `${exercise.title}`;
-        image.src = exercise.image
-            ? `/src/assets${exercise.image}`
-            : `/src/assets/default-exercise.jpg`;
+        image.src = `../images/saragungar${exercise.id}.jpg`;
 
         imageAnchor.appendChild(image);
         div.appendChild(imageAnchor);

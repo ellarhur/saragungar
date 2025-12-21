@@ -22,7 +22,7 @@ const displayExercise = (exercise) => {
     <div class="exercise-details-top">
         <div>
             ${exercise.image
-                ? `<img src="/src/assets${exercise.image}" alt="${exercise.title}"/>`
+                ? `<img src="../images/saragungar${exercise.id}.jpg" alt="${exercise.title}"/>`
                 : ``}
         </div>
         <div class="info">
