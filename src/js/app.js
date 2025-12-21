@@ -9,7 +9,7 @@ setInterval(function() {
     slideIndex++;
     if (slideIndex > 3) slideIndex = 1;
     showSlide(slideIndex);
-}, 5fff);
+}, 5000);
 
 function currentSlide(n) {
     showSlide(slideIndex = n);
