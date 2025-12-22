@@ -59,7 +59,7 @@ header {
         align-items: center;
     justify-content: center;
     overflow: hidden;
-    min-height: 400px;
+    min-height: 200px;
 
 }
 
@@ -71,7 +71,7 @@ header {
     justify-content: center;
     align-items: flex-start;
     margin-right: 70px;
-    margin-top: 260px;
+    margin-top: 70px;
 
 }
 
@@ -164,8 +164,6 @@ right: 100px;
 top: 50%;
 transform: translateY(-50%);
 display: flex;
-justify-content: center;
-align-items: center;
 z-index: 10;
 border-radius: 10px;
 border: #fff 1px solid;
@@ -182,6 +180,20 @@ color: #fff;
     color: #fff;
     text-decoration: none;
     }
+    
+.centered-text {
+    text-align: left;
+    margin: 0;
+    flex: 1;
+}
+
+.button-row {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    width: 100%;
+}
+   
     
 /* Slideshow för inspiration */
 
@@ -369,17 +381,17 @@ color: #fff;
 /* Knapp för startsidan */
 
 .startpage-button {
-    background-color: #3c3316;
+    background-color: #000;
     color:#fff;
-    border-radius: 10px;
-    font-size: 1.2rem;
+    font-size: 1.5rem;
     border: #fff 1px solid;
     padding: 10px 20px;
-    margin: 20px auto;
-    width: 400px;
     text-align: center;
-    font-family: 'Outfit', sans-serif;
-    display: block;
+    font-family: 'Hubballi', sans-serif;
+    cursor: pointer;
+    white-space: nowrap;
+    flex-shrink: 0;
+    width:200px;
 }
 /* Kod för videoboxen */
 
@@ -487,11 +499,18 @@ color: #fff;
     justify-content: flex-start;
     align-items: flex-start;
     margin-left: 70px;
-    margin-top: 260px;
+    margin-top: 70px;
     color: #000;
 
 
-
+}
+.hero-section-left-content {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    justify-content: flex-start;
+    align-items: flex-start;
+    max-width: 800px;
 }
 
 .hero-section-left h3 {
@@ -742,9 +761,8 @@ footer {
   }
 
   .interest-form-button {
-    background-color: #fff;
-    color: #3c3316;
-    border-radius: 10px;
+    background-color: #000;
+    color: #fff;
     font-size: 1.2rem;
     border: #fff 1px solid;
     padding: 10px 20px;
