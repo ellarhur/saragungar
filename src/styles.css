@@ -1,7 +1,7 @@
 body {
-    background: #e8d1a7;
-    color: #333;
-    font-family: "Cardo", serif;
+    background: #e7d9cb;
+    color: #000;
+    font-family: "Hubballi", serif;
     font-weight: 400;
     font-style: normal;
     min-height: 100vh;
@@ -13,30 +13,30 @@ body {
 }
 
 h1 {
-    font-size: 2rem;
+    font-size: 4rem;
     font-weight: 400;
     text-align: center;
     margin: 0 auto;
     width: 100%;
     color: #9d9167;
-    font-family: "Cardo", serif;
+    font-family: "Hubballi", serif;
 }
 
 h1 a {
-    color: #743014;
+    color: #fff;
     text-decoration: none;
 }
 
 h1 a:hover {
-    color: #333;
+    color: #fff;
 }
 
 h2, h3, h4, h5, h6 {
-    font-family: "Cardo", serif;
+    font-family: "Hubballi", serif;
 }
 
 p, li, a, button, input, textarea, label {
-    font-family: "Cardo", serif;
+    font-family: "Hubballi", serif;
 }
 
 /* Kod för navigering och header */
@@ -51,14 +51,37 @@ header {
     padding: 15px 0;
     gap: 15px;
     z-index: 100;
-    background: #e8d1a7;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url('images/fiol.jpg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
     position: fixed;
-    box-shadow: 0 10px 5px rgba(0,0,0,0.1);
-    align-items: center;
+        align-items: center;
     justify-content: center;
     overflow: hidden;
+    min-height: 400px;
+
 }
 
+.image-right {
+    flex: 0 0 auto;
+    max-width: 600px;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    margin-right: 70px;
+    margin-top: 260px;
+
+}
+
+.image-right img {
+    width: 100%;
+    height: auto;
+    border-radius: 10px;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.2);
+    object-fit: cover;
+}
 
 .nav-links {
     display: flex;
@@ -69,7 +92,8 @@ header {
     margin: auto;
     margin-top:10px;
     text-align: center;
-    font-family: "Cardo", serif;
+    font-family: "Hubballi", serif;
+    font-size: 1.5rem;
 }
 
 .nav-link {
@@ -79,12 +103,12 @@ header {
 }
 
 .nav-link a {
-    color: #333;
+    color: #fff;
     text-decoration: none;
 }
 
 .nav-link a:hover {
-    color: #333;
+    color: #fff;
     font-style: italic
 }
 
@@ -102,7 +126,7 @@ header {
     flex-direction: row;
     gap: 15px;
     z-index: 10;
-    color: #743014;
+    color: #fff;
 }
 
 .youtube-icon {
@@ -146,7 +170,7 @@ z-index: 10;
 border-radius: 10px;
 border: #fff 1px solid;
 padding: 5px;
-background-color: #743014;
+background-color: #fff;
 width: 150px;
 height: 50px;
 font-size: 1.2rem;
@@ -192,7 +216,7 @@ color: #fff;
 .slide h3 {
     font-size: 1.2rem;
     margin-bottom: 20px;
-    color: #333;
+    color: #fff;
 }
 
 .slide p {
@@ -220,7 +244,7 @@ color: #fff;
 }
 
 .slide-dot.active, .slide-dot:hover {
-    background-color: #333;
+    background-color: #fff;
 }
 
 /* Styling för övningskort */
@@ -260,7 +284,7 @@ color: #fff;
 .exercisecard-title {
     font-size: 1.2rem;
     margin-bottom: 10px;
-    color: #333;
+    color: #fff;
 }
 
 .exercisecard-body p {
@@ -454,12 +478,31 @@ color: #fff;
 }
 
 /* Hero-sektion med bild */
-.hero-section {
-    position: relative;
-    width: 100%;
-    height: 70vh;
-    overflow: hidden;
-    margin-bottom: 50px;
+.hero-section-left {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    padding: 40px;
+    justify-content: flex-start;
+    align-items: flex-start;
+    margin-left: 70px;
+    margin-top: 260px;
+    color: #000;
+
+
+
+}
+
+.hero-section-left h3 {
+    font-size: 2.5rem;
+    color: #000;
+}
+
+.hero-section-left p {
+    font-size: 2rem;
+    color: #000;
+    margin: 0;
 }
 
 .hero-image {
@@ -501,23 +544,28 @@ color: #fff;
 main {
     flex: 1;
     min-height: 100vh;
-    min-width: 100vw;
+    width: 100%;
+    max-width: 100vw;
     display: flex;
-    flex-direction: column;
+    flex-direction: row;
+    gap: 20px;
     margin-bottom: 100px;
-    padding: 0;
-    padding-top: 140px;
-    font-family: "Cardo", serif;
+    padding: 0 20px;
+    padding-top: 240px;
+    font-family: "Hubballi", serif;
+    align-items: flex-start;
+    box-sizing: border-box;
+    overflow-x: hidden;
 }
 
 /* Container för schemasidan - två kolumner */
 
 .schedule-header{
     text-align: center;
-    background: #e8d1a7;
+    background: #e7d9cb;
     color: #e7e4d8;
     font-size: 2.5rem;
-    font-family: "Cardo", serif;
+    font-family: "Hubballi", serif;
     font-weight: 400;
     font-style: normal;
     padding: 5px;
@@ -540,7 +588,7 @@ main {
     flex: 1;
     background-color: #3c3316;
     color: #e7e4d8;
-    font-family: "Cardo", serif;
+    font-family: "Hubballi", serif;
     font-weight: 400;
     padding: 30px;
     border-radius: 10px;
@@ -572,7 +620,7 @@ main {
 }
 
 .schedule-info a {
-    color: #e8d1a7;
+    color: #e7d9cb;
     text-decoration: underline;
 }
 
@@ -607,17 +655,64 @@ main {
 
 footer {
     flex-direction: column;
-    padding: 20px;
+    padding: 40px 20px;
     border-top: solid 1px #fff;
     margin-top: auto;
-    font-family: "Cardo", serif;
+    font-family: "Hubballi", serif;
 }
   
   .footer-wrapper {
     display: flex;
-    gap: 128px;
+    flex-direction: column;
+    gap: 20px;
     justify-content: center;
+    align-items: center;
     margin-bottom: 16px;
+  }
+
+  .footer-wrapper p {
+    font-size: 1.3rem;
+    color: #000;
+    margin: 0;
+  }
+
+  .newsletter-form {
+    display: flex;
+    gap: 10px;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .newsletter-form input[type="email"] {
+    padding: 12px 20px;
+    border: 2px solid #000;
+    border-radius: 5px;
+    width: 300px;
+    font-family: "Hubballi", serif;
+    font-size: 1rem;
+    background: #fff;
+    color: #000;
+  }
+
+  .newsletter-form input[type="email"]:focus {
+    outline: none;
+    border-color: #9d9167;
+  }
+
+  .newsletter-form button {
+    padding: 12px 30px;
+    background-color: #000;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    font-family: "Hubballi", serif;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+
+  .newsletter-form button:hover {
+    background-color: #333;
   }
   
   .footer-ul {
@@ -643,7 +738,7 @@ footer {
     padding: 10px;
     text-align: center;
     margin: 0 auto;
-    font-family: "Cardo", serif;
+    font-family: "Hubballi", serif;
   }
 
   .interest-form-button {
@@ -653,5 +748,5 @@ footer {
     font-size: 1.2rem;
     border: #fff 1px solid;
     padding: 10px 20px;
-    font-family: "Cardo", serif;
+    font-family: "Hubballi", serif;
   }
