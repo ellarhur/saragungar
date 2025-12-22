@@ -51,7 +51,8 @@ header {
     padding: 15px 0;
     gap: 15px;
     z-index: 100;
-    background-image: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url('images/fiol.jpg');
+    /* background-image: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url('images/header.jpeg'); */
+background-color: #333;
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
@@ -59,7 +60,7 @@ header {
         align-items: center;
     justify-content: center;
     overflow: hidden;
-    min-height: 200px;
+    min-height: 150px;
 
 }
 
@@ -381,7 +382,7 @@ color: #fff;
 /* Knapp för startsidan */
 
 .startpage-button {
-    background-color: #000;
+    background-color: #333;
     color:#fff;
     font-size: 1.5rem;
     border: #fff 1px solid;
