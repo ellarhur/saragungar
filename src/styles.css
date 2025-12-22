@@ -55,7 +55,7 @@ header {
     gap: 15px;
     z-index: 100;
     /* background-image: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url('images/header.jpeg'); */
-background-color: #333;
+background-color: #27231c;
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
@@ -149,8 +149,8 @@ background-color: #333;
 }
 
 .nav-link a:hover {
-    color: #fff;
-    font-style: italic
+    color: #743014;
+    font-style: none;
 }
 
 .nav-link a:active {
@@ -248,7 +248,10 @@ background-color: #333;
 }
 
 .contact-list a {
-    color: #743014;
+    color: #4f1200
+
+
+    ;
     text-decoration: none;
 }
 
@@ -279,13 +282,17 @@ background-color: #333;
     padding: 15px 20px;
     margin: 15px 0;
     border-radius: 5px;
-    border-left: 4px solid #743014;
+    border-left: 4px solid #4f1200
+
+
+
+    ;
 }
 
 .help-item h3 {
     margin: 0 0 10px 0;
     font-size: 1.3rem;
-    color: #333;
+    color: #27231c;
 }
 
 .help-item p {
@@ -293,7 +300,11 @@ background-color: #333;
 }
 
 .help-item a {
-    color: #743014;
+    color: #4f1200
+
+
+
+    ;
     text-decoration: none;
     font-weight: bold;
 }
@@ -330,24 +341,30 @@ background-color: #333;
     text-align: center;
     max-width: 500px;
     margin: 20px;
-    border: 3px solid #743014;
+    border: 3px solid #4f1200
+
+    ;
 }
 
 .newsletter-popup-content h3 {
-    color: #743014;
+    color: #4f1200
+
+    ;
     margin: 0 0 15px 0;
     font-size: 1.8rem;
 }
 
 .newsletter-popup-content p {
-    color: #333;
+    color: #27231c;
     margin: 0 0 25px 0;
     font-size: 1.1rem;
     line-height: 1.6;
 }
 
 .popup-close-btn {
-    background-color: #743014;
+    background-color: #4f1200
+
+    ;
     color: #fff;
     border: none;
     padding: 12px 30px;
@@ -596,10 +613,11 @@ color: #fff;
 /* Knapp för startsidan */
 
 .startpage-button {
-    background-color: #333;
+    background-color: #27231c;
     color:#fff;
     font-size: 1.5rem;
     border: #fff 1px solid;
+    border-radius: 10px;
     padding: 10px 20px;
     text-align: center;
     font-family: 'Hubballi', sans-serif;
@@ -607,6 +625,10 @@ color: #fff;
     white-space: nowrap;
     flex-shrink: 0;
     width:200px;
+}
+
+.startpage-button:hover {
+    background-color: #743014;
 }
 /* Kod för videoboxen */
 
@@ -667,7 +689,9 @@ color: #fff;
     overflow: hidden;
     padding: 20px;
     text-align: center;
-    background-color: #3c3316;
+    background-color: #4f1200
+
+    ;
     border: #fff 1px solid;
     color: #fff;
     font-size: 1.0rem;
@@ -822,7 +846,7 @@ main {
 /* Informationskolumn till vänster */
 .schedule-info {
     flex: 1;
-    background-color: #3c3316;
+    background-color: #4f1200;
     color: #e7e4d8;
     font-family: "Hubballi", serif;
     font-size:1.6rem;
@@ -935,7 +959,7 @@ footer {
 
   .newsletter-form input[type="email"] {
     padding: 12px 20px;
-    border: 2px solid #000;
+    border: 2px solid #27231c;
     border-radius: 5px;
     width: 300px;
     font-family: "Hubballi", serif;
@@ -951,7 +975,7 @@ footer {
 
   .newsletter-form button {
     padding: 12px 30px;
-    background-color: #000;
+    background-color: #27231c;
     color: #fff;
     border: none;
     border-radius: 5px;
@@ -962,7 +986,7 @@ footer {
   }
 
   .newsletter-form button:hover {
-    background-color: #333;
+    background-color: #743014;
   }
   
   .footer-ul {
@@ -1086,7 +1110,7 @@ footer {
     width: 60%;
     margin: 60px auto;
     border: none;
-    border-top: 2px solid #333;
+    border-top: 2px solid #27231c;
   }
 
   .about-text-left {
