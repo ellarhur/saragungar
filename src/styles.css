@@ -87,6 +87,25 @@ background-color: #333;
     object-fit: cover;
 }
 
+.image-left {
+    flex: 0 0 auto;
+    max-width: 500px;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: flex-left;
+    margin-right: 200px;
+    margin-top: 70px;
+
+}
+
+.image-left img {
+    width: 100%;
+    height: auto;
+    border-radius: 10px;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.2);
+    object-fit: cover;
+}
 .image-under-schedulingform {
     flex: 1;
     height: 958px;
@@ -166,6 +185,16 @@ background-color: #333;
 }
 
 .instagram-link:hover .instagram-icon {
+    opacity: 0.7;
+}
+
+.linkedin-icon {
+    width: 30px;
+    height: 30px;
+    filter: brightness(0) invert(1);
+}
+
+.linkedin-link:hover .linkedin-icon {
     opacity: 0.7;
 }
 
@@ -632,7 +661,7 @@ main {
     background-color: #3c3316;
     color: #e7e4d8;
     font-family: "Hubballi", serif;
-    font-size:1rem;
+    font-size:1.6rem;
     font-weight: 400;
     padding: 30px;
     border-radius: 10px;
@@ -793,4 +822,124 @@ footer {
     border: #fff 1px solid;
     padding: 10px 20px;
     font-family: "Hubballi", serif;
+  }
+
+  /* Om Sara sidan */
+  .about-page-title {
+    text-align: center;
+    color: #000;
+    font-size: 3rem;
+    margin-bottom: 50px;
+    margin-top: 20px;
+  }
+
+  .about-section {
+    display: flex;
+    gap: 40px;
+    max-width: 1200px;
+    margin: 0 auto 60px auto;
+    padding: 20px;
+    align-items: center;
+  }
+
+  .about-section-2 {
+    display: flex;
+    gap: 40px;
+    max-width: 1200px;
+    margin: 0 auto 60px auto;
+    padding: 20px;
+    align-items: center;
+  }
+
+  .about-section-3 {
+    display: flex;
+    flex-direction: row;
+    gap: 30px;
+    max-width: 1200px;
+    margin: 0 auto 60px auto;
+    padding: 20px;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .about-image-left {
+    flex: 1;
+    max-width: 400px;
+  }
+
+  .about-image-left img {
+    width: 100%;
+    height: auto;
+    border-radius: 10px;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.2);
+    object-fit: cover;
+  }
+
+
+  .about-image-center {
+    flex: 1;
+    max-width: 400px;
+  }
+
+  .about-image-center img {
+    width: 100%;
+    height: auto;
+    border-radius: 10px;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.2);
+    object-fit: cover;
+  }
+  .about-text-right {
+    flex: 1;
+    max-width: 600px;
+  }
+
+  .about-text-right h2 {
+    font-size: 2rem;
+    color: #000;
+    margin-bottom: 20px;
+  }
+
+  .about-text-right p {
+    font-size: 1.2rem;
+    color: #000;
+    line-height: 1.6;
+    margin-bottom: 15px;
+  }
+
+  .about-divider {
+    width: 60%;
+    margin: 60px auto;
+    border: none;
+    border-top: 2px solid #333;
+  }
+
+  .about-text-left {
+    flex: 1;
+    max-width: 600px;
+  }
+
+  .about-text-left h2 {
+    font-size: 2rem;
+    color: #000;
+    margin-bottom: 20px;
+  }
+
+  .about-text-left p {
+    font-size: 1.2rem;
+    color: #000;
+    line-height: 1.6;
+    margin-bottom: 15px;
+  }
+
+  .about-image-right {
+    flex: 1;
+    max-width: 400px;
+  }
+
+  .about-image-right img {
+    width: 100%;
+    height: auto;
+    border-radius: 10px;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.2);
+    object-fit: cover;
   }
