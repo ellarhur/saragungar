@@ -595,11 +595,12 @@ main {
 .schedule-container {
     display: flex;
     gap: 40px;
-    max-width: 2000px;
-    margin: 0px auto;
+    max-width: 1500px;
+    margin: 0 auto;
     margin-top: -20px;
     padding: 20px;
     align-items: flex-start;
+    justify-content: center;
 }
 
 /* Informationskolumn till vänster */
