@@ -198,6 +198,170 @@ background-color: #333;
     opacity: 0.7;
 }
 
+/* Social links 2 för kontaktsidan - svarta ikoner */
+.social-links-2 {
+    display: flex;
+    flex-direction: row;
+    gap: 15px;
+    margin-top: 20px;
+}
+
+.youtube-icon-black {
+    width: 30px;
+    height: 30px;
+    filter: brightness(0);
+}
+
+.youtube-link:hover .youtube-icon-black {
+    opacity: 0.7;
+}
+
+.instagram-icon-black {
+    width: 25px;
+    height: 30px;
+    filter: brightness(0);
+}
+
+.instagram-link:hover .instagram-icon-black {
+    opacity: 0.7;
+}
+
+.linkedin-icon-black {
+    width: 30px;
+    height: 30px;
+    filter: brightness(0);
+}
+
+.linkedin-link:hover .linkedin-icon-black {
+    opacity: 0.7;
+}
+
+.contact-list {
+    list-style: none;
+    padding-left: 0;
+    margin: 20px 0;
+}
+
+.contact-list li {
+    margin: 10px 0;
+    font-size: 1.1rem;
+}
+
+.contact-list a {
+    color: #743014;
+    text-decoration: none;
+}
+
+.contact-list a:hover {
+    text-decoration: underline;
+}
+
+.info-box {
+    background-color: #f5f0e8;
+    border-left: 4px solid #743014;
+    padding: 15px 20px;
+    margin: 25px 0;
+    border-radius: 5px;
+}
+
+.info-box p {
+    margin: 0;
+    font-size: 1rem;
+    line-height: 1.6;
+}
+
+.instrument-help-list {
+    margin-top: 25px;
+}
+
+.help-item {
+    background-color: #f5f0e8;
+    padding: 15px 20px;
+    margin: 15px 0;
+    border-radius: 5px;
+    border-left: 4px solid #743014;
+}
+
+.help-item h3 {
+    margin: 0 0 10px 0;
+    font-size: 1.3rem;
+    color: #333;
+}
+
+.help-item p {
+    margin: 0;
+}
+
+.help-item a {
+    color: #743014;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.help-item a:hover {
+    text-decoration: underline;
+}
+
+/* Newsletter popup */
+.newsletter-popup {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 1000;
+    opacity: 0;
+    transition: opacity 0.3s ease;
+}
+
+.newsletter-popup.show {
+    opacity: 1;
+}
+
+.newsletter-popup-content {
+    background-color: #e7d9cb;
+    padding: 40px;
+    border-radius: 10px;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.3);
+    text-align: center;
+    max-width: 500px;
+    margin: 20px;
+    border: 3px solid #743014;
+}
+
+.newsletter-popup-content h3 {
+    color: #743014;
+    margin: 0 0 15px 0;
+    font-size: 1.8rem;
+}
+
+.newsletter-popup-content p {
+    color: #333;
+    margin: 0 0 25px 0;
+    font-size: 1.1rem;
+    line-height: 1.6;
+}
+
+.popup-close-btn {
+    background-color: #743014;
+    color: #fff;
+    border: none;
+    padding: 12px 30px;
+    font-size: 1.1rem;
+    border-radius: 5px;
+    cursor: pointer;
+    font-family: "Hubballi", serif;
+    transition: background-color 0.3s ease;
+}
+
+.popup-close-btn:hover {
+    background-color: #8d3d1a;
+}
+
 .facebook-icon {
     width: 25px;
     height: 30px;
@@ -725,6 +889,18 @@ main {
 .schedule-main script {
     margin: 0;
     padding: 0;
+}
+
+.button-technical {
+    display: flex;
+    flex-direction:row;
+    background-color: #000;
+    color: #fff;
+    font-size: 1.2rem;
+    border: #fff 1px solid;
+    padding: 10px 20px;
+    font-family: "Hubballi", serif;
+    
 }
 
 footer {

@@ -33,3 +33,42 @@ function showSlide(n) {
     slides[slideIndex - 1].classList.add("active");
     dots[slideIndex - 1].classList.add("active");
 }
+
+// Newsletter form popup
+document.addEventListener('DOMContentLoaded', function() {
+    const newsletterForm = document.querySelector('.newsletter-form');
+    if (newsletterForm) {
+        newsletterForm.addEventListener('submit', function(e) {
+            e.preventDefault();
+            showNewsletterPopup();
+            newsletterForm.reset();
+        });
+    }
+});
+
+function showNewsletterPopup() {
+    const popup = document.createElement('div');
+    popup.className = 'newsletter-popup';
+    popup.innerHTML = `
+        <div class="newsletter-popup-content">
+            <h3>Tack för din prenumeration! 📧</h3>
+            <p>Kolla din inkorg och bekräfta din prenumeration på nyhetsbrev.</p>
+            <button class="popup-close-btn" onclick="closeNewsletterPopup()">OK</button>
+        </div>
+    `;
+    document.body.appendChild(popup);
+    
+    setTimeout(() => {
+        popup.classList.add('show');
+    }, 10);
+}
+
+function closeNewsletterPopup() {
+    const popup = document.querySelector('.newsletter-popup');
+    if (popup) {
+        popup.classList.remove('show');
+        setTimeout(() => {
+            popup.remove();
+        }, 300);
+    }
+}
