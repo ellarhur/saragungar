@@ -150,11 +150,16 @@ background-color: #27231c;
 
 .nav-link a:hover {
     color: #743014;
-    font-style: none;
+    text-decoration: underline;
 }
 
 .nav-link a:active {
     color: #fff;
+}
+
+.nav-link a.active {
+    color: #743014;
+    text-decoration: underline;
 }
 /* Kod för sociala medier i vänster hörn */
 

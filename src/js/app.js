@@ -44,7 +44,26 @@ document.addEventListener('DOMContentLoaded', function() {
             newsletterForm.reset();
         });
     }
+    
+    // Active navigation link
+    setActiveNavLink();
 });
+
+function setActiveNavLink() {
+    const currentPath = window.location.pathname;
+    const navLinks = document.querySelectorAll('.nav-link a');
+    
+    navLinks.forEach(link => {
+        const linkPath = new URL(link.href).pathname;
+        
+        // Check if current page matches the link
+        if (currentPath === linkPath || 
+            (currentPath.includes('index.html') && linkPath.includes('index.html')) ||
+            (currentPath.endsWith('/') && linkPath.includes('index.html'))) {
+            link.classList.add('active');
+        }
+    });
+}
 
 function showNewsletterPopup() {
     const popup = document.createElement('div');
