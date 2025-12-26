@@ -811,6 +811,7 @@ main {
     max-width: 100vw;
     display: flex;
     flex-direction: row;
+    justify-content: center;
     gap: 20px;
     margin-bottom: 100px;
     padding: 0 20px;
@@ -1041,7 +1042,7 @@ footer {
   .about-section {
     display: flex;
     gap: 40px;
-    max-width: 1200px;
+    max-width: 1400px;
     margin: 0 auto 60px auto;
     padding: 20px;
     align-items: center;
@@ -1050,7 +1051,7 @@ footer {
   .about-section-2 {
     display: flex;
     gap: 40px;
-    max-width: 1200px;
+    max-width: 1400px;
     margin: 0 auto 60px auto;
     padding: 20px;
     align-items: center;
@@ -1060,17 +1061,31 @@ footer {
     display: flex;
     flex-direction: row;
     gap: 30px;
-    max-width: 1200px;
+    max-width: 1400px;
     margin: 0 auto 60px auto;
     padding: 20px;
     align-items: center;
     justify-content: center;
   }
 
+  .about-image-susuki {
+    flex: 1;
+    max-width: 500px;
+  }
+
+  .about-image-susuki img {
+    width: 100%;
+    height: auto;
+    border-radius: 10px;
+    box-shadow: 0 14px 30px rgba(0,0,0,0.3), 0 6px 12px rgba(0,0,0,0.18);
+    object-fit: cover;
+    transform: rotate(-2.5deg);
+    transform-origin: center;
+  }
+
   .about-image-left {
     flex: 1;
-    max-width: 400px;
-  }
+    max-width: 400px;  }
 
   .about-image-left img {
     width: 100%;
@@ -1095,7 +1110,7 @@ footer {
   }
   .about-text-right {
     flex: 1;
-    max-width: 600px;
+    max-width: 750px;
   }
 
   .about-text-right h2 {
@@ -1148,3 +1163,12 @@ footer {
     box-shadow: 0 4px 15px rgba(0,0,0,0.2);
     object-fit: cover;
   }
+
+
+.about-page-wrapper {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    max-width: 1400px;
+    align-items: center;
+}
