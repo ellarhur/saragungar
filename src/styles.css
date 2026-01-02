@@ -67,6 +67,31 @@ background-color: #27231c;
 
 }
 
+.site-logo-wrapper {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.header-logo {
+    height: 200px;
+    width: auto;
+    filter: invert(1);
+    object-fit: contain;
+}
+
+.about-logo-wrapper {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 20px auto 10px;
+    width: 100%;
+}
+
+.about-logo-wrapper img {
+    display: block;
+}
+
 .image-right {
     flex: 0 0 auto;
     max-width: 500px;
