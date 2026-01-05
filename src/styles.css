@@ -19,6 +19,7 @@ h1 {
     width: 100%;
     color: #9d9167;
     font-family: "Roboto", sans-serif;
+    line-height: 1.0;
     font-weight: 300;
     letter-spacing: 0.05em;
 }
@@ -43,6 +44,7 @@ h3 {
 
 h4, h5, h6 {
     font-family: "Roboto", sans-serif;
+    line-height: 1.0;
     font-weight: 300;
     letter-spacing: 0.05em;
 
@@ -65,8 +67,10 @@ li, a, button, input, textarea, label {
 }
 
 p {
-    font-size: 0.4em;
+    font-size: 1.4rem;
     line-height: 1.5;
+    font-weight: 300;
+    letter-spacing: 0.05em;
 }
 
 .h2-wrapper {
@@ -74,10 +78,11 @@ p {
     margin: 0 auto;
     width: 100%;
     color: #9d9167;
-    font-family: "Roboto ", sans-serif;
+    font-family: "Roboto", sans-serif;
+    line-height: 1.0;
+    font-weight: 300;
+    letter-spacing: 0.05em;
 }
-
-
 
 /* Kod för navigering och header */
 
@@ -101,13 +106,11 @@ background-color: #27231c;
     justify-content: center;
     overflow: hidden;
     min-height: 150px;
+    font-family: "Roboto", sans-serif;
+    line-height: 1.0;
+    font-weight: 300;
+    letter-spacing: 0.05em;
 
-}
-
-.site-logo-wrapper {
-    display: flex;
-    justify-content: center;
-    align-items: center;
 }
 
 .header-logo {
@@ -119,14 +122,22 @@ background-color: #27231c;
 
 .about-logo-wrapper {
     display: flex;
-    justify-content: center;
+    justify-content: flex-end;
     align-items: center;
-    margin: 20px auto 10px;
+    margin: -80px 80px -100px auto;
     width: 100%;
+    max-width: 800px;
+    font-family: "Roboto", sans-serif;
+    line-height: 1.0;
+    font-weight: 300;
+    letter-spacing: 0.05em;
 }
 
 .about-logo-wrapper img {
     display: block;
+    max-width: 200px;
+    transform: rotate(-17deg);
+    opacity: 0.8;
 }
 
 .image-right {
@@ -168,24 +179,6 @@ background-color: #27231c;
     box-shadow: 0 4px 15px rgba(0,0,0,0.2);
     object-fit: cover;
 }
-.image-under-schedulingform {
-    flex: 1;
-    height: 958px;
-    width:100%;
-    margin-top: 90px;
-    display: flex;
-    align-items: flex-start;
-}
-
-.image-under-schedulingform img {
-    width: 100%;
-    height: 100%;
-    border-radius: 10px;
-    box-shadow: 0 4px 15px rgba(0,0,0,0.2);
-    object-fit: cover;
-}
-
-
 .nav-links {
     display: flex;
     flex-direction: row;
@@ -223,6 +216,31 @@ background-color: #27231c;
     color: #743014;
     text-decoration: underline;
 }
+
+/* Hamburger toggle */
+.nav-toggle {
+    display: none;
+}
+
+.nav-toggle-label {
+    display: none;
+    cursor: pointer;
+    width: 40px;
+    height: 32px;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    padding: 6px 4px;
+    box-sizing: border-box;
+}
+
+.nav-toggle-label span {
+    display: block;
+    width: 100%;
+    height: 3px;
+    background: #fff;
+    border-radius: 2px;
+}
 /* Kod för sociala medier i vänster hörn */
 
 .social-links {
@@ -235,15 +253,6 @@ background-color: #27231c;
     gap: 15px;
     z-index: 10;
     color: #fff;
-}
-
-.youtube-icon {
-    width: 30px;
-    height: 30px;
-}
-
-.youtube-link:hover .youtube-icon {
-    opacity: 0.7;
 }
 
 .instagram-icon {
@@ -271,16 +280,6 @@ background-color: #27231c;
     flex-direction: row;
     gap: 15px;
     margin-top: 20px;
-}
-
-.youtube-icon-black {
-    width: 30px;
-    height: 30px;
-    filter: brightness(0);
-}
-
-.youtube-link:hover .youtube-icon-black {
-    opacity: 0.7;
 }
 
 .instagram-icon-black {
@@ -368,7 +367,7 @@ background-color: #27231c;
 
     ;
     text-decoration: none;
-    font-weight: bold;
+    font-weight: 300;
 }
 
 .help-item a:hover {
@@ -441,40 +440,8 @@ background-color: #27231c;
     background-color: #8d3d1a;
 }
 
-.facebook-icon {
-    width: 25px;
-    height: 30px;
-}
-
-.facebook-link:hover .facebook-icon {
-    opacity: 0.7;
-}
-
 /* Kod för kontakta-mig-knappen */
 
-.right-book-button {
-position: absolute;
-right: 100px;
-top: 50%;
-transform: translateY(-50%);
-display: flex;
-z-index: 10;
-border-radius: 10px;
-border: #fff 1px solid;
-padding: 5px;
-background-color: #fff;
-width: 150px;
-height: 50px;
-font-size: 1.2rem;
-font-weight: 600;
-color: #fff;
-}
-
-.right-book-button a {
-    color: #fff;
-    text-decoration: none;
-    }
-    
 .centered-text {
     text-align: left;
     margin: 0;
@@ -629,30 +596,6 @@ color: #fff;
     flex: 1;
 }
 
-.start-exercise-btn {
-    background-color: #3c3316;
-    color: #fff;
-    border: 1px solid #fff;
-    border-radius: 8px;
-    padding: 12px 24px;
-    font-family: 'Outfit', sans-serif;
-    font-size: 1rem;
-    cursor: pointer;
-    margin-top: 20px;
-    transition: background-color 0.3s ease;
-}
-
-.start-exercise-btn:hover {
-    background-color: #D4A574;
-}
-
-.error-message {
-    text-align: center;
-    padding: 40px;
-    background: #f8f8f8;
-    border-radius: 10px;
-    margin: 20px;
-}
 
 /* Spotify-spelare */
 
@@ -775,7 +718,7 @@ color: #fff;
 }
 
 #interest-form label {
-    font-weight: bold;
+    font-weight: 300;
     margin-bottom: 5px;
     width: 500px;
 }
@@ -817,40 +760,13 @@ color: #fff;
 
 .hero-section-left p {
     font-size: 1.4rem;
-    line-height: 1.2;
+    line-height: 1.5;
+    font-weight: 300;
+    letter-spacing: 0.05em;
     color: #000;
     margin: 0;
 }
 
-.hero-image {
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-    filter: grayscale(100%);
-    opacity: 0.7;
-}
-
-.hero-overlay {
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    text-align: center;
-    color: #e7e4d8;
-    width: 90%;
-    max-width: 800px;
-    background: #8f8360;
-    padding: 40px;
-    border-radius: 15px;
-    border: 2px solid #fff;
-}
-
-
-.hero-overlay p {
-    font-size: 1.5rem;
-    color: #e7e4d8;
-    margin: 0;
-}
 
 main {
     flex: 1;
@@ -865,121 +781,12 @@ main {
     padding: 0 20px;
     padding-top: 180px;
     font-family: "Roboto", serif;
+    font-weight: 300;
     align-items: flex-start;
     box-sizing: border-box;
     overflow-x: hidden;
 }
 
-/* Container för schemasidan - två kolumner */
-
-.schedule-page-wrapper {
-    display: flex;
-    flex-direction: column;
-    width: 100%;
-    align-items: center;
-}
-
-.schedule-page-title {
-    text-align: center;
-    color: #000;
-    font-size: 3rem;
-    margin-bottom: 30px;
-    margin-top: 20px;
-    width: 100%;
-}
-
-.schedule-container {
-    display: flex;
-    gap: 40px;
-    max-width: 1500px;
-    padding: 20px;
-    align-items: flex-start;
-    justify-content: center;
-}
-
-/* Informationskolumn till vänster */
-.schedule-info {
-    flex: 1;
-    background-color: #4f1200;
-    color: #e7e4d8;
-    font-family: "Roboto", serif;
-    font-size:1.6rem;
-    font-weight: 400;
-    padding: 30px;
-    border-radius: 10px;
-    border: 1px solid #fff;
-    max-width: 400px;
-    height:900px;
-    margin-top:90px;
-}
-
-.schedule-info h3 {
-    color: #fff;
-    margin-top: 0;
-    font-size: 1.5rem;
-}
-
-.schedule-info h4 {
-    color: #fff;
-    margin-top: 20px;
-    margin-bottom: 10px;
-    font-size: 1.2rem;
-}
-
-.schedule-info ul {
-    list-style-position: inside;
-    padding-left: 0;
-}
-
-.schedule-info li {
-    margin-bottom: 8px;
-}
-
-.schedule-info a {
-    color: #e7d9cb;
-    text-decoration: underline;
-}
-
-.schedule-info a:hover {
-    color: #fff;
-}
-
-/* Widget-kolumn till höger */
-.schedule-main {
-    flex: 1.5;
-    position: relative;
-    display: flex;
-    justify-content: center;
-    align-items: flex-start;
-    overflow: hidden;
-    width: 1000px;
-}
-
-/* Ta bort vitt utrymme från schemawidgeten */
-.schedule-main iframe {
-    width: 100%;
-    margin: 0 !important;
-    margin-top: -100px !important;
-    padding: 0 !important;
-    display: block;
-}
-
-.schedule-main script {
-    margin: 0;
-    padding: 0;
-}
-
-.button-technical {
-    display: flex;
-    flex-direction:row;
-    background-color: #000;
-    color: #fff;
-    font-size: 1.2rem;
-    border: #fff 1px solid;
-    padding: 10px 20px;
-    font-family: "Roboto", serif;
-    
-}
 
 footer {
     flex-direction: column;
@@ -1168,9 +975,11 @@ footer {
   }
 
   .about-text-right p {
-    font-size: 1.2rem;
+    font-size: 1.4rem;
     color: #000;
-    line-height: 1.6;
+    line-height: 1.5;
+    font-weight: 300;
+    letter-spacing: 0.05em;
     margin-bottom: 15px;
   }
 
@@ -1193,9 +1002,11 @@ footer {
   }
 
   .about-text-left p {
-    font-size: 1.2rem;
+    font-size: 1.4rem;
     color: #000;
-    line-height: 1.6;
+    line-height: 1.5;
+    font-weight: 300;
+    letter-spacing: 0.05em;
     margin-bottom: 15px;
   }
 
@@ -1278,10 +1089,6 @@ footer {
     max-width: 100%;
   }
 
-  .schedule-main {
-    width: 100%;
-  }
-
   .newsletter-form {
     flex-wrap: wrap;
   }
@@ -1300,7 +1107,8 @@ footer {
 @media (max-width: 767px) {
   header {
     padding: 10px 0;
-    min-height: 120px;
+    min-height: 80px;
+    position: relative;
   }
 
   .social-links {
@@ -1312,7 +1120,6 @@ footer {
     padding-top: 4px;
   }
 
-  .youtube-icon,
   .instagram-icon,
   .linkedin-icon {
     width: 24px;
@@ -1320,10 +1127,41 @@ footer {
   }
 
   .nav-links {
+    display: none;
+    position: absolute;
+    top: 70px;
+    right: 0;
+    left: 0;
     flex-direction: column;
     align-items: center;
-    gap: 8px;
+    gap: 12px;
     font-size: 1.1rem;
+    background: #27231c;
+    padding: 16px 0 20px;
+    border-top: 1px solid #fff;
+  }
+
+  .nav-toggle {
+    display: block;
+    position: absolute;
+    right: 20px;
+    top: 12px;
+    width: 44px;
+    height: 44px;
+    opacity: 0;
+    z-index: 200;
+  }
+
+  .nav-toggle-label {
+    display: flex;
+    position: absolute;
+    right: 20px;
+    top: 12px;
+    z-index: 199;
+  }
+
+  .nav-toggle:checked ~ .nav-links {
+    display: flex;
   }
 
   main {
@@ -1352,8 +1190,10 @@ footer {
 
   .about-text-right p,
   .about-text-left p {
-    font-size: 0.9rem;
-    line-height: 1.6;
+    font-size: 1.4rem;
+    line-height: 1.5;
+    font-weight: 300;
+    letter-spacing: 0.05em;
   }
 
   .about-divider {
@@ -1361,9 +1201,18 @@ footer {
     margin: 40px auto;
   }
 
-  .schedule-main iframe {
-    margin-top: -40px !important;
+  .schedule-page-wrapper {
+    font-family: "Roboto", sans-serif;
+    font-weight: 300;
+    letter-spacing: 0.05em;
   }
+
+  .schedule-widget {
+    width: 100%;
+    max-width: 1000px;
+    height: auto;
+  }
+
 
   .newsletter-form {
     flex-direction: column;
