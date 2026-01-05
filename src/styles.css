@@ -1,8 +1,8 @@
 body {
     background: #e7d9cb;
     color: #000;
-    font-family: "Instrument Serif", serif;
-    font-weight: 400;
+    font-family: "Roboto", sans-serif;
+    font-weight: 300;
     font-style: normal;
     min-height: 100vh;
     min-width: 100vw;
@@ -18,7 +18,9 @@ h1 {
     margin: 0 auto;
     width: 100%;
     color: #9d9167;
-    font-family: "Instrument Serif", serif;
+    font-family: "Roboto", sans-serif;
+    font-weight: 300;
+    letter-spacing: 0.05em;
 }
 
 h1 a {
@@ -30,20 +32,41 @@ h1 a:hover {
     color: #fff;
 }
 
-h3, h4, h5, h6 {
-    font-family: "Instrument Serif", serif;
+h3 {
+    font-size: 2rem;
+    line-height: 1.0;
+    font-weight: 300;
+    letter-spacing: 0.05em;
+    font-family: "Roboto", sans-serif;
+}
+
+
+h4, h5, h6 {
+    font-family: "Roboto", sans-serif;
+    font-weight: 300;
+    letter-spacing: 0.05em;
+
 }
 h2 {
-    font-size: 1.5rem;
+    font-size: 1rem;
     text-align: center;
     margin: 0 auto;
     width: 100%;
     color: #9d9167;
-    font-family: "Instrument Serif", serif;
+    font-family: "Roboto", sans-serif;
+    letter-spacing: 0.05em;
+    font-weight: 300;
 }
 
-p, li, a, button, input, textarea, label {
-    font-family: "Hubballi", serif;
+li, a, button, input, textarea, label {
+    font-family: "Roboto", sans-serif;
+    font-weight: 300;
+    letter-spacing: 0.05em;
+}
+
+p {
+    font-size: 0.4em;
+    line-height: 1.5;
 }
 
 .h2-wrapper {
@@ -51,7 +74,7 @@ p, li, a, button, input, textarea, label {
     margin: 0 auto;
     width: 100%;
     color: #9d9167;
-    font-family: "Instrument Serif", serif;
+    font-family: "Roboto ", sans-serif;
 }
 
 
@@ -108,7 +131,7 @@ background-color: #27231c;
 
 .image-right {
     flex: 0 0 auto;
-    max-width: 500px;
+    max-width: 400px;
     width: 100%;
     display: flex;
     justify-content: center;
@@ -172,7 +195,7 @@ background-color: #27231c;
     margin: auto;
     margin-top:2px;
     text-align: center;
-    font-family: "Instrument Serif", serif;
+    font-family: "Roboto Serif", serif;
     font-size: 1.2rem;
 }
 
@@ -317,7 +340,7 @@ background-color: #27231c;
     line-height: 1.6;
 }
 
-.instrument-help-list {
+.Roboto-help-list {
     margin-top: 25px;
 }
 
@@ -333,11 +356,6 @@ background-color: #27231c;
     ;
 }
 
-.help-item h3 {
-    margin: 0 0 10px 0;
-    font-size: 1.3rem;
-    color: #27231c;
-}
 
 .help-item p {
     margin: 0;
@@ -415,7 +433,7 @@ background-color: #27231c;
     font-size: 1.1rem;
     border-radius: 5px;
     cursor: pointer;
-    font-family: "Hubballi", serif;
+    font-family: "Roboto", serif;
     transition: background-color 0.3s ease;
 }
 
@@ -664,7 +682,7 @@ color: #fff;
     border-radius: 10px;
     padding: 10px 20px;
     text-align: center;
-    font-family: 'Hubballi', sans-serif;
+    font-family: 'Roboto', sans-serif;
     cursor: pointer;
     white-space: nowrap;
     flex-shrink: 0;
@@ -793,16 +811,13 @@ color: #fff;
     gap: 20px;
     justify-content: flex-start;
     align-items: flex-start;
-    max-width: 600px;
+    max-width: 850px;
 }
 
-.hero-section-left h3 {
-    font-size: 2.5rem;
-    color: #000;
-}
 
 .hero-section-left p {
-    font-size: 1.7rem;
+    font-size: 1.4rem;
+    line-height: 1.2;
     color: #000;
     margin: 0;
 }
@@ -849,7 +864,7 @@ main {
     margin-bottom: 100px;
     padding: 0 20px;
     padding-top: 180px;
-    font-family: "Hubballi", serif;
+    font-family: "Roboto", serif;
     align-items: flex-start;
     box-sizing: border-box;
     overflow-x: hidden;
@@ -887,7 +902,7 @@ main {
     flex: 1;
     background-color: #4f1200;
     color: #e7e4d8;
-    font-family: "Hubballi", serif;
+    font-family: "Roboto", serif;
     font-size:1.6rem;
     font-weight: 400;
     padding: 30px;
@@ -937,7 +952,7 @@ main {
     justify-content: center;
     align-items: flex-start;
     overflow: hidden;
-    width: 700px;
+    width: 1000px;
 }
 
 /* Ta bort vitt utrymme från schemawidgeten */
@@ -962,7 +977,7 @@ main {
     font-size: 1.2rem;
     border: #fff 1px solid;
     padding: 10px 20px;
-    font-family: "Hubballi", serif;
+    font-family: "Roboto", serif;
     
 }
 
@@ -971,7 +986,7 @@ footer {
     padding: 40px 20px;
     border-top: solid 1px #fff;
     margin-top: auto;
-    font-family: "Hubballi", serif;
+    font-family: "Roboto", serif;
 }
   
   .footer-wrapper {
@@ -1001,7 +1016,7 @@ footer {
     border: 2px solid #27231c;
     border-radius: 5px;
     width: 300px;
-    font-family: "Hubballi", serif;
+    font-family: "Roboto", serif;
     font-size: 1rem;
     background: #fff;
     color: #000;
@@ -1018,7 +1033,7 @@ footer {
     color: #fff;
     border: none;
     border-radius: 5px;
-    font-family: "Hubballi", serif;
+    font-family: "Roboto", serif;
     font-size: 1rem;
     cursor: pointer;
     transition: background-color 0.3s ease;
@@ -1051,7 +1066,7 @@ footer {
     padding: 10px;
     text-align: center;
     margin: 0 auto;
-    font-family: "Hubballi", serif;
+    font-family: "Roboto", serif;
   }
 
   .interest-form-button {
@@ -1060,7 +1075,7 @@ footer {
     font-size: 1.2rem;
     border: #fff 1px solid;
     padding: 10px 20px;
-    font-family: "Hubballi", serif;
+    font-family: "Roboto", serif;
   }
 
   /* Om Sara sidan */
@@ -1332,12 +1347,12 @@ footer {
   }
 
   .about-page-title {
-    font-size: 2.2rem;
+    font-size: 1.0 rem;
   }
 
   .about-text-right p,
   .about-text-left p {
-    font-size: 1.05rem;
+    font-size: 0.9rem;
     line-height: 1.6;
   }
 
