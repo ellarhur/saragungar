@@ -1,7 +1,7 @@
 body {
     background: #e7d9cb;
     color: #000;
-    font-family: "Hubballi", serif;
+    font-family: "Instrument Serif", serif;
     font-weight: 400;
     font-style: normal;
     min-height: 100vh;
@@ -13,17 +13,16 @@ body {
 }
 
 h1 {
-    font-size: 4rem;
-    font-weight: 400;
+    font-size: 3rem;
     text-align: center;
     margin: 0 auto;
     width: 100%;
     color: #9d9167;
-    font-family: "Hubballi", serif;
+    font-family: "Instrument Serif", serif;
 }
 
 h1 a {
-    color: #fff;
+    color: #9d9167;
     text-decoration: none;
 }
 
@@ -32,15 +31,30 @@ h1 a:hover {
 }
 
 h3, h4, h5, h6 {
-    font-family: "Hubballi", serif;
+    font-family: "Instrument Serif", serif;
 }
 h2 {
-    font-size: 2.5rem;
+    font-size: 1.5rem;
+    text-align: center;
+    margin: 0 auto;
+    width: 100%;
+    color: #9d9167;
+    font-family: "Instrument Serif", serif;
 }
 
 p, li, a, button, input, textarea, label {
     font-family: "Hubballi", serif;
 }
+
+.h2-wrapper {
+    text-align: center;
+    margin: 0 auto;
+    width: 100%;
+    color: #9d9167;
+    font-family: "Instrument Serif", serif;
+}
+
+
 
 /* Kod för navigering och header */
 
@@ -152,14 +166,14 @@ background-color: #27231c;
 .nav-links {
     display: flex;
     flex-direction: row;
-    gap: 15px;
+    gap: 10px;
     list-style: none;
-    padding: 10px;
+    padding: 2px;
     margin: auto;
-    margin-top:10px;
+    margin-top:2px;
     text-align: center;
-    font-family: "Hubballi", serif;
-    font-size: 1.5rem;
+    font-family: "Instrument Serif", serif;
+    font-size: 1.2rem;
 }
 
 .nav-link {
@@ -816,12 +830,6 @@ color: #fff;
     border: 2px solid #fff;
 }
 
-.hero-overlay h1 {
-    font-size: 3rem;
-    margin-bottom: 20px;
-    color: #e7e4d8;
-    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
-}
 
 .hero-overlay p {
     font-size: 1.5rem;
@@ -1207,7 +1215,7 @@ footer {
   }
 
   h1 {
-    font-size: 3rem;
+    font-size: 2.5rem;
   }
 
   .nav-links {
@@ -1294,11 +1302,6 @@ footer {
   .linkedin-icon {
     width: 24px;
     height: 24px;
-  }
-
-  h1 {
-    font-size: 2.4rem;
-    margin: 0 auto;
   }
 
   .nav-links {
