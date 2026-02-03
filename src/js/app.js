@@ -4,27 +4,42 @@ console.log('Sara Gungar website loaded successfully!');
 document.addEventListener('DOMContentLoaded', () => {
     const headerImage = document.querySelector('.header-image');
     const headerElement = document.querySelector('header');
-    const targets = Array.from(document.querySelectorAll('[data-header-image]'));
+    const imageTargets = Array.from(document.querySelectorAll('[data-header-image]'));
+    const navTargets = Array.from(document.querySelectorAll('[data-nav-bg]'));
 
-    if (!headerImage || !targets.length) {
+    if (!headerElement) {
         return;
     }
 
-    const defaultSrc = headerImage.getAttribute('src');
+    const defaultSrc = headerImage?.getAttribute('src');
+    const defaultNavBg =
+        headerElement.dataset.navDefaultBg || window.getComputedStyle(headerElement).backgroundColor;
 
     const updateHeaderImage = () => {
         const headerOffset = (headerElement?.offsetHeight || 0) + 12;
         let activeSrc = defaultSrc;
+        let activeNavBg = defaultNavBg;
 
-        targets.forEach((target) => {
+        imageTargets.forEach((target) => {
             const rect = target.getBoundingClientRect();
             if (rect.top <= headerOffset) {
                 activeSrc = target.getAttribute('data-header-image') || activeSrc;
             }
         });
 
-        if (activeSrc && headerImage.getAttribute('src') !== activeSrc) {
+        navTargets.forEach((target) => {
+            const rect = target.getBoundingClientRect();
+            if (rect.top <= headerOffset) {
+                activeNavBg = target.getAttribute('data-nav-bg') || activeNavBg;
+            }
+        });
+
+        if (activeSrc && headerImage && headerImage.getAttribute('src') !== activeSrc) {
             headerImage.setAttribute('src', activeSrc);
+        }
+
+        if (activeNavBg && headerElement.style.backgroundColor !== activeNavBg) {
+            headerElement.style.backgroundColor = activeNavBg;
         }
     };
 
