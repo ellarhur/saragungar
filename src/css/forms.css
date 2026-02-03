@@ -21,7 +21,7 @@
 }
 
 .newsletter-popup-content {
-    background-color: #fff6ea;
+    background-color: #fff;
     padding: 40px;
     border-radius: 10px;
     box-shadow: 0 4px 20px rgba(0, 0, 0, 0.3);
@@ -93,9 +93,9 @@
     overflow: hidden;
     padding: 20px;
     text-align: center;
-    background-color: #0f0f0f;
+    background-color: #fff;
     border: #FF8C00 1px solid;
-    color: #fff;
+    color: #000;
     font-size: 0.9rem;
 }
 
@@ -110,36 +110,5 @@
     background-color: #FF8C00;
     border: #000 1px solid;
     color: #000;
-    font-size: 0.9rem;
-}
-
-#interest-form {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    gap: 10px;
-}
-
-#interest-form input {
-    padding: 10px;
-    border: 1px solid #ccc;
-    border-radius: 10px;
-    width: 500px;
-}
-
-#interest-form label {
-    font-weight: 300;
-    margin-bottom: 5px;
-    width: 500px;
-}
-
-#interest-form textarea {
-    height: 100px;
-    resize: vertical;
-    width: 500px;
-    padding: 10px;
-    border: 1px solid #ccc;
-    border-radius: 10px;
-    width: 500px;
+    font-size: 1.0rem;
 }

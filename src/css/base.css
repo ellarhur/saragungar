@@ -20,6 +20,7 @@ body {
     max-width: 1600px;
     margin: 0 auto;
     width: 100%;
+    margin-top: 48px;
 }
 
 main {
@@ -38,15 +39,22 @@ main {
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    gap: 60px;
+    gap: 24px;
     margin-bottom: 100px;
-    padding: 60px 20px;
+    padding: 24px 20px;
     text-align: center;
+}
+
+/* Bakgrund bokningsdelen */
+.page-container--boka {
+    background: #fff;
+    border-radius: 10px;
 }
 
 .page-container--flush-top {
     padding-top: 0;
     gap: 0;
+    margin-top: 48px; /* Avstånd så parallax-bilden ovanför inte täcker "Om Sara gungar" */
 }
 
 .page-container--flush-top > .section-header:first-child {
@@ -63,6 +71,7 @@ main {
 .page-container--flush-top > section.content-section {
     padding-top: 0 !important;
     margin-top: 0 !important;
+    margin-top: 48px;
 }
 
 /* Typografi */

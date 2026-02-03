@@ -8,7 +8,7 @@ header {
     margin: 0;
     gap: 5px;
     z-index: 100;
-    background: #000;
+    background: #fff;
     background-position: center;
     background-repeat: no-repeat;
     position: fixed;
@@ -90,7 +90,7 @@ header {
 }
 
 .nav-link a:active {
-    color: #fff;
+    color: #000;
 }
 
 .nav-link a.active {

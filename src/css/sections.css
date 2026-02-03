@@ -10,8 +10,7 @@
     padding: 60px 20px;
     display: flex;
     align-items: center;
-    justify-content: center;
-    text-align: center;
+    justify-content: flex-end;
     overflow: hidden;
 }
 
@@ -19,7 +18,7 @@
     content: "";
     position: absolute;
     inset: 0;
-    background: linear-gradient(180deg, rgba(0,0,0,0.45) 0%, rgba(0,0,0,0.6) 100%);
+    background: linear-gradient(180deg, rgba(0,0,0,0.25) 0%, rgba(0,0,0,0.4) 100%);
     z-index: 1;
 }
 
@@ -36,21 +35,28 @@
 .presentation-content {
     position: relative;
     z-index: 2;
-    background: rgba(0, 0, 0, 0.55);
     padding: 24px 20px;
     border-radius: 10px;
-    box-shadow: 0 8px 25px rgba(0,0,0,0.25);
-    margin: 0 auto;
-    max-width: 600px;
-    color: #fff;
+    margin: 150px;
+    max-width: 300px;
+    color: #000;
+    text-align: right;
     -webkit-backdrop-filter: blur(2px);
     backdrop-filter: blur(2px);
 }
 
 .presentation-content h3 {
-    color: #fff;
+    color: #000;
     font-size: 0.9rem;
     margin-top: 0;
+}
+
+.presentation-content-image {
+    display: block;
+    max-width: 100%;
+    width: 600px;
+    height: auto;
+    margin-bottom: 16px;
 }
 
 .presentation-content p {
@@ -70,6 +76,7 @@
     justify-content: center;
     margin: 0 auto 60px auto;
     padding: 20px;
+    color: #000;
 }
 
 .booking-widget {
@@ -150,7 +157,7 @@
 
 /* Content sections som kommer efter parallax */
 .content-section {
-    background: #fff6ea;
+    background: #fff;
     position: relative;
     z-index: 3;
 }

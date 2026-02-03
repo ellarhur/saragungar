@@ -4,7 +4,7 @@
 .section-header {
     width: 100%;
     text-align: center;
-    margin: 40px 0 60px 0;
+    margin: 24px 0 24px 0;
 }
 
 .section-header-image {
@@ -87,7 +87,8 @@
 
 /* Info boxar */
 .info-box {
-    background-color: #fff1e0;
+    background-color: #fff;
+    color: #000;
     border-left: 4px solid #FF8C00;
     padding: 15px 20px;
     margin: 25px 0;

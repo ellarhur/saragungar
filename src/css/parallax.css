@@ -2,8 +2,9 @@
 
 .parallax-section {
     position: relative;
-    height: 60vh;
-    min-height: 400px;
+    width: 100vw;
+    height: 100vh;
+    min-height: 100vh;
     overflow: hidden;
     display: flex;
     align-items: center;
@@ -12,10 +13,10 @@
 
 .parallax-bg {
     position: absolute;
-    top: -15%;
+    top: 0;
     left: 0;
-    width: 100%;
-    height: 130%;
+    width: 100vw;
+    height: 100vh;
     background-attachment: scroll;
     background-position: center center;
     background-repeat: no-repeat;
@@ -32,49 +33,30 @@
     left: 0;
     width: 100%;
     height: 100%;
-    background: rgba(0, 0, 0, 0.4);
+    background: linear-gradient(180deg, rgba(0,0,0,0.25) 0%, rgba(0,0,0,0.4) 100%);
     z-index: 1;
 }
-
-/* Innehåll ovanpå parallax */
-.parallax-content {
-    position: relative;
-    z-index: 2;
-    text-align: center;
-    color: white;
-    max-width: 800px;
-    padding: 40px 20px;
-}
-
-.parallax-content h2 {
-    font-size: 0.9rem;
-    margin-bottom: 20px;
-    text-shadow: 2px 2px 4px rgba(0,0,0,0.5);
-}
-
-.parallax-content p {
-    font-size: 0.9rem;
-    line-height: 1.6;
-    text-shadow: 1px 1px 2px rgba(0,0,0,0.5);
-}
-
-/* Specifika bakgrundsbilder */
+/* Specifika bakgrundsbilder + vilken del som syns (background-position) */
+/* Första värdet: vänster (0%)–höger (100%), andra: upp (0%)–ner (100%). center = 50% */
 .parallax-1 .parallax-bg {
-    background-image: url('../images/saraplaying.jpeg');
+    background-image: url('../images/Elevundervisasonline.jpg');
+    background-position: 50% 30%;
 }
 
 .parallax-2 .parallax-bg {
-    background-image: url('../images/saraundervisaronline.jpg');
+    background-image: url('../images/saraler.jpg');
+    background-position: 70% 30%;
 }
 
 .parallax-3 .parallax-bg {
-    background-image: url('../images/saragungar2.jpg');
+    background-image: url('../images/saraklickar.jpg');
+    background-position: 55% 45%;
 }
 
 /* Innehållssektioner mellan parallax */
 .content-section {
-    background: #fff6ea;
-    padding: 80px 0;
+    background: #fff;
+    padding: 0px 0;
     position: relative;
     z-index: 3;
 }
@@ -86,17 +68,19 @@
 
 /* Ren parallax utan extra animationer */
 
-/* Mobilanpassning - inaktivera parallax på mobil för prestanda */
+/* Mobilanpassning - parallax fullskärm på mobil också */
 @media (max-width: 768px) {
     .parallax-bg {
         background-attachment: scroll;
-        height: 100%;
-        background-position: center center !important; /* Fixa position på mobil */
+        width: 100vw;
+        height: 100vh;
+        background-position: center center !important;
     }
     
     .parallax-section {
-        height: 50vh;
-        min-height: 300px;
+        width: 100vw;
+        height: 100vh;
+        min-height: 100vh;
     }
     
     .parallax-content h2 {
