@@ -1,91 +1,122 @@
-/* Responsiv design - Media queries */
+/* Responsiv design – mobilanpassning av hela hemsidan */
 
-/* Tablet (<=1024px) */
+/* ========== Tablet (≤1024px) ========== */
 @media (max-width: 1024px) {
     header {
         padding: 12px 0;
-        gap: 10px;
-        min-height: 130px;
+        gap: 5px;
+        min-height: 100px;
     }
 
     .header-image {
-        max-height: 180px;
+        max-height: 160px;
     }
 
     .presentation-section {
-        margin-top: 180px;
-        min-height: calc(80vh - 180px);
-        padding: 40px 20px;
+        margin-top: 140px;
+        min-height: calc(80vh - 140px);
+        padding: 40px 24px;
+    }
+
+    .presentation-content {
+        margin: 40px 24px;
+        max-width: 380px;
+        padding: 20px 16px;
+    }
+
+    .presentation-content-image {
+        max-width: 100%;
+        width: 100%;
     }
 
     h1 {
-        font-size: 0.9rem;
+        font-size: 1.5rem;
     }
 
     .nav-links {
         flex-wrap: wrap;
-        gap: 10px;
-        font-size: 0.9rem;
+        gap: 8px;
+        font-size: 0.85rem;
     }
 
     .page-container {
-        padding: 40px 15px;
-        gap: 40px;
+        padding: 32px 16px;
+        gap: 28px;
+    }
+
+    .booking-section,
+    .technical-section {
+        gap: 28px;
+        padding: 24px 16px;
+    }
+
+    .booking-text,
+    .technical-content {
+        padding: 24px 16px;
+    }
+
+    section.about-section > .about-section {
+        flex-direction: row;
+        gap: 28px;
+        padding: 24px 16px;
+    }
+
+    .about-logo-wrapper {
+        margin: -60px 40px -80px auto;
+    }
+
+    .about-logo-wrapper img {
+        max-width: 160px;
     }
 }
 
-/* Mobil (<=767px) */
+/* ========== Mobil (≤767px) ========== */
 @media (max-width: 767px) {
     header {
-        padding: 10px 0;
-        min-height: 80px;
+        padding: 8px 0;
+        min-height: 72px;
         position: relative;
     }
 
     .header-image {
-        max-height: 120px;
-    }
-
-    .presentation-section {
-        margin-top: 120px;
-        min-height: calc(70vh - 120px);
-        padding: 30px 15px;
-    }
-
-    .social-links {
-        position: static;
-        transform: none;
-        justify-content: center;
-        width: 100%;
-        gap: 12px;
-        padding-top: 4px;
-    }
-
-    .instagram-icon,
-    .linkedin-icon {
-        width: 24px;
-        height: 24px;
+        max-height: 100px;
     }
 
     .nav-links {
         display: none;
         position: absolute;
-        top: 70px;
-        right: 0;
+        top: 100%;
         left: 0;
+        right: 0;
         flex-direction: column;
-        align-items: center;
-        gap: 12px;
-        font-size: 0.9rem;
+        align-items: stretch;
+        gap: 0;
+        font-size: 1rem;
         background: #fff;
-        padding: 16px 0 20px;
+        padding: 16px 0;
+        box-shadow: 0 4px 12px rgba(0,0,0,0.15);
+    }
+
+    .nav-link {
+        padding: 14px 20px;
+        border-bottom: 1px solid rgba(0,0,0,0.06);
+    }
+
+    .nav-link:last-child {
+        border-bottom: none;
+    }
+
+    .nav-link a {
+        display: block;
+        padding: 4px 0;
     }
 
     .nav-toggle {
         display: block;
         position: absolute;
-        right: 20px;
-        top: 12px;
+        right: 16px;
+        top: 50%;
+        transform: translateY(-50%);
         width: 44px;
         height: 44px;
         opacity: 0;
@@ -95,101 +126,392 @@
     .nav-toggle-label {
         display: flex;
         position: absolute;
-        right: 20px;
-        top: 12px;
+        right: 16px;
+        top: 50%;
+        transform: translateY(-50%);
         z-index: 199;
+        width: 44px;
+        height: 44px;
+        align-items: center;
+        justify-content: center;
     }
 
     .nav-toggle:checked ~ .nav-links {
         display: flex;
     }
 
-    .hero-section-left-content p {
-        font-size: 0.9rem;
+    /* Presentation – centrerad, mindre marginal */
+    .presentation-section {
+        margin-top: 0px;
+        min-height: calc(100vh - 100px);
+        padding: 20px 16px;
+        justify-content: center;
+        align-items: center;
     }
 
-    .image-right {
-        margin-right: 0;
-        margin-top: 20px;
+    .presentation-content {
+        margin: 0 0px;
+        max-width: 100%;
+        padding: 20px 16px;
+        text-align: center;
     }
 
-    .image-right img {
-        max-height: 360px;
-        object-fit: cover;
+    .presentation-content h3 {
+        font-size: 0.95rem;
     }
 
-    .about-page-title {
-        font-size: 0.9rem;
-    }
-
-    .about-text-right p,
-    .about-text-left p {
+    .presentation-content p {
         font-size: 0.9rem;
         line-height: 1.5;
-        font-weight: 300;
-        letter-spacing: 0.05em;
     }
 
-
-    .newsletter-form {
-        flex-direction: column;
-    }
-
-    .newsletter-form input[type="email"],
-    .newsletter-form button,
-    .startpage-button {
-        width: 100%;
+    .presentation-content-image {
         max-width: 100%;
+        width: 100%;
+        margin-bottom: 12px;
     }
 
-    footer {
-        padding: 30px 16px;
+    /* Bokning */
+    .page-container {
+        padding: 0px 12px;
+        gap: 0px;
+        margin-bottom: 1px;
     }
 
-    .footer-wrapper p {
-        font-size: 0.9rem;
-        text-align: center;
+    .page-container--boka {
+        padding: 0px;
     }
 
     .booking-section {
         flex-direction: column;
         gap: 20px;
-        padding: 15px;
-        margin: 0 auto 40px auto;
+        padding: 16px 12px;
+        margin: 0 auto 32px auto;
     }
 
-    .booking-widget,
     .booking-text {
         max-width: 100%;
+        padding: 20px 16px;
+        line-height: 1.6;
     }
 
-    .technical-section {
-        flex-direction: column;
-        gap: 20px;
-        padding: 15px;
-        margin: 0 auto 40px auto;
+    .booking-text h1 {
+        font-size: 1.35rem;
+        margin-bottom: 12px;
     }
 
-    .technical-content,
-    .technical-image-right {
+    .booking-text p {
+        font-size: 0.9rem;
+    }
+
+    .booking-widget {
         max-width: 100%;
-    }
-
-    .contact-section {
-        padding: 15px;
-        margin: 0 auto 40px auto;
-    }
-
-    .page-container {
-        padding: 20px 10px;
-        gap: 30px;
+        min-height: 400px;
+        min-width: 500px;
     }
 
     .section-header {
-        margin: 20px 0 40px 0;
+        margin: 16px 0 20px 0;
     }
 
     .section-header-image {
-        max-height: 150px;
+        max-height: 120px;
+    }
+
+    
+
+    /* Teknisk information – ingen bild på mobil, text stannar inom bredd */
+    .technical-section {
+        flex-direction: column;
+        gap: 20px;
+        padding: 16px;
+        margin: 0 auto 32px auto;
+        width: 100%;
+        max-width: 100%;
+        box-sizing: border-box;
+        overflow-x: hidden;
+    }
+
+    .technical-content {
+        width: 100%;
+        max-width: 100%;
+        min-width: 0;
+        box-sizing: border-box;
+        padding: 20px 16px;
+        margin: 0;
+        overflow-wrap: break-word;
+        word-wrap: break-word;
+        word-break: break-word;
+    }
+
+    .technical-content h1 {
+        font-size: 1.35rem;
+        margin-bottom: 12px;
+    }
+
+    .technical-content p {
+        font-size: 0.9rem;
+        max-width: 100%;
+        overflow-wrap: break-word;
+    }
+
+    .technical-image-right {
+        display: none;
+    }
+
+    .startpage-button {
+        width: 100%;
+        max-width: 100%;
+        padding: 14px 20px;
+    }
+
+    /* Om mig / About – ingen bild på mobil, text stannar inom bredd */
+    section.about-section {
+        padding: 0 16px;
+        width: 100%;
+        max-width: 100%;
+        box-sizing: border-box;
+        overflow-x: hidden;
+    }
+
+    section.about-section > h3,
+    section.about-section > .about-section .about-text-right h1 {
+        font-size: 1.35rem;
+        text-align: center;
+        margin-bottom: 16px;
+    }
+
+    section.about-section > .about-section {
+        flex-direction: column;
+        gap: 20px;
+        padding: 20px 16px;
+        margin-bottom: 16px;
+        width: 100%;
+        max-width: 100%;
+        box-sizing: border-box;
+    }
+
+    .about-image-susuki {
+        display: none;
+    }
+
+    .about-text-right {
+        width: 100%;
+        max-width: 100%;
+        min-width: 0;
+        box-sizing: border-box;
+        order: 1;
+        overflow-wrap: break-word;
+        word-wrap: break-word;
+        word-break: break-word;
+    }
+
+    .about-text-right h1 {
+        font-size: 1.25rem;
+        text-align: left;
+    }
+
+    .about-text-right p {
+        font-size: 0.9rem;
+        overflow-wrap: break-word;
+    }
+
+    .about-logo-wrapper {
+        margin: 24px auto 0;
+        justify-content: center;
+        max-width: 100%;
+    }
+
+    .about-logo-wrapper img {
+        max-width: 140px;
+    }
+
+    .about-divider {
+        width: 90%;
+        margin: 32px auto;
+    }
+
+    .page-container--flush-top {
+        margin-top: 24px;
+    }
+
+    .page-container--flush-top > section.content-section {
+        margin-top: 0;
+    }
+
+    /* Kontakt – text stannar inom bredd */
+    .contact-section {
+        padding: 16px;
+        margin: 0 auto 32px auto;
+        width: 100%;
+        max-width: 100%;
+        box-sizing: border-box;
+        overflow-x: hidden;
+    }
+
+    .contact-content {
+        width: 100%;
+        max-width: 100%;
+        min-width: 0;
+        box-sizing: border-box;
+        padding: 20px 16px;
+        overflow-wrap: break-word;
+        word-wrap: break-word;
+        word-break: break-word;
+    }
+
+    .contact-content h1 {
+        font-size: 1.35rem;
+        margin-bottom: 12px;
+    }
+
+    .contact-content p,
+    .contact-content i {
+        font-size: 0.9rem;
+        overflow-wrap: break-word;
+    }
+
+    .contact-list {
+        overflow-wrap: break-word;
+    }
+
+    .contact-list li {
+        font-size: 0.9rem;
+    }
+
+    .social-links-2 {
+        justify-content: center;
+        gap: 16px;
+    }
+
+    .info-box {
+        padding: 16px;
+        margin: 20px 0;
+        overflow-wrap: break-word;
+    }
+
+    .info-box p {
+        font-size: 0.9rem;
+    }
+
+    /* Parallax – något lägre på mobil för att spara plats */
+    .parallax-section {
+        min-height: 50vh;
+        height: 50vh;
+    }
+
+    .parallax-content h2 {
+        font-size: 0.95rem;
+    }
+
+    .parallax-content p {
+        font-size: 0.85rem;
+    }
+
+    /* Footer & nyhetsbrev – stannar inom bredd */
+    footer {
+        padding: 24px 16px;
+        width: 100%;
+        max-width: 100%;
+        box-sizing: border-box;
+        overflow-x: hidden;
+    }
+
+    .footer-wrapper {
+        gap: 16px;
+        width: 100%;
+        max-width: 100%;
+        box-sizing: border-box;
+    }
+
+    .footer-wrapper p {
+        font-size: 0.9rem;
+        text-align: center;
+        overflow-wrap: break-word;
+        word-wrap: break-word;
+        word-break: break-word;
+    }
+
+    .newsletter-form {
+        flex-direction: column;
+        width: 100%;
+        max-width: 100%;
+        box-sizing: border-box;
+    }
+
+    .newsletter-form input[type="email"],
+    .newsletter-form button {
+        width: 100%;
+        max-width: 100%;
+        min-width: 0;
+        box-sizing: border-box;
+        padding: 12px 16px;
+    }
+}
+
+/* ========== Liten mobil (≤480px) ========== */
+@media (max-width: 480px) {
+    .presentation-section {
+        margin-top: 88px;
+        min-height: calc(100vh - 88px);
+        padding: 16px 12px;
+    }
+
+    .presentation-content {
+        margin: 0 12px;
+        padding: 16px 12px;
+    }
+
+    .presentation-content h3 {
+        font-size: 0.9rem;
+    }
+
+    .presentation-content p {
+        font-size: 0.85rem;
+    }
+
+    .header-image {
+        max-height: 80px;
+    }
+
+    header {
+        min-height: 64px;
+    }
+
+    .nav-links {
+        top: 100%;
+    }
+
+    h1 {
+        font-size: 1.25rem;
+    }
+
+    .page-container {
+        padding: 16px 10px;
+        gap: 16px;
+    }
+
+    .booking-section,
+    .technical-section {
+        padding: 12px 10px;
+    }
+
+    .booking-text,
+    .technical-content,
+    .contact-content {
+        padding: 16px 12px;
+    }
+
+    section.about-section > .about-section {
+        padding: 16px 12px;
+    }
+
+    .about-logo-wrapper img {
+        max-width: 120px;
+    }
+
+    .parallax-section {
+        min-height: 40vh;
+        height: 40vh;
     }
 }
