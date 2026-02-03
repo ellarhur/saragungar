@@ -5,9 +5,9 @@
     position: relative;
     width: 100%;
     max-width: none;
-    min-height: calc(70vh - 100px);
-    margin: 0;
-    padding: 120px 20px 60px;
+    min-height: calc(100vh - 220px);
+    margin-top: 200px; /* Plats för headern */
+    padding: 60px 20px;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -30,7 +30,7 @@
     height: 100%;
     object-fit: cover;
     z-index: 0;
-    object-position: 20% 80%;
+    object-position: 30% 70%;
 }
 
 .presentation-content {
