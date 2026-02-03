@@ -1,0 +1,40 @@
+/* Footer */
+
+footer {
+    flex-direction: column;
+    padding: 40px 20px;
+    border-top: solid 1px #fff;
+    margin-top: auto;
+    font-family: "Roboto", serif;
+}
+
+.footer-wrapper {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 16px;
+}
+
+.footer-wrapper p {
+    font-size: 1.3rem;
+    color: #000;
+    margin: 0;
+}
+
+.footer-ul {
+    padding: 0;
+    list-style: none;
+    flex-direction: column;
+    display: flex;
+    gap: 8px;
+}
+
+.footer-list {
+    text-align: center;
+}
+
+.copyright {
+    text-align: center;
+}

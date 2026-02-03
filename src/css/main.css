@@ -1,0 +1,17 @@
+/* Main CSS - Importerar alla modulära CSS-filer */
+
+/* Bas-stilar och typografi */
+@import 'base.css';
+
+/* Layout komponenter */
+@import 'header.css';
+@import 'sections.css';
+@import 'about.css';
+@import 'footer.css';
+
+/* Komponenter och UI-element */
+@import 'components.css';
+@import 'forms.css';
+
+/* Responsiv design */
+@import 'responsive.css';

@@ -1,0 +1,409 @@
+/* Komponenter - knappar, formulär, bilder, etc. */
+
+/* Knappar */
+.startpage-button {
+    background-color: #FF8C00;
+    color: #000;
+    font-size: 1.5rem;
+    border: #000 1px solid;
+    border-radius: 10px;
+    padding: 10px 20px;
+    text-align: center;
+    font-family: 'Roboto', sans-serif;
+    cursor: pointer;
+    white-space: nowrap;
+    flex-shrink: 0;
+    width: 200px;
+}
+
+.startpage-button:hover {
+    background-color: #cc6f00;
+}
+
+.interest-form-button {
+    background-color: #000;
+    color: #fff;
+    font-size: 1.2rem;
+    border: #fff 1px solid;
+    padding: 10px 20px;
+    font-family: "Roboto", serif;
+}
+
+.popup-close-btn {
+    background-color: #FF8C00;
+    color: #000;
+    border: none;
+    padding: 12px 30px;
+    font-size: 1.1rem;
+    border-radius: 5px;
+    cursor: pointer;
+    font-family: "Roboto", serif;
+    transition: background-color 0.3s ease;
+}
+
+.popup-close-btn:hover {
+    background-color: #cc6f00;
+}
+
+/* Bilder */
+.image-right {
+    flex: 0 0 auto;
+    max-width: 500px;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    margin: 70px auto 0;
+}
+
+.image-right img {
+    width: 100%;
+    height: auto;
+    border-radius: 10px;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.2);
+    object-fit: cover;
+}
+
+.image-left {
+    flex: 0 0 auto;
+    max-width: 500px;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    margin: 70px auto 0;
+}
+
+.image-left img {
+    width: 100%;
+    height: auto;
+    border-radius: 10px;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.2);
+    object-fit: cover;
+}
+
+/* Sociala medier */
+.social-links {
+    position: absolute;
+    left: 20px;
+    top: 50%;
+    transform: translateY(-50%);
+    display: flex;
+    flex-direction: row;
+    gap: 15px;
+    z-index: 10;
+    color: #fff;
+}
+
+.instagram-icon {
+    width: 25px;
+    height: 30px;
+}
+
+.instagram-link:hover .instagram-icon {
+    opacity: 0.7;
+}
+
+.linkedin-icon {
+    width: 30px;
+    height: 30px;
+    filter: brightness(0) invert(1);
+}
+
+.linkedin-link:hover .linkedin-icon {
+    opacity: 0.7;
+}
+
+/* Social links 2 för kontaktsidan - svarta ikoner */
+.social-links-2 {
+    display: flex;
+    flex-direction: row;
+    gap: 15px;
+    margin-top: 20px;
+}
+
+.instagram-icon-black {
+    width: 25px;
+    height: 30px;
+    filter: brightness(0);
+}
+
+.instagram-link:hover .instagram-icon-black {
+    opacity: 0.7;
+}
+
+.linkedin-icon-black {
+    width: 30px;
+    height: 30px;
+    filter: brightness(0);
+}
+
+.linkedin-link:hover .linkedin-icon-black {
+    opacity: 0.7;
+}
+
+/* Kontaktlista */
+.contact-list {
+    list-style: none;
+    padding-left: 0;
+    margin: 20px 0;
+}
+
+.contact-list li {
+    margin: 10px 0;
+    font-size: 1.1rem;
+}
+
+.contact-list a {
+    color: #FF8C00;
+    text-decoration: none;
+}
+
+.contact-list a:hover {
+    text-decoration: underline;
+}
+
+/* Info boxar */
+.info-box {
+    background-color: #fff1e0;
+    border-left: 4px solid #FF8C00;
+    padding: 15px 20px;
+    margin: 25px 0;
+    border-radius: 5px;
+}
+
+.info-box p {
+    margin: 0;
+    font-size: 1rem;
+    line-height: 1.6;
+}
+
+/* Centrerat innehåll */
+.centered-text {
+    text-align: left;
+    margin: 0;
+    flex: 1;
+}
+
+.button-row {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    width: 100%;
+}
+
+.centered-content {
+    text-align: center;
+    margin: 0 auto;
+    max-width: 800px;
+    padding: 20px;
+}
+
+/* Help items */
+.help-list {
+    margin-top: 25px;
+}
+
+.help-item {
+    background-color: #fff1e0;
+    padding: 15px 20px;
+    margin: 15px 0;
+    border-radius: 5px;
+    border-left: 4px solid #FF8C00;
+}
+
+.help-item p {
+    margin: 0;
+}
+
+.help-item a {
+    color: #FF8C00;
+    text-decoration: none;
+    font-weight: 300;
+}
+
+.help-item a:hover {
+    text-decoration: underline;
+}
+
+/* Exercise cards */
+.exercisecard {
+    background: #fff;
+    border-radius: 10px;
+    border: 1px solid #ddd;
+    overflow: hidden;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+    transition: transform 0.3s ease;
+    height: 450px;
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+}
+
+.exercisecard:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 4px 15px rgba(0,0,0,0.2);
+}
+
+.exercisecard img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+}
+
+.exercisecard-body {
+    padding: 15px;
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.exercisecard-title {
+    font-size: 1.2rem;
+    margin-bottom: 10px;
+    color: #fff;
+}
+
+.exercisecard-body p {
+    margin: 8px 0;
+    color: #666;
+    font-size: 0.9rem;
+}
+
+#exercises {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 20px;
+    padding: 20px;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+/* Media containers */
+.spotify-container {
+    max-width: 600px;
+    margin: 30px auto;
+    padding: 20px;
+    background: #fff;
+    border-radius: 15px;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+}
+
+.video-box {
+    max-width: 700px;
+    margin: 30px auto;
+    padding: 20px;
+    background: #fff;
+    border-radius: 15px;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+    text-align: center;
+}
+
+.inside-video-box {
+    width: 100%;
+    height: 315px;
+    border-radius: 10px;
+    overflow: hidden;
+}
+
+.inside-video-box iframe {
+    border-radius: 10px;
+}
+
+.infobox {
+    width: 700px;
+    height: auto;
+    margin-top: 100px;
+    margin-bottom: 20px;
+    margin-left: auto;
+    margin-right: auto;
+    border-radius: 10px;
+    padding: 10px;
+    text-align: center;
+}
+
+/* Inspiration slideshow */
+.inspiration-slideshow {
+    position: relative;
+    max-width: 600px;
+    margin: 20px auto;
+    background: #f5f5f5;
+    border-radius: 10px;
+    overflow: hidden;
+}
+
+.inside-inspiration {
+    position: relative;
+    width: 100%;
+    height: 300px;
+}
+
+.slide {
+    display: none;
+    padding: 40px;
+    text-align: center;
+    background: linear-gradient(135deg, #3c3316, #E8D5B7);
+    height: 100%;
+    box-sizing: border-box;
+}
+
+.slide.active {
+    display: block;
+}
+
+.slide h3 {
+    font-size: 1.2rem;
+    margin-bottom: 20px;
+    color: #fff;
+}
+
+.slide p {
+    font-size: 1rem;
+    line-height: 1.6;
+    color: #444;
+    font-style: italic;
+}
+
+.slide-nav {
+    text-align: center;
+    padding: 15px;
+    background: #fff;
+}
+
+.slide-dot {
+    height: 12px;
+    width: 12px;
+    margin: 0 5px;
+    background-color: #bbb;
+    border-radius: 50%;
+    display: inline-block;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.slide-dot.active, .slide-dot:hover {
+    background-color: #fff;
+}
+
+/* Exercise details */
+.exercise-details-container {
+    max-width: 800px;
+    margin: 20px auto;
+    padding: 20px;
+}
+
+.exercise-details-top {
+    display: flex;
+    gap: 30px;
+    margin-bottom: 30px;
+}
+
+.exercise-details-top img {
+    max-width: 300px;
+    border-radius: 10px;
+}
+
+.exercise-details-top .info {
+    flex: 1;
+}

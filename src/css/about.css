@@ -1,0 +1,167 @@
+/* About Sara sektionen */
+
+.about-page-title {
+    text-align: center;
+    color: #000;
+    font-size: 3rem;
+    margin-bottom: 50px;
+    margin-top: 20px;
+}
+
+.about-section {
+    display: flex;
+    gap: 40px;
+    max-width: 1400px;
+    margin: 0 auto 60px auto;
+    padding: 20px;
+    align-items: center;
+}
+
+.about-section-2 {
+    display: flex;
+    gap: 40px;
+    max-width: 1400px;
+    margin: 0 auto 60px auto;
+    padding: 20px;
+    align-items: center;
+}
+
+.about-section-3 {
+    display: flex;
+    flex-direction: row;
+    gap: 30px;
+    max-width: 1400px;
+    margin: 0 auto 60px auto;
+    padding: 20px;
+    align-items: center;
+    justify-content: center;
+}
+
+.about-image-susuki {
+    flex: 1;
+    max-width: 500px;
+}
+
+.about-image-susuki img {
+    width: 100%;
+    height: auto;
+    border-radius: 10px;
+    box-shadow: 0 14px 30px rgba(0,0,0,0.3), 0 6px 12px rgba(0,0,0,0.18);
+    object-fit: cover;
+    transform: rotate(-2.5deg);
+    transform-origin: center;
+}
+
+.about-image-left {
+    flex: 1;
+    max-width: 400px;
+}
+
+.about-image-left img {
+    width: 100%;
+    height: auto;
+    border-radius: 10px;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.2);
+    object-fit: cover;
+}
+
+.about-image-center {
+    flex: 1;
+    max-width: 400px;
+}
+
+.about-image-center img {
+    width: 100%;
+    height: auto;
+    border-radius: 10px;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.2);
+    object-fit: cover;
+}
+
+.about-text-right {
+    flex: 1;
+    max-width: 750px;
+}
+
+.about-text-right h2 {
+    font-size: 1.6rem;
+    color: #000;
+    margin-bottom: 20px;
+}
+
+.about-text-right p {
+    font-size: 1.1rem;
+    color: #000;
+    line-height: 1.5;
+    font-weight: 300;
+    letter-spacing: 0.05em;
+    margin-bottom: 15px;
+}
+
+.about-divider {
+    width: 60%;
+    margin: 60px auto;
+    border: none;
+    border-top: 2px solid #FF8C00;
+}
+
+.about-text-left {
+    flex: 1;
+    max-width: 600px;
+}
+
+.about-text-left h2 {
+    font-size: 1.6rem;
+    color: #000;
+    margin-bottom: 20px;
+}
+
+.about-text-left p {
+    font-size: 1.1rem;
+    color: #000;
+    line-height: 1.5;
+    font-weight: 300;
+    letter-spacing: 0.05em;
+    margin-bottom: 15px;
+}
+
+.about-image-right {
+    flex: 1;
+    max-width: 400px;
+}
+
+.about-image-right img {
+    width: 100%;
+    height: auto;
+    border-radius: 10px;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.2);
+    object-fit: cover;
+}
+
+.about-section {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    max-width: 1400px;
+    align-items: center;
+}
+
+.about-logo-wrapper {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    margin: -80px 80px -100px auto;
+    width: 100%;
+    max-width: 800px;
+    font-family: "Roboto", sans-serif;
+    line-height: 1.0;
+    font-weight: 300;
+    letter-spacing: 0.05em;
+}
+
+.about-logo-wrapper img {
+    display: block;
+    max-width: 200px;
+    transform: rotate(-17deg);
+    opacity: 0.8;
+}
