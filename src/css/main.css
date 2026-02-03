@@ -13,5 +13,8 @@
 @import 'components.css';
 @import 'forms.css';
 
+/* Parallax effekter */
+@import 'parallax.css';
+
 /* Responsiv design */
 @import 'responsive.css';

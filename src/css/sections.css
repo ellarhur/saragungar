@@ -141,3 +141,10 @@
     padding: 20px;
     text-align: center;
 }
+
+/* Content sections som kommer efter parallax */
+.content-section {
+    background: #fff6ea;
+    position: relative;
+    z-index: 3;
+}

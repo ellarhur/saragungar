@@ -1,0 +1,105 @@
+/* Parallax Effects */
+
+.parallax-section {
+    position: relative;
+    height: 60vh;
+    min-height: 400px;
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.parallax-bg {
+    position: absolute;
+    top: -10%;
+    left: 0;
+    width: 100%;
+    height: 120%;
+    background-attachment: scroll;
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    will-change: transform;
+    transform: translateY(0);
+    /* Debug - lägg till en border för att se att elementet finns */
+    /* border: 2px solid red; */
+}
+
+/* Overlay för bättre textkontrast */
+.parallax-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.4);
+    z-index: 1;
+}
+
+/* Innehåll ovanpå parallax */
+.parallax-content {
+    position: relative;
+    z-index: 2;
+    text-align: center;
+    color: white;
+    max-width: 800px;
+    padding: 40px 20px;
+}
+
+.parallax-content h2 {
+    font-size: 2.5rem;
+    margin-bottom: 20px;
+    text-shadow: 2px 2px 4px rgba(0,0,0,0.5);
+}
+
+.parallax-content p {
+    font-size: 1.2rem;
+    line-height: 1.6;
+    text-shadow: 1px 1px 2px rgba(0,0,0,0.5);
+}
+
+/* Specifika bakgrundsbilder */
+.parallax-1 .parallax-bg {
+    background-image: url('../images/saraplaying.jpeg');
+}
+
+.parallax-2 .parallax-bg {
+    background-image: url('../images/saraundervisaronline.jpg');
+}
+
+.parallax-3 .parallax-bg {
+    background-image: url('../images/saragungar2.jpg');
+}
+
+/* Innehållssektioner mellan parallax */
+.content-section {
+    background: #fff6ea;
+    padding: 80px 0;
+    position: relative;
+    z-index: 3;
+}
+
+/* Ren parallax utan extra animationer */
+
+/* Mobilanpassning - inaktivera parallax på mobil för prestanda */
+@media (max-width: 768px) {
+    .parallax-bg {
+        background-attachment: scroll;
+        height: 100%;
+        background-position: center center !important; /* Fixa position på mobil */
+    }
+    
+    .parallax-section {
+        height: 50vh;
+        min-height: 300px;
+    }
+    
+    .parallax-content h2 {
+        font-size: 1.8rem;
+    }
+    
+    .parallax-content p {
+        font-size: 1rem;
+    }
+}
