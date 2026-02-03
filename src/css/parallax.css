@@ -12,18 +12,17 @@
 
 .parallax-bg {
     position: absolute;
-    top: -10%;
+    top: -15%;
     left: 0;
     width: 100%;
-    height: 120%;
+    height: 130%;
     background-attachment: scroll;
     background-position: center center;
     background-repeat: no-repeat;
     background-size: cover;
     will-change: transform;
-    transform: translateY(0);
-    /* Debug - lägg till en border för att se att elementet finns */
-    /* border: 2px solid red; */
+    transform: translate3d(0, 0, 0);
+    backface-visibility: hidden;
 }
 
 /* Overlay för bättre textkontrast */
@@ -48,13 +47,13 @@
 }
 
 .parallax-content h2 {
-    font-size: 2.5rem;
+    font-size: 0.9rem;
     margin-bottom: 20px;
     text-shadow: 2px 2px 4px rgba(0,0,0,0.5);
 }
 
 .parallax-content p {
-    font-size: 1.2rem;
+    font-size: 0.9rem;
     line-height: 1.6;
     text-shadow: 1px 1px 2px rgba(0,0,0,0.5);
 }
@@ -80,6 +79,11 @@
     z-index: 3;
 }
 
+/* Om mig och kontakt: ingen vit rand under navbar */
+.page-container--flush-top > section.content-section {
+    padding-top: 0;
+}
+
 /* Ren parallax utan extra animationer */
 
 /* Mobilanpassning - inaktivera parallax på mobil för prestanda */
@@ -96,10 +100,10 @@
     }
     
     .parallax-content h2 {
-        font-size: 1.8rem;
+        font-size: 0.9rem;
     }
     
     .parallax-content p {
-        font-size: 1rem;
+        font-size: 0.9rem;
     }
 }

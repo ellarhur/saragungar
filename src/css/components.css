@@ -20,7 +20,7 @@
 .startpage-button {
     background-color: #FF8C00;
     color: #000;
-    font-size: 1.5rem;
+    font-size: 0.9rem;
     border: #000 1px solid;
     border-radius: 10px;
     padding: 10px 20px;
@@ -73,7 +73,7 @@
 
 .contact-list li {
     margin: 10px 0;
-    font-size: 1.1rem;
+    font-size: 0.9rem;
 }
 
 .contact-list a {
@@ -96,6 +96,6 @@
 
 .info-box p {
     margin: 0;
-    font-size: 1rem;
+    font-size: 0.9rem;
     line-height: 1.6;
-}
+}   

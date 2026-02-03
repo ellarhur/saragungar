@@ -21,6 +21,7 @@ header {
     font-weight: 300;
     letter-spacing: 0.05em;
     transition: background-color 200ms ease;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.2);
 }
 
 .header-logo {
@@ -55,11 +56,21 @@ header {
     flex-direction: row;
     gap: 10px;
     list-style: none;
-    margin: auto;
+    margin: 0 auto;
     margin-top: 2px;
+    margin-bottom: 12px;
+    padding: 0;
+    width: 100%;
+    max-width: 100%;
+    box-sizing: border-box;
     text-align: center;
     font-family: "Roboto Serif", serif;
-    font-size: 1.2rem;
+    font-size: 0.9rem;
+    font-weight: 300;
+    letter-spacing: 0.05em;
+    text-decoration: none;
+    text-transform: uppercase;
+    justify-content: center;
 }
 
 .nav-link {

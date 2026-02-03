@@ -5,7 +5,8 @@ html {
 }
 
 body {
-    background: #fff6ea;
+    background: #fff;
+    font-size:1.0rem;
     color: #000;
     font-family: "Roboto", sans-serif;
     font-weight: 300;
@@ -43,9 +44,30 @@ main {
     text-align: center;
 }
 
+.page-container--flush-top {
+    padding-top: 0;
+    gap: 0;
+}
+
+.page-container--flush-top > .section-header:first-child {
+    margin-top: 0;
+    margin-bottom: 0;
+    min-height: 0;
+    height: 0;
+    overflow: hidden;
+    line-height: 0;
+    padding: 0;
+}
+
+/* Ingen vit/beige rand ovanför om mig- och kontaktsektion */
+.page-container--flush-top > section.content-section {
+    padding-top: 0 !important;
+    margin-top: 0 !important;
+}
+
 /* Typografi */
 h1 {
-    font-size: 2.4rem;
+    font-size: 0.9rem;
     text-align: center;
     margin: 0 auto;
     width: 100%;
@@ -66,7 +88,7 @@ h1 a:hover {
 }
 
 h3 {
-    font-size: 1.6rem;
+    font-size: 0.9rem;
     line-height: 1.0;
     font-weight: 300;
     letter-spacing: 0.05em;
@@ -81,7 +103,7 @@ h4, h5, h6 {
 }
 
 h2 {
-    font-size: 1rem;
+    font-size: 0.9rem;
     text-align: center;
     margin: 0 auto;
     width: 100%;
@@ -98,7 +120,7 @@ li, a, button, input, textarea, label {
 }
 
 p {
-    font-size: 1.1rem;
+    font-size: 0.9rem;
     line-height: 1.5;
     font-weight: 300;
     letter-spacing: 0.05em;
