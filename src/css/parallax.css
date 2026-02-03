@@ -26,6 +26,8 @@
     backface-visibility: hidden;
 }
 
+
+
 /* Overlay för bättre textkontrast */
 .parallax-overlay {
     position: absolute;

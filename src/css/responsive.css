@@ -130,10 +130,6 @@
         letter-spacing: 0.05em;
     }
 
-    .about-divider {
-        width: 80%;
-        margin: 40px auto;
-    }
 
     .newsletter-form {
         flex-direction: column;

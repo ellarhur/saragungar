@@ -1,7 +1,7 @@
 /* About Sara sektionen */
 
 .about-page-title {
-    text-align: center;
+    text-align: right;
     color: #000;
     font-size: 0.9rem;
     margin-bottom: 50px;
@@ -16,6 +16,7 @@
     padding: 20px;
     align-items: center;
     background: #fff;
+    border-radius: 10px;
 }
 
 .about-section-2 {
@@ -47,7 +48,7 @@
     width: 100%;
     height: auto;
     border-radius: 10px;
-    box-shadow: 0 14px 30px rgba(0,0,0,0.3), 0 6px 12px rgba(0,0,0,0.18);
+    box-shadow: 0 4px 15px rgba(0,0,0,0.2);
     object-fit: cover;
     transform: rotate(-2.5deg);
     transform-origin: center;
@@ -62,7 +63,6 @@
     width: 100%;
     height: auto;
     border-radius: 10px;
-    box-shadow: 0 4px 15px rgba(0,0,0,0.2);
     object-fit: cover;
 }
 
@@ -75,7 +75,6 @@
     width: 100%;
     height: auto;
     border-radius: 10px;
-    box-shadow: 0 4px 15px rgba(0,0,0,0.2);
     object-fit: cover;
 }
 
@@ -84,10 +83,11 @@
     max-width: 750px;
 }
 
-.about-text-right h2 {
-    font-size: 0.9rem;
+.about-text-right h1 {
+    font-size: 2rem;
     color: #000;
     margin-bottom: 20px;
+    text-align: right;
 }
 
 .about-text-right p {
@@ -95,15 +95,17 @@
     color: #000;
     line-height: 1.5;
     font-weight: 300;
+    width: 100%;
     letter-spacing: 0.05em;
     margin-bottom: 15px;
+    text-align: right;
 }
 
 .about-divider {
     width: 60%;
     margin: 60px auto;
     border: none;
-    border-top: 2px solid #FF8C00;
+    border-top: 2px solid #4f1200;
 }
 
 .about-text-left {
@@ -135,7 +137,6 @@
     width: 100%;
     height: auto;
     border-radius: 10px;
-    box-shadow: 0 4px 15px rgba(0,0,0,0.2);
     object-fit: cover;
 }
 
@@ -147,6 +148,11 @@ section.about-section {
     align-items: center;
     margin-left: auto;
     margin-right: auto;
+}
+
+/* Mindre avstånd mellan about-innehåll och logotyp */
+section.about-section > .about-section {
+    margin-bottom: 24px;
 }
 
 .about-logo-wrapper {

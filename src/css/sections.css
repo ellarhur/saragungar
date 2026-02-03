@@ -92,12 +92,12 @@
 .booking-text {
     flex: 1;
     max-width: 600px;
-    height: 980px;
+    height: auto;
     text-align: left;
-    padding: 20px;
+    padding: 50px;
     border-radius: 10px;
     background-color: #fff;
-    box-shadow: 0 4px 15px rgba(0,0,0,0.2);
+    line-height: 3;
 }
 
 /* Technical Section */
@@ -108,14 +108,20 @@
     display: flex;
     gap: 40px;
     align-items: flex-start;
-    justify-content: center;
     margin: 0 auto 60px auto;
     padding: 20px;
+    justify-content: center;
+
 }
 
 .technical-content {
     flex: 1;
     max-width: 600px;
+    background-color: #fff;
+    border-radius: 10px;
+    padding: 20px;
+    text-align: left;
+
 }
 
 .technical-content h2 {
@@ -153,6 +159,13 @@
     margin: 0 auto 60px auto;
     padding: 20px;
     text-align: center;
+}
+
+.contact-content {
+    background-color: #fff;
+    border-radius: 10px;
+    padding: 20px;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.2);
 }
 
 /* Content sections som kommer efter parallax */

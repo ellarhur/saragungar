@@ -8,7 +8,7 @@ header {
     margin: 0;
     gap: 5px;
     z-index: 100;
-    background: #fff;
+    background: #000;
     background-position: center;
     background-repeat: no-repeat;
     position: fixed;
