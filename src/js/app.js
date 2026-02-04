@@ -17,19 +17,21 @@ document.addEventListener('DOMContentLoaded', () => {
 
     const updateHeaderImage = () => {
         const headerOffset = (headerElement?.offsetHeight || 0) + 12;
+        const triggerLeeway = 220; // give sections extra space so images swap earlier
+        const triggerPoint = headerOffset + triggerLeeway;
         let activeSrc = defaultSrc;
         let activeNavBg = defaultNavBg;
 
         imageTargets.forEach((target) => {
             const rect = target.getBoundingClientRect();
-            if (rect.top <= headerOffset) {
+            if (rect.top <= triggerPoint) {
                 activeSrc = target.getAttribute('data-header-image') || activeSrc;
             }
         });
 
         navTargets.forEach((target) => {
             const rect = target.getBoundingClientRect();
-            if (rect.top <= headerOffset) {
+            if (rect.top <= triggerPoint) {
                 activeNavBg = target.getAttribute('data-nav-bg') || activeNavBg;
             }
         });
