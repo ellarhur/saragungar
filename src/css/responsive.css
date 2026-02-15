@@ -68,6 +68,84 @@
     .about-logo-wrapper img {
         max-width: 160px;
     }
+
+    /* Visa hamburgermenyn på tablet och neråt */
+    .nav-links {
+        display: none;
+        position: fixed;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        padding: 120px 24px 32px;
+        flex-direction: column;
+        align-items: stretch;
+        gap: 0;
+        font-size: 1rem;
+        background: #fff;
+        box-shadow: 0 4px 12px rgba(0,0,0,0.15);
+        z-index: 150;
+        cursor: pointer;
+        overflow-y: auto;
+    }
+
+    .nav-toggle {
+        display: block;
+        position: absolute;
+        right: 16px;
+        top: 50%;
+        transform: translateY(-50%);
+        width: 44px;
+        height: 44px;
+        opacity: 0;
+        z-index: 200;
+    }
+
+    .nav-toggle-label {
+        display: flex;
+        position: absolute;
+        right: 16px;
+        top: 50%;
+        transform: translateY(-50%);
+        z-index: 199;
+        width: 44px;
+        height: 44px;
+        align-items: center;
+        justify-content: center;
+        background: #fff;
+        border-radius: 10px;
+        box-shadow: 0 4px 12px rgba(0,0,0,0.15);
+        border: 1px solid rgba(0,0,0,0.06);
+        gap: 5px;
+    }
+
+    .nav-toggle-label span {
+        display: block;
+        width: 24px;
+        height: 1px;
+        background: #000;
+        border-radius: 2px;
+    }
+
+    .nav-toggle:checked ~ .nav-links {
+        display: flex;
+    }
+
+    .nav-link {
+        padding: 16px 0;
+        border-bottom: 1px solid rgba(0,0,0,0.06);
+        text-align: center;
+    }
+
+    .nav-link:last-child {
+        border-bottom: none;
+    }
+
+    .nav-link a {
+        display: block;
+        padding: 6px 0;
+        font-size: 1.1rem;
+    }
 }
 
 /* ========== Mobil (≤767px) ========== */
@@ -89,17 +167,20 @@
 
     .nav-links {
         display: none;
-        position: absolute;
-        top: 100%;
+        position: fixed;
+        top: 0;
         left: 0;
         right: 0;
+        bottom: 0;
+        padding: 120px 24px 32px;
         flex-direction: column;
         align-items: stretch;
-        gap: 0;()
+        gap: 0;
         font-size: 1rem;
         background: #fff;
-        padding: 16px 0;
         box-shadow: 0 4px 12px rgba(0,0,0,0.15);
+        z-index: 150;
+        overflow-y: auto;
     }
 
     .nav-link {
@@ -143,6 +224,22 @@
 
     .nav-toggle:checked ~ .nav-links {
         display: flex;
+    }
+
+    .nav-link {
+        padding: 16px 0;
+        border-bottom: 1px solid rgba(0,0,0,0.06);
+        text-align: center;
+    }
+
+    .nav-link:last-child {
+        border-bottom: none;
+    }
+
+    .nav-link a {
+        display: block;
+        padding: 6px 0;
+        font-size: 1.1rem;
     }
 
     /* Presentation – centrerad, mindre marginal */

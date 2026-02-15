@@ -6,6 +6,9 @@ document.addEventListener('DOMContentLoaded', () => {
     const headerElement = document.querySelector('header');
     const imageTargets = Array.from(document.querySelectorAll('[data-header-image]'));
     const navTargets = Array.from(document.querySelectorAll('[data-nav-bg]'));
+    const navToggle = document.getElementById('nav-toggle');
+    const navLinksMenu = document.querySelector('.nav-links');
+    const navLinks = Array.from(document.querySelectorAll('.nav-links a'));
 
     if (!headerElement) {
         return;
@@ -44,8 +47,13 @@ document.addEventListener('DOMContentLoaded', () => {
             headerImage.setAttribute('src', activeSrc);
         }
 
-        if (activeNavBg && headerElement.style.backgroundColor !== activeNavBg) {
-            headerElement.style.backgroundColor = activeNavBg;
+        if (activeNavBg) {
+            if (headerElement.style.backgroundColor !== activeNavBg) {
+                headerElement.style.backgroundColor = activeNavBg;
+            }
+            if (navLinksMenu && navLinksMenu.style.backgroundColor !== activeNavBg) {
+                navLinksMenu.style.backgroundColor = activeNavBg;
+            }
         }
     };
 
@@ -64,4 +72,13 @@ document.addEventListener('DOMContentLoaded', () => {
     updateHeaderImage();
     window.addEventListener('scroll', onScroll, { passive: true });
     window.addEventListener('resize', onScroll);
+
+    // Stäng hamburgermenyn efter klick på länk
+    if (navToggle && navLinks.length > 0) {
+        navLinks.forEach((link) => {
+            link.addEventListener('click', () => {
+                navToggle.checked = false;
+            });
+        });
+    }
 });

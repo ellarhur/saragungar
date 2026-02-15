@@ -1,5 +1,13 @@
 /* Huvudsektioner på sidan */
 
+/* Fixar offset för ankarlänkar så headern inte täcker innehållet */
+#presentation-section,
+#booking-section,
+#about-section,
+#contact-section {
+    scroll-margin-top: 140px;
+}
+
 /* Presentation Section */
 .presentation-section {
     position: relative;
