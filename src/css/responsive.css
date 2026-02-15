@@ -74,12 +74,17 @@
 @media (max-width: 767px) {
     header {
         padding: 8px 0;
-        min-height: 72px;
-        position: relative;
+        min-height: 100px;
+        position: fixed;
+        top: 0;
+        left: 0;
+        right: 0;
+        width: 100%;
+        z-index: 100;
     }
 
     .header-image {
-        max-height: 100px;
+        max-height: 140px;
     }
 
     .nav-links {
@@ -90,7 +95,7 @@
         right: 0;
         flex-direction: column;
         align-items: stretch;
-        gap: 0;
+        gap: 0;()
         font-size: 1rem;
         background: #fff;
         padding: 16px 0;
@@ -187,12 +192,15 @@
         gap: 20px;
         padding: 16px 12px;
         margin: 0 auto 32px auto;
+        align-items: center;
+        text-align: center;
     }
 
     .booking-text {
         max-width: 100%;
         padding: 20px 16px;
         line-height: 1.6;
+        text-align: center;
     }
 
     .booking-text h1 {
@@ -202,25 +210,31 @@
 
     .booking-text p {
         font-size: 0.9rem;
+        text-align: center;
     }
 
     .booking-widget {
         max-width: 100%;
         min-height: 400px;
-        min-width: 500px;
+        min-width: 0;
+        width: 100%;
     }
 
     .section-header {
-        margin: 16px 0 20px 0;
+        margin: 20px auto;
     }
 
     .section-header-image {
-        max-height: 120px;
+        width: 100%;
+        max-height: 200px;
+        height: auto;
+        object-fit: cover;
+        transform: scale(1.08);
     }
 
     
 
-    /* Teknisk information – ingen bild på mobil, text stannar inom bredd */
+    /* Teknisk information – visa bilden under text på mobil */
     .technical-section {
         flex-direction: column;
         gap: 20px;
@@ -242,6 +256,7 @@
         overflow-wrap: break-word;
         word-wrap: break-word;
         word-break: break-word;
+        text-align: center;
     }
 
     .technical-content h1 {
@@ -256,7 +271,21 @@
     }
 
     .technical-image-right {
-        display: none;
+        display: block;
+        order: 2;
+        width: 100%;
+        max-width: 360px;
+        margin: 4px auto 0;
+        transform: rotate(-2.5deg);
+    }
+
+    .technical-image-right img {
+        width: 100%;
+        height: auto;
+        border-radius: 12px;
+        box-shadow: 0 12px 28px rgba(0,0,0,0.25);
+        object-fit: cover;
+        transform: rotate(2.5deg);
     }
 
     .startpage-button {
@@ -292,7 +321,21 @@
     }
 
     .about-image-susuki {
-        display: none;
+        display: block;
+        order: 2;
+        width: 100%;
+        max-width: 360px;
+        margin: 8px auto 0;
+        transform: rotate(-2.5deg);
+    }
+
+    .about-image-susuki img {
+        width: 100%;
+        height: auto;
+        border-radius: 12px;
+        box-shadow: 0 12px 28px rgba(0,0,0,0.25);
+        object-fit: cover;
+        transform: rotate(2.5deg);
     }
 
     .about-text-right {
@@ -308,12 +351,13 @@
 
     .about-text-right h1 {
         font-size: 1.25rem;
-        text-align: left;
+        text-align: center;
     }
 
     .about-text-right p {
         font-size: 0.9rem;
         overflow-wrap: break-word;
+        text-align: center;
     }
 
     .about-logo-wrapper {

@@ -16,8 +16,12 @@ document.addEventListener('DOMContentLoaded', () => {
         headerElement.dataset.navDefaultBg || window.getComputedStyle(headerElement).backgroundColor;
 
     const updateHeaderImage = () => {
+        const isMobile = window.innerWidth <= 767;
         const headerOffset = (headerElement?.offsetHeight || 0) + 12;
-        const triggerLeeway = 220; // give sections extra space so images swap earlier
+        // Earlier trigger on mobile: use larger viewport-based buffer
+        const triggerLeeway = isMobile
+            ? Math.max(window.innerHeight * 0.35, 320)
+            : Math.max(window.innerHeight * 0.2, 220);
         const triggerPoint = headerOffset + triggerLeeway;
         let activeSrc = defaultSrc;
         let activeNavBg = defaultNavBg;
