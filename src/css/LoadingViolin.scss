@@ -1,0 +1,52 @@
+.LoadingOverlay {
+    position: fixed;
+    inset: 0;
+    background: #4b4b4dcc;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 1000;
+    animation: fadeIn 0.3s ease-in-out;
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+.LoadingBox {
+    background: #fff;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.2);
+}
+.LoadingViolin {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    &__icon {
+        width: 50px;
+        height: 50px;
+        animation: spin 1s linear infinite;
+    }
+}
+
+@keyframes spin {
+    from {
+        transform: rotate(0deg);
+    }
+    to {
+        transform: rotate(360deg);
+    }
+}
+.LoadingViolinText {
+    font-size: 1.2rem;
+    font-weight: 300;
+    letter-spacing: 0.05em;
+    font-family: "Roboto", sans-serif;
+    color: #000;
+}
