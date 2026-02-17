@@ -1,11 +1,10 @@
 import React from 'react'
-import kontakt from '../images/kontakt.png'
 
 export default function ContactSection() {
   return (
     <div className="page-container page-container--flush-top">
-      <div className="section-header" data-header-image={kontakt} data-nav-bg="#000000">
-        <img src={kontakt} alt="Kontakt" className="section-header-image" />
+      <div className="section-header" data-header-image="/images/kontakt.png" data-nav-bg="#000000">
+        <img src="/images/kontakt.png" alt="Kontakt" className="section-header-image" />
       </div>
 
       <section className="contact-section content-section" id="contact-section">

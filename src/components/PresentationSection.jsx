@@ -1,18 +1,16 @@
 import React from 'react'
-import hero from '../images/sarafrontpage.jpeg'
-import fundera from '../images/fundera.png'
 
 export default function PresentationSection() {
   return (
     <section
       className="presentation-section"
       id="presentation-section"
-      data-header-image={hero}
+      data-header-image="/images/Orangesvart.png"
     >
-      <img src={hero} alt="Sara gungar" className="presentation-hero" />
+      <img src="/images/sarafrontpage.jpeg" alt="Sara gungar" className="presentation-hero" />
       <div className="presentation-content">
         <img
-          src={fundera}
+          src="/images/fundera.png"
           alt="Funderar du på att plocka upp fiolen igen?"
           className="presentation-content-image"
         />

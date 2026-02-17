@@ -1,5 +1,4 @@
 import React from 'react'
-import dator from '../images/dator.jpeg'
 
 export default function TechnicalSection() {
   return (
@@ -13,7 +12,7 @@ export default function TechnicalSection() {
           <p>Jag använder verktyget Zoom, men du måste inte ladda ner någonting i förväg då vi även kan använda webbläsaren. I zoom kan man ställa in mikrofonens ljud så det är anpassat till musik. Det går snabbt och om du inte hittar inställningen på egen hand gör vi det tillsammans i början av vår lektion.</p>
         </div>
         <div className="technical-image-right">
-          <img src={dator} alt="Dator för lektioner" />
+          <img src="/images/dator.jpeg" alt="Dator för lektioner" />
         </div>
       </section>
     </div>

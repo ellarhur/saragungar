@@ -1,22 +1,16 @@
 import React from 'react'
-import ommigHeader from '../images/ommig.png'
-import sarazusuki from '../images/sarazusuki.jpeg'
-import invertsara from '../images/invertsara.png'
-import saraklickar from '../images/saraklickar.jpg'
-import fiolupclose from '../images/fiolupclose.jpg'
-import fiolfodral from '../images/fiolfodral.jpeg'
 
 export default function AboutSection() {
   return (
     <div className="page-container page-container--flush-top">
-      <div className="section-header" data-header-image={ommigHeader} data-nav-bg="#006eb6">
-        <img src={ommigHeader} alt="Om mig" className="section-header-image" />
+      <div className="section-header" data-header-image="/images/ommig.png" data-nav-bg="#006eb6">
+        <img src="/images/ommig.png" alt="Om mig" className="section-header-image" />
       </div>
 
       <section className="about-section content-section" id="about-section">
         <div className="about-section">
           <div className="about-image-susuki">
-            <img src={sarazusuki} alt="Sara med sin fiol" />
+            <img src="/images/sarazusuki.jpeg" alt="Sara med sin fiol" />
           </div>
           <div className="about-text-right">
             <h1>Om Sara gungar</h1>
@@ -31,19 +25,19 @@ export default function AboutSection() {
         </div>
 
         <div className="about-logo-wrapper">
-          <img src={invertsara} alt="Sara logotyp" className="header-logo" />
+          <img src="/images/invertsara.png" alt="Sara logotyp" className="header-logo" />
         </div>
       </section>
 
       <div className="about-section-3">
         <div className="about-image-left">
-          <img src={fiolupclose} alt="Fiol up close" />
+          <img src="/images/fiolupclose.jpg" alt="Fiol up close" />
         </div>
         <div className="about-image-center">
-          <img src={saraklickar} alt="Sara klicks" />
+          <img src="/images/saraklickar.jpg" alt="Sara klicks" />
         </div>
         <div className="about-image-right">
-          <img src={fiolfodral} alt="Fodral" />
+          <img src="/images/fiolfodral.jpeg" alt="Fodral" />
         </div>
       </div>
     </div>

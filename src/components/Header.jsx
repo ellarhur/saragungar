@@ -1,11 +1,10 @@
 import React from 'react'
-import orange from '../images/Orangesvart.png'
 
 export default function Header() {
   return (
     <header data-nav-default-bg="#ffffff">
       <div className="Sarasheader">
-        <img src={orange} alt="Sara gungar" className="header-image" />
+        <img src="/images/Orangesvart.png" alt="Sara gungar" className="header-image" />
       </div>
       <input type="checkbox" id="nav-toggle" className="nav-toggle" aria-label="Öppna navigationsmeny" />
       <label htmlFor="nav-toggle" className="nav-toggle-label">

@@ -1,5 +1,4 @@
 import React, { useEffect } from 'react'
-import boka from '../images/boka.png'
 
 export default function BookingSection() {
   useEffect(() => {
@@ -46,8 +45,8 @@ export default function BookingSection() {
 
   return (
     <div className="page-container page-container--boka">
-      <div className="section-header" data-header-image={boka} data-nav-bg="#ffffff">
-        <img src={boka} alt="Boka" className="section-header-image" />
+      <div className="section-header" data-header-image="/images/boka.png" data-nav-bg="#000000">
+        <img src="/images/boka.png" alt="Boka" className="section-header-image" />
       </div>
       <section className="booking-section" id="booking-section">
         <div className="booking-text">
