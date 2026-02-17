@@ -1,0 +1,20 @@
+/* Main scss - Importerar alla modulära scss-filer */
+
+/* Bas-stilar och typografi */
+@import 'base.scss';
+
+/* Layout komponenter */
+@import 'header.scss';
+@import 'sections.scss';
+@import 'about.scss';
+@import 'footer.scss';
+
+/* Komponenter och UI-element */
+@import 'components.scss';
+@import 'forms.scss';
+
+/* Parallax effekter */
+@import 'parallax.scss';
+
+/* Responsiv design */
+@import 'responsive.scss';

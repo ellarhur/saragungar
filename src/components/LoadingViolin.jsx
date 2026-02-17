@@ -6,7 +6,7 @@ export default function LoadingViolin() {
       <div className='LoadingOverlay'>
         <div className='LoadingBox'>
             <div className='LoadingViolin'>
-                <img src={violin} alt='Loading Violin' />
+                <img src="/images/violin.svg" alt='Loading Violin' className='LoadingViolin__icon' />
                 <div className='LoadingViolinText'>Laddar...</div>
             </div>
         </div>
