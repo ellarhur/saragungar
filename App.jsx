@@ -14,13 +14,48 @@ export default function App() {
   const [showLoading, setShowLoading] = useState(true)
 
   useEffect(() => {
-    import('./src/js/app.js')
-    import('./src/js/parallax.js')
+    let cancelled = false
+    const run = async () => {
+      const { initApp } = await import('./src/js/app.js')
+      requestAnimationFrame(() => {
+        if (cancelled) return
+        requestAnimationFrame(() => {
+          if (cancelled) return
+          initApp()
+        })
+      })
+    }
+    run()
+    return () => { cancelled = true }
+  }, [])
+
+  // Parallax körs när React-DOM är klart (annars hittar scriptet inga .parallax-bg i t.ex. Strict Mode)
+  useEffect(() => {
+    let cancelled = false
+    const run = async () => {
+      const { initParallax, initParallaxContentFade, initSmoothScroll } = await import('./src/js/parallax.js')
+      requestAnimationFrame(() => {
+        if (cancelled) return
+        requestAnimationFrame(() => {
+          if (cancelled) return
+          initParallax()
+          initParallaxContentFade()
+          initSmoothScroll()
+        })
+      })
+    }
+    run()
+    return () => { cancelled = true }
   }, [])
 
   useEffect(() => {
-    const timer = setTimeout(() => setShowLoading(false), 15000)
-    return () => clearTimeout(timer)
+    const hideLoading = () => setShowLoading(false)
+    if (document.readyState === 'complete') {
+      hideLoading()
+    } else {
+      window.addEventListener('load', hideLoading)
+      return () => window.removeEventListener('load', hideLoading)
+    }
   }, [])
 
   return (

@@ -558,6 +558,16 @@
         overflow-x: hidden;
     }
 
+    .footer-images {
+        gap: 16px;
+        margin-bottom: 24px;
+    }
+
+    .footer-images img {
+        max-width: 160px;
+        height: 160px;
+    }
+
     .footer-wrapper {
         gap: 16px;
         width: 100%;

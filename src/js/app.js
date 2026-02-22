@@ -1,7 +1,7 @@
-// Main application JavaScript
-console.log('Sara Gungar website loaded successfully!');
+// Main application JavaScript – headerbild + nav-färg vid scroll, hamburger-stängning
+// Anropas från React (App.jsx) när DOM är monterad.
 
-document.addEventListener('DOMContentLoaded', () => {
+export function initApp() {
     const headerImage = document.querySelector('.header-image');
     const headerElement = document.querySelector('header');
     const imageTargets = Array.from(document.querySelectorAll('[data-header-image]'));
@@ -15,24 +15,27 @@ document.addEventListener('DOMContentLoaded', () => {
     }
 
     const defaultSrc = headerImage?.getAttribute('src');
+    const defaultSrcMobile = headerElement.dataset.headerDefaultImageMobile || defaultSrc;
     const defaultNavBg =
         headerElement.dataset.navDefaultBg || window.getComputedStyle(headerElement).backgroundColor;
 
     const updateHeaderImage = () => {
         const isMobile = window.innerWidth <= 767;
         const headerOffset = (headerElement?.offsetHeight || 0) + 12;
-        // Earlier trigger on mobile: use larger viewport-based buffer
         const triggerLeeway = isMobile
             ? Math.max(window.innerHeight * 0.35, 320)
             : Math.max(window.innerHeight * 0.2, 220);
         const triggerPoint = headerOffset + triggerLeeway;
-        let activeSrc = defaultSrc;
+        let activeSrc = isMobile ? defaultSrcMobile : defaultSrc;
         let activeNavBg = defaultNavBg;
 
         imageTargets.forEach((target) => {
             const rect = target.getBoundingClientRect();
             if (rect.top <= triggerPoint) {
-                activeSrc = target.getAttribute('data-header-image') || activeSrc;
+                const src = isMobile && target.getAttribute('data-header-image-mobile')
+                    ? target.getAttribute('data-header-image-mobile')
+                    : target.getAttribute('data-header-image');
+                activeSrc = src || activeSrc;
             }
         });
 
@@ -59,9 +62,7 @@ document.addEventListener('DOMContentLoaded', () => {
 
     let isTicking = false;
     const onScroll = () => {
-        if (isTicking) {
-            return;
-        }
+        if (isTicking) return;
         isTicking = true;
         window.requestAnimationFrame(() => {
             updateHeaderImage();
@@ -73,7 +74,6 @@ document.addEventListener('DOMContentLoaded', () => {
     window.addEventListener('scroll', onScroll, { passive: true });
     window.addEventListener('resize', onScroll);
 
-    // Stäng hamburgermenyn efter klick på länk
     if (navToggle && navLinks.length > 0) {
         navLinks.forEach((link) => {
             link.addEventListener('click', () => {
@@ -81,4 +81,4 @@ document.addEventListener('DOMContentLoaded', () => {
             });
         });
     }
-});
+}

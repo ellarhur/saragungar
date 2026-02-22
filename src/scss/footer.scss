@@ -8,6 +8,26 @@ footer {
     font-family: "Roboto", serif;
 }
 
+.footer-images {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 24px;
+    flex-wrap: wrap;
+    max-width: 1200px;
+    margin: 0 auto 32px;
+}
+
+.footer-images img {
+    width: 100%;
+    max-width: 280px;
+    height: 280px;
+    object-fit: cover;
+    border-radius: 10px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+
 .footer-wrapper {
     display: flex;
     flex-direction: column;

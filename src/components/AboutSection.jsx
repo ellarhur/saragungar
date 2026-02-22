@@ -3,7 +3,7 @@ import React from 'react'
 export default function AboutSection() {
   return (
     <div className="page-container page-container--flush-top">
-      <div className="section-header" data-header-image="/images/ommig.png" data-nav-bg="#006eb6">
+      <div className="section-header" data-header-image="/images/ommig.png" data-header-image-mobile="/images/ommig-mobile.png" data-nav-bg="#851F19">
         <img src="/images/ommig.png" alt="Om mig" className="section-header-image" />
       </div>
 

@@ -1,5 +1,5 @@
 // Parallax: bakgrunden rör sig långsammare än sidan (som stefanboman.com)
-function initParallax() {
+export function initParallax() {
     const parallaxElements = document.querySelectorAll('.parallax-bg');
     if (parallaxElements.length === 0) return;
 
@@ -38,7 +38,7 @@ function initParallax() {
 }
 
 // Fade-in för text i parallax-sektioner
-function initParallaxContentFade() {
+export function initParallaxContentFade() {
     const contents = document.querySelectorAll('.parallax-content');
     if (contents.length === 0) return;
 
@@ -64,7 +64,7 @@ function initParallaxContentFade() {
 }
 
 // Smooth scroll för #-länkar
-function initSmoothScroll() {
+export function initSmoothScroll() {
     document.querySelectorAll('a[href^="#"]').forEach((anchor) => {
         anchor.addEventListener('click', function (e) {
             const href = this.getAttribute('href');
@@ -78,14 +78,4 @@ function initSmoothScroll() {
     });
 }
 
-if (document.readyState === 'loading') {
-    document.addEventListener('DOMContentLoaded', () => {
-        initParallax();
-        initParallaxContentFade();
-        initSmoothScroll();
-    });
-} else {
-    initParallax();
-    initParallaxContentFade();
-    initSmoothScroll();
-}
+// Kör inte automatiskt – React anropar init efter att DOM är monterad (se App.jsx)

@@ -5,7 +5,9 @@ export default function PresentationSection() {
     <section
       className="presentation-section"
       id="presentation-section"
-      data-header-image="/images/Orangesvart.png"
+      data-header-image="/images/saraheaderorange.png"
+      data-header-image-mobile="/images/saragungarorange-mobile.png"
+      data-nav-bg="#C66A27"
     >
       <img src="/images/sarafrontpage.jpeg" alt="Sara gungar" className="presentation-hero" />
       <div className="presentation-content">
