@@ -1,5 +1,3 @@
-racf
-
 export default function Form() {
   return (
     <div className="BookingForm">

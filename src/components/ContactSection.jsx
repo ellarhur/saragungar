@@ -9,8 +9,8 @@ export default function ContactSection() {
 
       <section className="contact-section content-section" id="contact-section">
         <div className="contact-content">
-          <h1>Kontakta mig</h1>
-          <p>Det finns flera sätt att nå mig:</p>
+        <img className="headline-picture"src="/images/kontaktamig.png" alt="Kontakta mig" />
+        <p>Det finns flera sätt att nå mig:</p>
           <ul className="contact-list">
             <li><strong>E-post:</strong> <a href="mailto:sara@tacksam.com">sara@tacksam.com</a></li>
             <li><strong>LinkedIn:</strong> <a href="https://linkedin.com/@dinkanal">@dinkanal</a></li>

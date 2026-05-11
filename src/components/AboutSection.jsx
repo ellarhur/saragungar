@@ -13,7 +13,7 @@ export default function AboutSection() {
             <img src="/images/sarazusuki.jpeg" alt="Sara med sin fiol" />
           </div>
           <div className="about-text-right">
-            <h1>Om Sara gungar</h1>
+          <img className="headline-picture"src="/images/omsaraochsaragungar.png" alt="Om Sara gungar" />
             <p>Första gången jag undervisade i fiol var 1988. Det var på musikskolan i Tidaholm. Jag var bara sexton och hade själv varit elev där.</p>
             <p>Jag började spela redan som treåring. Min pappa var traditionellt utbildad fiolpedagog men intresserade sig under början av sjuttiotalet för suzukimetoden med den påföljden att jag blev hans första elev. Han var både målmedveten och hängiven, ordnade till och med att jag fick spela för självaste Shinichi Suzuki 1981.</p>
             <p>Länge hade jag siktet på att bli musiker och nådde efter studier på Edsbergs musikinstitut och Mälardalens högskola fram till en fil. kand. i kammarmusik. Studerade även två somrar för John D. Kendall i USA.</p>

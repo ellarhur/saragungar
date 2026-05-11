@@ -1,4 +1,5 @@
-import React, { useEffect } from 'react'
+import React from 'react'
+import Form from './Form.jsx'
 
 export default function BookingSection() {
 
@@ -8,7 +9,7 @@ export default function BookingSection() {
       </div>
       <section className="booking-section" id="booking-section">
         <div className="booking-text">
-          <h1>Boka din virtuella privatlektion</h1>
+          <img className="headline-picture"src="/images/bokadinlektion.png" alt="Boka din lektion" />
           <p>
             Klicka på en ledig tid i kalendern nedan och följ anvisningarna.<br /><br />
             När din bokning är klar får du bekräftelse via epost. Med din bekräftelse får du en länk till din lektion. Länken går att öppna i vilken webbläsare som helst. Under lektionen använder du datorns mikrofon, kamera och högtalare.
@@ -19,9 +20,7 @@ export default function BookingSection() {
           </p>
           <p>Har du frågor? <a href="#contact-section">Kontakta mig</a></p>
         </div>
-        {/* <div className="booking-widget">
-          <div id="simplybook-widget"></div>
-        </div> */}
+        <Form />
       </section>
     </div>
   )

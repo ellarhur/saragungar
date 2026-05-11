@@ -11,11 +11,8 @@ export default function PresentationSection() {
     >
       <img src="/images/sarafrontpage.jpeg" alt="Sara gungar" className="presentation-hero" />
       <div className="presentation-content">
-        <img
-          src="/images/fundera.png"
-          alt="Funderar du på att plocka upp fiolen igen?"
-          className="presentation-content-image"
-        />
+      <img className="headline-picture"src="/images/dagsattplockauppfiolen.png" alt="Dags att börja spela fiol" />
+
         <p>
           Vill du få undervisning anpassad till dina förutsättningar, oavsett var du är?
           Onlinelektioner är perfekt både för dig som önskar enstaka lektioner och för dig som vill ha återkommande undervisning.
