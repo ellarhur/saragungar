@@ -2,8 +2,14 @@ import React from 'react'
 
 export default function TechnicalSection() {
   return (
-    <div className="page-container">
-      <section className="technical-section content-section">
+    <div className="page-container page-container--flush-top">
+      <div
+        className="section-header"
+        data-header-image="/images/boka.png"
+        data-header-image-mobile="/images/boka-mobile.png"
+        data-nav-bg="#16213B"
+      />
+      <section className="technical-section content-section" id="teknisk-info">
         <div className="technical-content">
         <img className="headline-picture"src="/images/liteteknisk.png" alt="Teknisk information" />
         <p>Du behöver ingen avancerad utrustning - oftast räcker det med en laptop (och en fiol).</p>

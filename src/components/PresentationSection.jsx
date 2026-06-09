@@ -1,4 +1,5 @@
 import React from 'react'
+import '../scss/PresentationSection.scss'
 
 export default function PresentationSection() {
   return (
@@ -13,11 +14,14 @@ export default function PresentationSection() {
       <div className="presentation-content">
       <img className="headline-picture"src="/images/dagsattplockauppfiolen.png" alt="Dags att börja spela fiol" />
 
-        <p>
-          Vill du få undervisning anpassad till dina förutsättningar, oavsett var du är?
-          Onlinelektioner är perfekt både för dig som önskar enstaka lektioner och för dig som vill ha återkommande undervisning.
-          Du behöver ingen avancerad utrustning. Oftast räcker det med en laptop (och en fiol).
-          Du hittar tillgängliga tider <a href="#booking-section">här</a>
+        <p className="presentation-text">
+        Funderar du på att plocka upp fiolen igen? 
+
+Med onlineundervisning får du personlig coaching anpassad efter din nivå, dina mål och din takt. Fokus ligger på det som utvecklar ditt spel.
+
+Till skillnad från traditionella lektioner, där man ofta spelar tillsammans, handlar detta mer om individuell guidning – som att ha en personlig tränare snarare än att delta i ett gruppass. Du får feedback, övningar och stöd som tar dig framåt.
+
+Det bästa? Du behöver ingen avancerad utrustning. För de flesta räcker det med en laptop, ett par hörlurar – och såklart din fiol.
         </p>
       </div>
     </section>

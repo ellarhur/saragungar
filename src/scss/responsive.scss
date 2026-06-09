@@ -19,9 +19,9 @@
     }
 
     .presentation-content {
-        margin: 40px 24px;
-        max-width: 380px;
-        padding: 20px 16px;
+        margin: 40px 40px;
+        max-width: 480px;
+        padding: 24px 20px;
     }
 
     .presentation-content-image {
@@ -262,8 +262,7 @@
         font-size: 0.95rem;
     }
 
-    .presentation-content p {
-        font-size: 0.9rem;
+    .presentation-content p.presentation-text {
         line-height: 1.5;
     }
 
@@ -617,9 +616,6 @@
         font-size: 0.9rem;
     }
 
-    .presentation-content p {
-        font-size: 0.85rem;
-    }
 
     .header-image {
         max-height: 80px;

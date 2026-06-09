@@ -1,0 +1,18 @@
+.presentation-content p.presentation-text {
+    font-size: 1.5rem;
+    line-height: 1.5;
+    font-weight: 300;
+    letter-spacing: 0.05em;
+    margin-bottom: 15px;
+}
+
+.presentation-content a {
+    color: #fff;
+    text-decoration: none;
+    font-weight: 500;
+    transition: color 0.3s ease;
+}
+
+.presentation-content a:hover {
+    color: #cc6f00;
+}
