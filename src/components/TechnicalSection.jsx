@@ -1,4 +1,5 @@
 import React from 'react'
+import '../scss/TechnicalSection.scss'
 
 export default function TechnicalSection() {
   return (
@@ -11,7 +12,7 @@ export default function TechnicalSection() {
       />
       <section className="technical-section content-section" id="teknisk-info">
         <div className="technical-content">
-        <img className="headline-picture"src="/images/liteteknisk.png" alt="Teknisk information" />
+        <img className="headline-picture-technical"src="/images/liteteknisk.png" alt="Teknisk information" />
         <p>Du behöver ingen avancerad utrustning - oftast räcker det med en laptop (och en fiol).</p>
           <p>Under lektionen använder du datorns mikrofon, kamera och högtalare. Se till att du har en stabil internetanslutning och en lugn miljö där du kan spela ostört.</p>
           <p>Placera datorn så att kameran kan fånga både din spelposition och fingrarna på greppbrädan.</p>

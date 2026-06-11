@@ -33,6 +33,9 @@ export default function AboutSection() {
         <div className="about-image-left">
           <img src="/images/fiolupclose.jpg" alt="Fiol up close" />
         </div>
+        <div className="about-image-center">
+          <img src="/images/saraklickar.jpg" alt="Sara klicks" />
+        </div>
         <div className="about-image-right">
           <img src="/images/fiolfodral.jpeg" alt="Fodral" />
         </div>

@@ -1,37 +1,39 @@
-.booking-section {
-    min-height: 100vh;
-    display: flex;
-    align-items: center;
+/* Bokningssektionen – ändra utrymme, text och bild HÄR (#booking-section) */
+
+#booking-section {
+    width: 100%;
+    margin: 0;
+    padding: 0;
     background: #1d1c1c;
 }
 
-.booking-section .booking-layout {
+#booking-section .booking-layout {
     display: grid;
     grid-template-columns: minmax(0, 1fr) auto minmax(0, 1fr);
     gap: 48px;
     align-items: center;
     width: 100%;
     max-width: 1400px;
-    min-height: 100vh;
-    margin: 0 auto;
-    padding: 0px 32px;
+    margin: 100px 100px 100px 100px;
+    padding: 0 32px;
     box-sizing: border-box;
     color: #fff;
 }
 
-.booking-col--left {
+#booking-section .booking-col--left {
     text-align: left;
 }
 
-.booking-headline {
+#booking-section .booking-headline {
     width: 100%;
     max-width: 600px;
     height: auto;
+    display: block;
     margin-bottom: 28px;
 }
 
-.booking-intro,
-.booking-col--right p {
+#booking-section .booking-intro,
+#booking-section .booking-col--right p {
     font-size: 1.7rem;
     line-height: 1.55;
     font-weight: 300;
@@ -39,37 +41,37 @@
     margin: 0 0 24px;
 }
 
-.booking-col--right {
+#booking-section .booking-col--right {
     text-align: right;
 }
 
-.booking-col--right p:last-child {
+#booking-section .booking-col--right p:last-child {
     margin-bottom: 0;
 }
 
-.booking-image {
+#booking-section .booking-image {
     width: 380px;
     max-width: 100%;
     aspect-ratio: 2 / 3;
     max-height: 75vh;
     object-fit: cover;
-    object-position: center top;
+    object-position: 30% 20%;
     border-radius: 10px;
-    display: block;
 }
 
 @media (max-width: 1024px) {
-    .booking-section .booking-layout {
+    #booking-section .booking-layout {
         grid-template-columns: 1fr 1fr;
         gap: 32px;
+        padding: 0 24px;
     }
 
-    .booking-col--center {
+    #booking-section .booking-col--center {
         grid-column: 1 / -1;
         justify-self: center;
     }
 
-    .booking-image {
+    #booking-section .booking-image {
         width: 100%;
         max-width: 360px;
         max-height: 65vh;
@@ -77,35 +79,31 @@
 }
 
 @media (max-width: 767px) {
-    .booking-section,
-    .booking-section .booking-layout {
-        min-height: auto;
-    }
-
-    .booking-section .booking-layout {
+    #booking-section .booking-layout {
         grid-template-columns: 1fr;
         gap: 28px;
         padding: 32px 16px;
+        margin-bottom: 32px;
+    }
+
+    #booking-section .booking-col--left,
+    #booking-section .booking-col--right {
         text-align: center;
     }
 
-    .booking-intro,
-    .booking-col--right p {
-        font-size: 1.7rem;
-    }
-
-    .booking-col--left,
-    .booking-col--right {
-        text-align: center;
-    }
-
-    .booking-headline {
+    #booking-section .booking-headline {
         max-width: 280px;
         margin-left: auto;
         margin-right: auto;
     }
 
-    .booking-image {
+    #booking-section .booking-image {
+        width: 380px;
         max-width: 100%;
+        aspect-ratio: 2 / 3;
+        max-height: 75vh;
+        object-fit: cover;
+        object-position: 70% 20%;
+        border-radius: 10px;
     }
 }
