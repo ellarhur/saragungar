@@ -13,7 +13,6 @@ export default function PresentationSection() {
       <img src="/images/sarafrontpage.jpeg" alt="Sara gungar" className="presentation-hero" />
       <div className="presentation-content">
       <img className="headline-picture"src="/images/dagsattplockauppfiolen.png" alt="Dags att börja spela fiol" />
-
       </div>
     </section>
   )

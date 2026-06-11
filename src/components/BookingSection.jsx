@@ -25,11 +25,6 @@ Till skillnad från traditionella lektioner, där man ofta spelar tillsammans, h
 
 Det bästa? Du behöver ingen avancerad utrustning. För de flesta räcker det med en laptop, ett par hörlurar – och såklart din fiol.
           </p>
-          <img
-            className="headline-picture2"
-            src="/images/skrivupp1.png"
-            alt="Fundera"
-          />
         </div>
       </section>
     </div>

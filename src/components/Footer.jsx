@@ -3,11 +3,6 @@ import React from 'react'
 export default function Footer() {
   return (
     <footer>
-      <div className="footer-images">
-        <img src="/images/fiolupclose.jpg" alt="Fiol närbild" />
-        <img src="/images/saraklickar.jpg" alt="Sara vid datorn" />
-        <img src="/images/fiolfodral.jpeg" alt="Fiol i fodral" />
-      </div>
       <div className="footer-wrapper">
         <p>Missa inte uppdateringar genom att prenumerera på mitt nyhetsbrev!</p>
         <form className="newsletter-form">
