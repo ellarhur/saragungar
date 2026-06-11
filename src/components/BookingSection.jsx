@@ -11,11 +11,25 @@ export default function BookingSection() {
         data-nav-bg="#16213B"
       />
       <section className="booking-section" id="booking-section">
-        <div className="Coming-soon">
-          <p>Kommer snart!</p>
-          <p>
-            Har du frågor? <a href="#contact-section">Kontakta mig</a>
+        <div className="booking-text">
+          <img
+            className="headline-picture"
+            src="/images/fundera.png"
+            alt="Fundera"
+          />
+          <p className="booking-body">
+
+          Med onlineundervisning får du personlig coaching anpassad efter din nivå, dina mål och din takt. Fokus ligger på det som utvecklar ditt spel.
+
+Till skillnad från traditionella lektioner, där man ofta spelar tillsammans, handlar detta mer om individuell guidning – som att ha en personlig tränare snarare än att delta i ett gruppass. Du får feedback, övningar och stöd som tar dig framåt.
+
+Det bästa? Du behöver ingen avancerad utrustning. För de flesta räcker det med en laptop, ett par hörlurar – och såklart din fiol.
           </p>
+          <img
+            className="headline-picture2"
+            src="/images/skrivupp1.png"
+            alt="Fundera"
+          />
         </div>
       </section>
     </div>
