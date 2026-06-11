@@ -1,0 +1,98 @@
+.signup-section {
+    width: 100%;
+    padding: 48px 24px 72px;
+    color: #fff;
+}
+
+.signup-content {
+    max-width: 720px;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.signup-headline {
+    width: 100%;
+    max-width: 560px;
+    height: auto;
+    display: block;
+    margin: 0 auto 40px;
+}
+
+.signup-intro {
+    text-align: left;
+    font-size: 0.9rem;
+    line-height: 1.5;
+    font-weight: 300;
+    letter-spacing: 0.05em;
+    margin: 0 0 40px;
+}
+
+.signup-form {
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+    align-items: center;
+}
+
+.signup-field {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+    text-align: left;
+    font-size: 0.9rem;
+    font-weight: 300;
+    letter-spacing: 0.05em;
+}
+
+.signup-field input {
+    width: 100%;
+    box-sizing: border-box;
+    padding: 14px 16px;
+    border: none;
+    border-radius: 0;
+    background: #fff;
+    color: #fff;
+    font-family: "Roboto", sans-serif;
+    font-size: 0.9rem;
+    font-weight: 300;
+}
+
+.signup-field input:focus {
+    outline: 2px solid #fff;
+    outline-offset: 2px;
+}
+
+.signup-form button {
+    margin-top: 8px;
+    padding: 12px 48px;
+    border: none;
+    border-radius: 0;
+    background: #fff;
+    color: #fff;
+    font-family: "Roboto", sans-serif;
+    font-size: 0.9rem;
+    font-weight: 300;
+    letter-spacing: 0.05em;
+    cursor: pointer;
+    transition: background-color 0.2s ease, color 0.2s ease;
+}
+
+.signup-form button:hover {
+    background: #e6e6e6;
+}
+
+@media (max-width: 767px) {
+    .signup-section {
+        padding: 32px 16px 56px;
+    }
+
+    .signup-headline {
+        max-width: 100%;
+        margin-bottom: 28px;
+    }
+
+    .signup-intro {
+        margin-bottom: 28px;
+    }
+}

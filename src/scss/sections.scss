@@ -76,14 +76,9 @@
 /* Booking Section */
 .booking-section {
     width: 100%;
-    max-width: 1400px;
-    height: auto;
-    display: flex;
-    gap: 40px;
-    align-items: flex-start;
-    justify-content: center;
-    margin: 0 auto 60px auto;
-    padding: 20px;
+    max-width: none;
+    margin: 0;
+    padding: 0;
     color: #fff;
 }
 
@@ -134,13 +129,13 @@
 
 .technical-content h2 {
     font-size: 0.9rem;
-    color: #000;
+    color: #fff;
     margin-bottom: 20px;
 }
 
 .technical-content p {
     font-size: 0.9rem;
-    color: #000;
+    color: #fff;
     line-height: 1.5;
     font-weight: 300;
     letter-spacing: 0.05em;

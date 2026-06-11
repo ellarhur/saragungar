@@ -8,8 +8,7 @@ body {
     background: #1d1c1c;
     font-size: 2rem;
     color: #fff;
-    font-family: "Roboto", sans-serif;
-    font-weight: 300;
+  font-family: "Pliant", sans-serif;    font-weight: 300;
     min-height: 100vh;
     margin: 0;
     overflow-x: hidden;
@@ -28,7 +27,7 @@ main {
     width: 100%;
     display: flex;
     flex-direction: column;
-    font-family: "Roboto", serif;
+    font-family: "Pliant", sans-serif;
     font-weight: 300;
     box-sizing: border-box;
     overflow-x: hidden;
@@ -80,8 +79,7 @@ h1 {
     margin: 0 auto;
     width: 100%;
     color: #fff;
-    font-family: "Roboto", sans-serif;
-    line-height: 1.0;
+  font-family: "Pliant", sans-serif;    line-height: 1.0;
     font-weight: 300;
     letter-spacing: 0.05em;
 }
@@ -100,12 +98,10 @@ h3 {
     line-height: 1.0;
     font-weight: 300;
     letter-spacing: 0.05em;
-    font-family: "Roboto", sans-serif;
-}
+  font-family: "Pliant", sans-serif;}
 
 h4, h5, h6 {
-    font-family: "Roboto", sans-serif;
-    line-height: 1.0;
+  font-family: "Pliant", sans-serif;    line-height: 1.0;
     font-weight: 300;
     letter-spacing: 0.05em;
 }
@@ -116,14 +112,12 @@ h2 {
     margin: 0 auto;
     width: 100%;
     color: #fff;
-    font-family: "Roboto", sans-serif;
-    letter-spacing: 0.05em;
+  font-family: "Pliant", sans-serif;    letter-spacing: 0.05em;
     font-weight: 300;
 }
 
 li, a, button, input, textarea, label {
-    font-family: "Roboto", sans-serif;
-    font-weight: 300;
+  font-family: "Pliant", sans-serif;    font-weight: 300;
     letter-spacing: 0.05em;
 }
 
@@ -139,8 +133,7 @@ p {
     margin: 0 auto;
     width: 100%;
     color: #fff;
-    font-family: "Roboto", sans-serif;
-    line-height: 1.0;
+  font-family: "Pliant", sans-serif;    line-height: 1.0;
     font-weight: 300;
     letter-spacing: 0.05em;
 }
