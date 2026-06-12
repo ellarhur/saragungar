@@ -17,6 +17,16 @@ export default function PresentationSection() {
           alt="Dags att börja spela fiol"
         />
       </div>
+
+      <a
+        href="#booking-section"
+        className="presentation-scroll-hint"
+        aria-label="Scrolla nedåt"
+      >
+        <svg viewBox="0 0 24 24" aria-hidden="true" focusable="false">
+          <path d="M12 16l-6-6h12l-6 6z" />
+        </svg>
+      </a>
     </section>
   )
 }

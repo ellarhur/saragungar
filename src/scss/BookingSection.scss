@@ -1,7 +1,16 @@
 /* Bokningssektionen – text + formulär vänster, bild höger (#booking-section) */
 
+.page-container--boka {
+    max-width: 1800px;
+    width: 100%;
+    align-self: stretch;
+    padding-left: 12px;
+    padding-right: 12px;
+}
+
 #booking-section {
     width: 100%;
+    max-width: none;
     margin: 0;
     padding: 0;
     background: #1d1c1c;
@@ -9,27 +18,19 @@
 
 #booking-section .booking-layout {
     display: grid;
-    grid-template-columns: minmax(0, 1fr) auto;
-    gap: 56px;
+    grid-template-columns: minmax(0, 1.25fr) auto;
+    gap: 150px;
     align-items: center;
     width: 100%;
-    max-width: 1400px;
+    max-width: none;
     margin: 0 auto 60px;
-    padding: 48px 32px;
+    padding: 48px 16px;
     box-sizing: border-box;
     color: #fff;
 }
 
 #booking-section .booking-col--text {
     text-align: left;
-}
-
-#booking-section .booking-headline {
-    font-size: 1.7rem;
-    line-height: 1.55;
-    font-weight: 300;
-    letter-spacing: 0.05em;
-    margin: 0 0 24px;
 }
 
 #booking-section .booking-col--image-mobile {
@@ -92,10 +93,16 @@
 }
 
 @media (max-width: 767px) {
+    .page-container--boka {
+        padding-left: 28px;
+        padding-right: 28px;
+        box-sizing: border-box;
+    }
+
     #booking-section .booking-layout {
         grid-template-columns: 1fr;
         gap: 0;
-        padding: 32px 16px;
+        padding: 32px 0 40px;
         margin-bottom: 32px;
     }
 
@@ -105,7 +112,9 @@
 
     #booking-section .booking-col--image-mobile {
         display: block;
-        margin: 0 0 24px;
+        margin: 0 -28px 24px;
+        width: calc(100% + 56px);
+        max-width: none;
     }
 
     #booking-section .booking-image--mobile {
@@ -115,7 +124,4 @@
         border-radius: 0;
     }
 
-    #booking-section .booking-headline {
-        margin-bottom: 20px;
-    }
 }

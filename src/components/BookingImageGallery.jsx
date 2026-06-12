@@ -2,8 +2,9 @@ import React from 'react'
 
 export default function BookingImageGallery() {
   return (
-    <section className="booking-gallery" id="booking-gallery">
-      <div className="booking-gallery__row">
+    <div className="page-container page-container--gallery">
+      <section className="booking-gallery" id="booking-gallery">
+        <div className="booking-gallery__row">
         <div className="booking-gallery__item">
           <img src="/images/fiolupclose.jpg" alt="Fiol närbild" />
         </div>
@@ -13,7 +14,8 @@ export default function BookingImageGallery() {
         <div className="booking-gallery__item">
           <img src="/images/fiolfodral.jpeg" alt="Fiol i fodral" />
         </div>
-      </div>
-    </section>
+        </div>
+      </section>
+    </div>
   )
 }

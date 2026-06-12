@@ -1,5 +1,9 @@
 /* PresentationSection – layout för rubrikbild (#presentation-section) */
 
+#presentation-section {
+    position: relative;
+}
+
 #presentation-section .presentation-hero {
     object-position: 30% 70%;
 }
@@ -18,6 +22,7 @@
     display: block;
     margin-left: auto;
     margin-right: 0;
+    transform: translateX(-100px); /* öka talet = längre åt vänster */
 }
 
 #presentation-section .presentation-content p.presentation-text {
@@ -37,6 +42,10 @@
 
 #presentation-section .presentation-content a:hover {
     color: #cc6f00;
+}
+
+#presentation-section .presentation-scroll-hint {
+    display: none;
 }
 
 @media (max-width: 1024px) {
@@ -72,6 +81,57 @@
         width: 100%;
         margin-left: auto;
         margin-right: auto;
+        transform: none;
+    }
+
+    #presentation-section .presentation-scroll-hint {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        position: absolute;
+        bottom: 28px;
+        left: 0;
+        right: 0;
+        margin: 0 auto;
+        width: 48px;
+        height: 48px;
+        color: #fff;
+        text-decoration: none;
+        opacity: 0;
+        z-index: 3;
+        animation:
+            presentation-scroll-hint-appear 0.8s ease 2s forwards,
+            presentation-scroll-hint-pulse 2.4s ease-in-out 2.8s infinite;
+    }
+
+    #presentation-section .presentation-scroll-hint svg {
+        width: 32px;
+        height: 32px;
+        fill: currentColor;
+        filter: drop-shadow(0 2px 6px rgba(0, 0, 0, 0.45));
+    }
+}
+
+@keyframes presentation-scroll-hint-appear {
+    from {
+        opacity: 0;
+    }
+
+    to {
+        opacity: 0.9;
+    }
+}
+
+@keyframes presentation-scroll-hint-pulse {
+    0%,
+    100% {
+        transform: translateY(0);
+        opacity: 0.75;
+    }
+
+    50% {
+        transform: translateY(10px);
+        opacity: 1;
     }
 }
 

@@ -12,13 +12,13 @@ export default function AboutSection() {
 
       <section className="about-section content-section" id="about-section">
         <div className="about-layout">
-          <div className="about-col about-col--text">
-            <img
-              className="about-headline"
-              src="/images/omsaraochsaragungar.png"
-              alt="Om Sara och Sara gungar"
-            />
+          <img
+            className="about-headline"
+            src="/images/omsaraochsaragungar.png"
+            alt="Om Sara och Sara gungar"
+          />
 
+          <div className="about-col about-col--text">
             <div className="about-body">
               <p>Första gången jag undervisade i fiol var 1988. Det var på musikskolan i Tidaholm. Jag var bara sexton och hade själv varit elev där.</p>
               <p>

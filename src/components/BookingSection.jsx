@@ -13,9 +13,9 @@ export default function BookingSection() {
       <section className="booking-section" id="booking-section">
         <div className="booking-layout">
           <div className="booking-col booking-col--text">
-            <p className="booking-headline">
-              Längtar du efter fiolundervisning som utgår helt och hållet från dig?
-            </p>
+            <h1>
+            Vill du utvecklas på fiol i din egen takt och i ett lugnt tempo?
+            </h1>
 
             <div className="booking-col--image booking-col--image-mobile">
               <img
@@ -26,9 +26,9 @@ export default function BookingSection() {
             </div>
 
             <div className="booking-body">
-              <p>
+              <p><br/> 
                 Till hösten bjuder jag in till personlig och helt skräddarsydd onlinecoachning. Det är tjänsten för dig som spelar fiol på egen hand, eller har spelat tidigare och vill hitta tillbaka till spelglädjen med den rätta tekniken.
-                Jag använder inga färdiga mallar. Tillsammans bygger vi ett individanpassat upplägg där dina behov står i centrum.
+             <br/><br/>    Jag använder inga färdiga mallar. Tillsammans bygger vi ett individanpassat upplägg där dina behov står i centrum.
               </p>
               <p>Det du behöver göra är att ge dig själv tiden att utvecklas. Jag ser till att hjälpa dig nå målen.</p>
               <p className="booking-cta">

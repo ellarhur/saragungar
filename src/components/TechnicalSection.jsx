@@ -2,7 +2,7 @@ import React from 'react'
 
 export default function TechnicalSection() {
   return (
-    <div className="page-container page-container--flush-top">
+    <div className="page-container page-container--flush-top page-container--technical">
       <div
         className="section-header"
         data-header-image="/images/boka.png"

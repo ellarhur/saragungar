@@ -38,13 +38,6 @@ export default function Footer() {
         </div>
       </div>
 
-      <div className="footer-wrapper">
-        <p>Missa inte uppdateringar – prenumerera på nyhetsbrevet!</p>
-        <form className="newsletter-form">
-          <input type="email" placeholder="Din e-postadress" required />
-          <button type="submit">PRENUMERERA</button>
-        </form>
-      </div>
 
       <p className="footer-note">
         Jag har en opolitisk och ickereligiös hållning i min undervisning.

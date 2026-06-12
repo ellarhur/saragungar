@@ -1,5 +1,14 @@
 /* Teknisk sektion – rubrik + text vänster, bild höger (#teknisk-info) */
 
+.page-container--technical {
+    max-width: 1800px;
+    width: 100%;
+    align-self: stretch;
+    padding-left: 12px;
+    padding-right: 12px;
+    box-sizing: border-box;
+}
+
 #teknisk-info {
     display: block;
     width: 100%;
@@ -11,16 +20,16 @@
 
 #teknisk-info .technical-layout {
     display: grid;
-    grid-template-columns: minmax(0, 1fr) auto;
+    grid-template-columns: minmax(0, 1.25fr) auto;
     grid-template-areas:
-        "headline ."
+        "headline image"
         "body image";
-    gap: 24px 56px;
+    gap: 24px 150px;
     align-items: start;
     width: 100%;
-    max-width: 1400px;
+    max-width: none;
     margin: 0 auto 60px;
-    padding: 48px 32px;
+    padding: 48px 16px;
     box-sizing: border-box;
     color: #fff;
 }
@@ -52,25 +61,27 @@
 }
 
 #teknisk-info .technical-image {
-    width: 420px;
+    width: 600px;
     max-width: 100%;
     aspect-ratio: 2 / 3;
-    max-height: 75vh;
+    max-height: 80vh;
     object-fit: cover;
     object-position: 50% 30%;
     border-radius: 10px;
     display: block;
+    transform: translateY(120px);
 }
 
 @media (max-width: 1024px) {
     #teknisk-info .technical-layout {
         gap: 24px 40px;
         padding: 40px 24px;
+        margin-bottom: 60px;
     }
 
     #teknisk-info .technical-image {
-        width: 360px;
-        max-height: 65vh;
+        width: 400px;
+        max-height: 70vh;
     }
 }
 
@@ -95,17 +106,6 @@
     }
 
     #teknisk-info .technical-col--image {
-        justify-self: center;
-        margin: 0;
-        transform: none;
-    }
-
-    #teknisk-info .technical-image {
-        width: 100%;
-        max-width: 360px;
-        aspect-ratio: auto;
-        max-height: none;
-        transform: none;
-        box-shadow: 0 12px 28px rgba(0, 0, 0, 0.25);
+        display: none;
     }
 }

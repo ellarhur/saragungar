@@ -87,5 +87,11 @@
     
     .parallax-content p {
         font-size: 1.7rem;
-    }   
+    }
+
+    /* Efter teknisk sektion: dator.jpeg istället för saraundervisaronline på mobil */
+    .parallax-2 .parallax-bg {
+        background-image: url('/images/dator.jpeg');
+        background-position: 50% 35%;
+    }
 }
