@@ -47,8 +47,12 @@
     text-align: left;
 }
 
+#teknisk-info .technical-body {
+    max-width: var(--prose-max);
+}
+
 #teknisk-info .technical-body p {
-    font-size: 1.7rem;
+    font-size: var(--text-base);
     line-height: 1.55;
     font-weight: 300;
     letter-spacing: 0.05em;
@@ -72,7 +76,7 @@
     transform: translateY(120px);
 }
 
-@media (max-width: 1024px) {
+@media (max-width: 991px) {
     #teknisk-info .technical-layout {
         gap: 24px 40px;
         padding: 40px 24px;

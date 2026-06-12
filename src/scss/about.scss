@@ -3,7 +3,7 @@
 .about-page-title {
     text-align: right;
     color: #fff;
-    font-size: 1.7rem;
+    font-size: var(--text-base);
     margin-bottom: 50px;
     margin-top: 20px;
 }
@@ -85,14 +85,14 @@
 }
 
 .about-text-right h1 {
-    font-size: 1.7rem;
+    font-size: var(--text-base);
     color: #fff;
     margin-bottom: 20px;
     text-align: right;
 }
 
 .about-text-right p {
-    font-size   : 1.7rem;
+    font-size: var(--text-base);
     color: #fff;
     line-height: 1.5;
     font-weight: 300;
@@ -115,13 +115,13 @@
 }
 
 .about-text-left h2 {
-    font-size: 1.7rem;
+    font-size: var(--text-base);
     color: #fff;
     margin-bottom: 20px;
 }
 
 .about-text-left p {
-    font-size: 1.7rem;
+    font-size: var(--text-base);
     color: #fff;
     line-height: 1.5;
     font-weight: 300;

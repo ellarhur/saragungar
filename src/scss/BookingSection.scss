@@ -37,36 +37,30 @@
     display: none;
 }
 
+#booking-section h1 {
+    font-size: var(--text-h1);
+    max-width: var(--prose-max);
+}
+
 #booking-section .booking-body p {
-    font-size: 1.7rem;
+    font-size: var(--text-base);
     line-height: 1.55;
     font-weight: 300;
     letter-spacing: 0.05em;
     margin: 0 0 24px;
+    max-width: var(--prose-max);
 }
 
 #booking-section .booking-cta {
-    font-size: 2rem;
+    font-size: var(--text-lg);
     font-weight: 400;
     margin-bottom: 32px;
+    max-width: var(--prose-max);
 }
 
 #booking-section .booking-signup {
-    max-width: 100%;
-}
-
-#booking-section .booking-signup .signup-form {
-    align-items: flex-start;
-    gap: 20px;
-}
-
-#booking-section .booking-signup .signup-field {
+    max-width: var(--form-max);
     width: 100%;
-    max-width: 100%;
-}
-
-#booking-section .booking-signup .signup-form button {
-    margin-top: 4px;
 }
 
 #booking-section .booking-image--desktop {
@@ -80,7 +74,7 @@
     display: block;
 }
 
-@media (max-width: 1024px) {
+@media (max-width: 991px) {
     #booking-section .booking-layout {
         gap: 40px;
         padding: 40px 24px;

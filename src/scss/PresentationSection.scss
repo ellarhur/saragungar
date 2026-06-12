@@ -26,7 +26,7 @@
 }
 
 #presentation-section .presentation-content p.presentation-text {
-    font-size: 1.5rem;
+    font-size: var(--text-lg);
     line-height: 1.5;
     font-weight: 300;
     letter-spacing: 0.05em;
@@ -48,7 +48,7 @@
     display: none;
 }
 
-@media (max-width: 1024px) {
+@media (max-width: 991px) {
     #presentation-section .presentation-content {
         max-width: 640px;
         margin: 40px 40px 40px auto;
@@ -72,15 +72,14 @@
     #presentation-section .presentation-content {
         max-width: 100%;
         margin: 0;
-        padding: 20px 16px;
+        padding: 48px 16px 20px;
         text-align: center;
-        transform: translateY(-300px);
+        transform: none;
     }
 
     #presentation-section .bigger-headline-picture {
         width: 100%;
-        margin-left: auto;
-        margin-right: auto;
+        margin: 32px auto 16px;
         transform: none;
     }
 

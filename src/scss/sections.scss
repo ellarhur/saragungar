@@ -56,7 +56,7 @@
 
 .presentation-content h3 {
     color: #fff;
-    font-size: 1.7rem;
+    font-size: var(--text-base);
     margin-top: 0;
 }
 
@@ -121,13 +121,13 @@
 }
 
 .technical-content h2 {
-    font-size: 1.7rem;
+    font-size: var(--text-base);
     color: #fff;
     margin-bottom: 20px;
 }
 
 .technical-content p {
-    font-size: 1.7rem;
+    font-size: var(--text-base);
     color: #fff;
     line-height: 1.5;
     font-weight: 300;

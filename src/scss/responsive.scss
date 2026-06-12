@@ -1,7 +1,7 @@
 /* Responsiv design – mobilanpassning av hela hemsidan */
 
-/* ========== Tablet (≤1024px) ========== */
-@media (max-width: 1024px) {
+/* ========== Tablet (≤991px) ========== */
+@media (max-width: 991px) {
     header {
         padding: 12px 0;
         gap: 5px;
@@ -32,7 +32,7 @@
     .nav-links {
         flex-wrap: wrap;
         gap: 8px;
-        font-size: 1.7rem;
+        font-size: var(--text-nav);
     }
 
     .page-container {
@@ -76,7 +76,7 @@
         flex-direction: column;
         align-items: stretch;
         gap: 0;
-        font-size: 1.7rem;
+        font-size: var(--text-nav);
         background: #fff;
         box-shadow: 0 4px 12px rgba(0,0,0,0.15);
         z-index: 150;
@@ -139,7 +139,7 @@
     .nav-link a {
         display: block;
         padding: 6px 0;
-        font-size: 1.7rem;
+        font-size: var(--text-nav);
     }
 }
 
@@ -171,7 +171,7 @@
         flex-direction: column;
         align-items: stretch;
         gap: 0;
-        font-size: 1.7rem;
+        font-size: var(--text-base);
         background: #fff;
         box-shadow: 0 4px 12px rgba(0,0,0,0.15);
         z-index: 150;
@@ -234,7 +234,7 @@
     .nav-link a {
         display: block;
         padding: 6px 0;
-        font-size: 1.7rem;
+        font-size: var(--text-nav);
     }
 
     /* Presentation – centrerad, mindre marginal */
@@ -254,7 +254,7 @@
     }
 
     .presentation-content h3 {
-        font-size: 1.7rem;
+        font-size: var(--text-base);
     }
 
     .presentation-content p.presentation-text {
@@ -286,7 +286,7 @@
     }
 
     .booking-text p {
-        font-size: 1.7rem;
+        font-size: var(--text-base);
         text-align: center;
     }
 
@@ -343,12 +343,12 @@
     }
 
     .technical-content h1 {
-        font-size: 1.7rem;
+        font-size: var(--text-base);
         margin-bottom: 12px;
     }
 
     .technical-content p {
-        font-size: 1.7rem;
+        font-size: var(--text-base);
         max-width: 100%;
         overflow-wrap: break-word;
     }
@@ -389,7 +389,7 @@
 
     section.about-section > h3,
     section.about-section > .about-section .about-text-right h1 {
-        font-size: 1.7rem;
+        font-size: var(--text-base);
         text-align: center;
         margin-bottom: 16px;
     }
@@ -434,12 +434,12 @@
     }
 
     .about-text-right h1 {
-        font-size: 1.7rem;
+        font-size: var(--text-base);
         text-align: center;
     }
 
     .about-text-right p {
-        font-size: 1.7rem;
+        font-size: var(--text-base);
         overflow-wrap: break-word;
         text-align: center;
     }
@@ -489,13 +489,13 @@
     }
 
     .contact-content h1 {
-        font-size: 1.7rem;
+        font-size: var(--text-base);
         margin-bottom: 12px;
     }
 
     .contact-content p,
     .contact-content i {
-        font-size: 1.7rem;
+        font-size: var(--text-base);
         overflow-wrap: break-word;
     }
 
@@ -504,7 +504,7 @@
     }
 
     .contact-list li {
-        font-size: 1.7rem;
+        font-size: var(--text-base);
     }
 
     .social-links-2 {
@@ -519,7 +519,7 @@
     }
 
     .info-box p {
-        font-size: 1.7rem;
+        font-size: var(--text-base);
     }
 
     /* Parallax – något lägre på mobil för att spara plats */
@@ -529,11 +529,11 @@
     }
 
     .parallax-content h2 {
-        font-size: 1.7rem;
+        font-size: var(--text-base);
     }
 
     .parallax-content p {
-        font-size: 1.7rem;
+        font-size: var(--text-base);
     }
 
     /* Footer & nyhetsbrev – stannar inom bredd */
@@ -563,7 +563,7 @@
     }
 
     .footer-wrapper p {
-        font-size: 1.7rem;
+        font-size: var(--text-base);
         text-align: center;
         overflow-wrap: break-word;
         word-wrap: break-word;
@@ -601,7 +601,7 @@
     }
 
     .presentation-content h3 {
-        font-size: 1.7rem;
+        font-size: var(--text-base);
     }
 
 

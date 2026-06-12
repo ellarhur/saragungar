@@ -48,8 +48,12 @@
     text-align: left;
 }
 
+#about-section .about-body {
+    max-width: var(--prose-max);
+}
+
 #about-section .about-body p {
-    font-size: 1.7rem;
+    font-size: var(--text-base);
     line-height: 1.55;
     font-weight: 300;
     letter-spacing: 0.05em;
@@ -91,7 +95,7 @@
     object-fit: cover;
 }
 
-@media (max-width: 1024px) {
+@media (max-width: 991px) {
     #about-section .about-layout {
         gap: 40px;
         padding: 40px 24px 56px;
