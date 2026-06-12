@@ -1,0 +1,135 @@
+/* Om mig – text vänster, roterad bild höger (#about-section) */
+
+.page-container--about {
+    max-width: 1800px;
+    padding-left: 12px;
+    padding-right: 12px;
+}
+
+#about-section {
+    display: block;
+    width: 100%;
+    max-width: none;
+    margin: 0;
+    padding: 0;
+    background: #121212;
+    overflow: visible;
+}
+
+#about-section .about-layout {
+    display: grid;
+    grid-template-columns: minmax(0, 1fr) auto;
+    gap: 56px;
+    align-items: start;
+    width: 100%;
+    max-width: none;
+    margin: 0 auto 60px;
+    padding: 48px 16px 64px;
+    box-sizing: border-box;
+    color: #fff;
+}
+
+#about-section .about-col--text {
+    text-align: left;
+}
+
+#about-section .about-headline {
+    width: auto;
+    max-width: 720px;
+    height: auto;
+    display: block;
+    margin: 0 0 28px;
+}
+
+#about-section .about-body p {
+    font-size: 1.7rem;
+    line-height: 1.55;
+    font-weight: 300;
+    letter-spacing: 0.05em;
+    margin: 0 0 24px;
+    text-align: left;
+}
+
+#about-section .about-signature {
+    display: flex;
+    justify-content: flex-end;
+    margin-top: 8px;
+}
+
+#about-section .about-signature img {
+    display: block;
+    max-width: 200px;
+    width: 100%;
+    height: auto;
+    transform: rotate(-12deg);
+    opacity: 0.9;
+}
+
+#about-section .about-col--image {
+    position: relative;
+    z-index: 2;
+    margin-top: -100px;
+    align-self: start;
+}
+
+#about-section .about-photo {
+    display: block;
+    width: 520px;
+    max-width: 100%;
+    height: auto;
+    border: 4px solid #fff;
+    transform: rotate(10deg);
+    transform-origin: center center;
+    box-shadow: 0 16px 40px rgba(0, 0, 0, 0.45);
+    object-fit: cover;
+}
+
+@media (max-width: 1024px) {
+    #about-section .about-layout {
+        gap: 32px;
+        padding: 40px 24px 56px;
+    }
+
+    #about-section .about-col--image {
+        margin-top: -60px;
+    }
+
+    #about-section .about-photo {
+        width: 400px;
+    }
+}
+
+@media (max-width: 767px) {
+    #about-section .about-layout {
+        grid-template-columns: 1fr;
+        gap: 24px;
+        padding: 32px 16px 48px;
+        margin-bottom: 32px;
+    }
+
+    #about-section .about-headline {
+        max-width: 100%;
+        margin-bottom: 20px;
+    }
+
+    #about-section .about-col--image {
+        order: 2;
+        margin-top: 0;
+        justify-self: center;
+    }
+
+    #about-section .about-photo {
+        width: 100%;
+        max-width: 320px;
+        transform: rotate(6deg);
+    }
+
+    #about-section .about-signature {
+        justify-content: center;
+        margin-top: 16px;
+    }
+
+    #about-section .about-signature img {
+        max-width: 160px;
+    }
+}

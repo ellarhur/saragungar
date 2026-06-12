@@ -2,7 +2,7 @@ import React, { useEffect, useState } from 'react'
 import Header from './src/components/Header.jsx'
 import PresentationSection from './src/components/PresentationSection.jsx'
 import BookingSection from './src/components/BookingSection.jsx'
-import Signup from './src/components/Signup.jsx'
+import BookingImageGallery from './src/components/BookingImageGallery.jsx'
 import Parallax from './src/components/Parallax.jsx'
 import TechnicalSection from './src/components/TechnicalSection.jsx'
 import AboutSection from './src/components/AboutSection.jsx'
@@ -66,12 +66,11 @@ export default function App() {
       <main>
         <PresentationSection />
         <BookingSection />
-        <Parallax id="parallax-signup" />
-        <Signup />
         <Parallax id="parallax-1" />
         <TechnicalSection />
         <Parallax id="parallax-2" />
         <AboutSection />
+        <BookingImageGallery />
         <ContactSection />
       </main>
       <Footer />

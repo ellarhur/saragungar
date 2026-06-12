@@ -1,173 +1,111 @@
-/* Huvudsektioner på sidan */
+/* Teknisk sektion – rubrik + text vänster, bild höger (#teknisk-info) */
 
-/* Fixar offset för ankarlänkar så headern inte täcker innehållet */
-#presentation-section,
-#booking-section,
-#signup-section,
-#about-section,
-#contact-section {
-    scroll-margin-top: 140px;
-}
-
-/* Presentation Section */
-.presentation-section {
-    position: relative;
+#teknisk-info {
+    display: block;
     width: 100%;
     max-width: none;
-    min-height: calc(100vh - 220px);
-    margin-top: 160px; /* Plats för headern */
-    padding: 60px 20px;
-    display: flex;
-    align-items: center;
-    justify-content: flex-end;
-    overflow: hidden;
+    margin: 0;
+    padding: 0;
+    background: #1d1c1c;
 }
 
-.presentation-section::after {
-    content: "";
-    position: absolute;
-    inset: 0;
-    background: linear-gradient(180deg, rgba(0,0,0,0.25) 0%, rgba(0,0,0,0.4) 100%);
-    z-index: 1;
-}
-
-.presentation-hero {
-    position: absolute;
-    inset: 0;
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-    z-index: 0;
-    object-position: 30% 70%;
-}
-
-.presentation-content {
-    position: relative;
-    z-index: 2;
-    padding: 28px 24px;
-    border-radius: 10px;
-    margin: 80px 50px 80px auto;
-    max-width: 480px;
-    color: #fff;
-    text-align: right;
-    -webkit-backdrop-filter: blur(2px);
-    backdrop-filter: blur(2px);
-}
-
-.presentation-content h3 {
-    color: #fff;
-    font-size: 1.7rem;
-    margin-top: 0;
-}
-
-.presentation-content-image {
-    display: block;
-    max-width: 100%;
-    width: 600px;
-    height: auto;
-    margin-bottom: 16px;
-}
-
-.presentation-content p {
-    color: #f5f5f5;
-    margin-bottom: 0;
-}
-
-/* Booking Section – se BookingSection.scss (#booking-section) */
-
-/* .booking-widget {
-    flex: 1;
-    max-width: 600px;
-    height: auto;
-    border-radius: 10px;
-    background-color: #fff;
-    box-shadow: 0 4px 15px rgba(0,0,0,0.2);
-
-} */
-
-.booking-text {
-    flex: 1;
-    max-width: 600px;
-    height: auto;
-    text-align: left;
-    padding: 50px;
-    border-radius: 10px;
-    background-color: #1d1c1c;
-    line-height: 3;
-}
-
-/* Technical Section */
-.technical-section {
+#teknisk-info .technical-layout {
+    display: grid;
+    grid-template-columns: minmax(0, 1fr) auto;
+    grid-template-areas:
+        "headline ."
+        "body image";
+    gap: 24px 56px;
+    align-items: start;
     width: 100%;
     max-width: 1400px;
+    margin: 0 auto 60px;
+    padding: 48px 32px;
+    box-sizing: border-box;
+    color: #fff;
+}
+
+#teknisk-info .technical-headline {
+    grid-area: headline;
+    width: auto;
+    max-width: 520px;
     height: auto;
-    display: flex;
-    gap: 40px;
-    align-items: flex-start;
-    margin: 0 auto 60px auto;
-    padding: 20px;
-    justify-content: center;
-
+    display: block;
 }
 
-.technical-content {
-    flex: 1;
-    max-width: 600px;
-    background-color: #1d1c1c;
-    border-radius: 10px;
-    padding: 20px;
+#teknisk-info .technical-body {
+    grid-area: body;
     text-align: left;
-
 }
 
-.technical-content h2 {
+#teknisk-info .technical-body p {
     font-size: 1.7rem;
-    color: #fff;
-    margin-bottom: 20px;
-}
-
-.technical-content p {
-    font-size: 1.7rem;
-    color: #fff;
-    line-height: 1.5;
+    line-height: 1.55;
     font-weight: 300;
     letter-spacing: 0.05em;
-    margin-bottom: 15px;
+    margin: 0 0 24px;
 }
 
-.technical-image-right {
-    flex: 1;
-    max-width: 600px;
-    margin-top: 400px;
+#teknisk-info .technical-col--image {
+    grid-area: image;
+    align-self: start;
 }
 
-.technical-image-right img {
-    width: 100%;
-    max-width: 600px;
-    height: auto;
-    border-radius: 10px;
-    box-shadow: 0 4px 15px rgba(0,0,0,0.2);
+#teknisk-info .technical-image {
+    width: 420px;
+    max-width: 100%;
+    aspect-ratio: 2 / 3;
+    max-height: 75vh;
     object-fit: cover;
-}
-
-/* Contact Section */
-.contact-section {
-    width: 100%;
-    max-width: 1400px;
-    margin: 0 auto 60px auto;
-    padding: 20px;
-    text-align: center;
-}
-
-.contact-content {
-    background-color: #1d1c1c;
+    object-position: 50% 30%;
     border-radius: 10px;
-    padding: 20px;
+    display: block;
 }
 
-/* Content sections som kommer efter parallax */
-.content-section {
-    background: transparent;
-    position: relative;
-    z-index: 3;
+@media (max-width: 1024px) {
+    #teknisk-info .technical-layout {
+        gap: 24px 40px;
+        padding: 40px 24px;
+    }
+
+    #teknisk-info .technical-image {
+        width: 360px;
+        max-height: 65vh;
+    }
+}
+
+@media (max-width: 767px) {
+    #teknisk-info .technical-layout {
+        grid-template-columns: 1fr;
+        grid-template-areas:
+            "headline"
+            "body"
+            "image";
+        gap: 20px;
+        padding: 32px 16px;
+        margin-bottom: 32px;
+    }
+
+    #teknisk-info .technical-headline {
+        max-width: 100%;
+    }
+
+    #teknisk-info .technical-body {
+        text-align: left;
+    }
+
+    #teknisk-info .technical-col--image {
+        justify-self: center;
+        margin: 0;
+        transform: none;
+    }
+
+    #teknisk-info .technical-image {
+        width: 100%;
+        max-width: 360px;
+        aspect-ratio: auto;
+        max-height: none;
+        transform: none;
+        box-shadow: 0 12px 28px rgba(0, 0, 0, 0.25);
+    }
 }

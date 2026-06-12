@@ -1,9 +1,100 @@
-.contact-me-picture {
-    width: 100%;
-    max-width: 380px;
-    height: auto;
-    border-radius: 10px;
-    object-fit: contain;
+/* Kontakt – text vänster, bild höger (#contact-section) */
+
+.page-container--contact {
+    max-width: 1800px;
+    padding-left: 12px;
+    padding-right: 12px;
+}
+
+#contact-section {
     display: block;
-    margin: 0 auto 24px;
+    width: 100%;
+    max-width: none;
+    margin: 0;
+    padding: 0;
+    background: #1a1a1a;
+    text-align: left;
+}
+
+#contact-section .contact-layout {
+    display: grid;
+    grid-template-columns: minmax(0, 1fr) auto;
+    gap: 56px;
+    align-items: center;
+    width: 100%;
+    max-width: none;
+    margin: 0 auto 60px;
+    padding: 48px 16px 64px;
+    box-sizing: border-box;
+    color: #fff;
+}
+
+#contact-section .contact-col--text {
+    text-align: left;
+}
+
+#contact-section .contact-headline {
+    width: auto;
+    max-width: 480px;
+    height: auto;
+    display: block;
+    margin: 0 0 32px;
+}
+
+#contact-section .contact-body p {
+    font-size: 1.7rem;
+    line-height: 1.55;
+    font-weight: 300;
+    letter-spacing: 0.05em;
+    margin: 0 0 24px;
+    text-align: left;
+}
+
+#contact-section .contact-body a {
+    color: #fff;
+    text-decoration: underline;
+    text-underline-offset: 3px;
+}
+
+#contact-section .contact-body a:hover {
+    color: #e6e6e6;
+}
+
+#contact-section .contact-image {
+    display: block;
+    width: 420px;
+    max-width: 100%;
+    height: auto;
+    border-radius: 16px;
+    object-fit: cover;
+    box-shadow: 0 12px 32px rgba(0, 0, 0, 0.35);
+}
+
+@media (max-width: 1024px) {
+    #contact-section .contact-layout {
+        gap: 40px;
+        padding: 40px 24px 56px;
+    }
+
+    #contact-section .contact-image {
+        width: 360px;
+    }
+}
+
+@media (max-width: 767px) {
+    #contact-section .contact-layout {
+        grid-template-columns: 1fr;
+        gap: 28px;
+        padding: 32px 16px 48px;
+        margin-bottom: 32px;
+    }
+
+    #contact-section .contact-headline {
+        max-width: 100%;
+        margin-bottom: 24px;
+    }
+
+    #contact-section .contact-col--image {
+        display: none;
+    }
 }

@@ -1,18 +1,26 @@
-.presentation-content .headline-picture {
-    width: 120%;
-    max-width: none;
-    margin-left: -42%;
-    margin-bottom: 126px;
+/* PresentationSection – layout för rubrikbild (#presentation-section) */
+
+#presentation-section .presentation-hero {
+    object-position: 30% 70%;
 }
 
-@media (max-width: 767px) {
-    .presentation-content .headline-picture {
-        width: 100%;
-        margin-left: 0;
-    }
+#presentation-section .presentation-content {
+    max-width: 820px;
+    margin: 80px 50px 80px auto;
+    padding: 28px 24px;
+    text-align: right;
 }
 
-.presentation-content p.presentation-text {
+#presentation-section .bigger-headline-picture {
+    width: 780px;
+    max-width: 100%;
+    height: auto;
+    display: block;
+    margin-left: auto;
+    margin-right: 0;
+}
+
+#presentation-section .presentation-content p.presentation-text {
     font-size: 1.5rem;
     line-height: 1.5;
     font-weight: 300;
@@ -20,13 +28,56 @@
     margin-bottom: 15px;
 }
 
-.presentation-content a {
+#presentation-section .presentation-content a {
     color: #fff;
     text-decoration: none;
     font-weight: 500;
     transition: color 0.3s ease;
 }
 
-.presentation-content a:hover {
+#presentation-section .presentation-content a:hover {
     color: #cc6f00;
+}
+
+@media (max-width: 1024px) {
+    #presentation-section .presentation-content {
+        max-width: 640px;
+        margin: 40px 40px 40px auto;
+    }
+
+    #presentation-section .bigger-headline-picture {
+        width: 600px;
+    }
+}
+
+@media (max-width: 767px) {
+    /* margin-top = headerhöjd, padding 0 så bilden börjar direkt under headern */
+    #presentation-section {
+        margin-top: 100px;
+        padding: 0;
+        min-height: calc(100vh - 100px);
+        justify-content: flex-start;
+        align-items: center;
+    }
+
+    #presentation-section .presentation-content {
+        max-width: 100%;
+        margin: 0;
+        padding: 20px 16px;
+        text-align: center;
+        transform: translateY(-300px);
+    }
+
+    #presentation-section .bigger-headline-picture {
+        width: 100%;
+        margin-left: auto;
+        margin-right: auto;
+    }
+}
+
+@media (max-width: 480px) {
+    #presentation-section {
+        margin-top: 80px;
+        min-height: calc(100vh - 80px);
+    }
 }

@@ -1,4 +1,5 @@
 import React from 'react'
+import SignupForm from './SignupForm.jsx'
 
 export default function BookingSection() {
   return (
@@ -11,32 +12,41 @@ export default function BookingSection() {
       />
       <section className="booking-section" id="booking-section">
         <div className="booking-layout">
-          <div className="booking-col booking-col--left">
-            <img
-              className="booking-headline"
-              src="/images/fundera.png"
-              alt="Funderar du på att plocka upp fiolen igen?"
-            />
-            <p className="booking-intro">
-              Med onlineundervisning får du personlig coaching anpassad efter din nivå, dina mål och din takt. Fokus ligger på det som utvecklar ditt spel.
+          <div className="booking-col booking-col--text">
+            <p className="booking-headline">
+              Längtar du efter fiolundervisning som utgår helt och hållet från dig?
             </p>
+
+            <div className="booking-col--image booking-col--image-mobile">
+              <img
+                className="booking-image booking-image--mobile"
+                src="/images/spelarfiol.png"
+                alt="Händer som spelar fiol"
+              />
+            </div>
+
+            <div className="booking-body">
+              <p>
+                Till hösten bjuder jag in till personlig och helt skräddarsydd onlinecoachning. Det är tjänsten för dig som spelar fiol på egen hand, eller har spelat tidigare och vill hitta tillbaka till spelglädjen med den rätta tekniken.
+                Jag använder inga färdiga mallar. Tillsammans bygger vi ett individanpassat upplägg där dina behov står i centrum.
+              </p>
+              <p>Det du behöver göra är att ge dig själv tiden att utvecklas. Jag ser till att hjälpa dig nå målen.</p>
+              <p className="booking-cta">
+                Lämna din e-post för att få en personlig inbjudan och mer information så fort vi öppnar för hösten. Platserna är begränsade.
+              </p>
+            </div>
+
+            <div className="booking-signup" id="signup-section">
+              <SignupForm />
+            </div>
           </div>
 
-          <div className="booking-col booking-col--center">
+          <div className="booking-col booking-col--image booking-col--image-desktop">
             <img
-              className="booking-image"
+              className="booking-image booking-image--desktop"
               src="/images/saraundervisaronline.jpg"
-              alt="Onlineundervisning i fiol"
+              alt="Sara ger onlineundervisning i fiol"
             />
-          </div>
-
-          <div className="booking-col booking-col--right">
-            <p>
-              Till skillnad från traditionella lektioner, där man ofta spelar tillsammans, handlar detta mer om individuell guidning – som att ha en personlig tränare snarare än att delta i ett gruppass. Du får feedback, övningar och stöd som tar dig framåt.
-            </p>
-            <p>
-              Det bästa? Du behöver ingen avancerad utrustning. För de flesta räcker det med en laptop, ett par hörlurar – och såklart din fiol.
-            </p>
           </div>
         </div>
       </section>

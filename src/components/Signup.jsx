@@ -1,5 +1,5 @@
 import React from 'react'
-import '../scss/Signup.scss'
+import SignupForm from './SignupForm.jsx'
 
 export default function Signup() {
   return (
@@ -10,7 +10,7 @@ export default function Signup() {
         data-header-image-mobile="/images/boka-mobile.png"
         data-nav-bg="#16213B"
       />
-      <section className="signup-section" id="signup-section">
+      <section className="signup-section" id="signup-section-standalone">
         <div className="signup-content">
           <img
             className="signup-headline"
@@ -20,24 +20,10 @@ export default function Signup() {
 
           <p className="signup-intro">
             Onlinecoachning kommer gå att boka snart.
-            Just nu samlar jag intresseanmälningar inför kommande lektioner. Fyll i dina uppgifter nedan för att säkra en plats eller få uppdateringar!
+            Just nu samlar jag intresseanmälningar inför kommande lektioner. Fyll i din e-post nedan för att säkra en plats eller få uppdateringar!
           </p>
 
-          <form className="signup-form" action="/send.php" method="POST">
-            <input type="hidden" name="form_type" value="signup" />
-
-            <label className="signup-field">
-              Namn
-              <input type="text" name="name" required />
-            </label>
-
-            <label className="signup-field">
-              E-post
-              <input type="email" name="email" required />
-            </label>
-
-            <button type="submit">Skicka</button>
-          </form>
+          <SignupForm />
         </div>
       </section>
     </div>

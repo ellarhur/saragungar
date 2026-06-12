@@ -1,23 +1,29 @@
 /* Main scss - Importerar alla modulära scss-filer */
 
 /* Bas-stilar och typografi */
-@import 'base.scss';
+@use 'base';
 
 /* Layout komponenter */
-@import 'header.scss';
-@import 'sections.scss';
-@import 'about.scss';
-@import 'footer.scss';
+@use 'header';
+@use 'sections';
+@use 'about';
+@use 'footer';
 
 /* Komponenter och UI-element */
-@import 'components.scss';
-@import 'forms.scss';
+@use 'components';
+@use 'forms';
 
 /* Parallax effekter */
-@import 'parallax.scss';
+@use 'parallax';
 
 /* Responsiv design */
-@import 'responsive.scss';
+@use 'responsive';
 
 /* Sektionsspecifika stilar – efter responsive så de inte skrivs över */
-@import 'BookingSection.scss';
+@use 'BookingSection';
+@use 'BookingImageGallery';
+@use 'AboutSection';
+@use 'TechnicalSection';
+@use 'Signup';
+@use 'ContactSection';
+@use 'PresentationSection';

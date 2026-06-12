@@ -40,13 +40,8 @@
 }
 /* Specifika bakgrundsbilder + vilken del som syns (background-position) */
 /* Första värdet: vänster (0%)–höger (100%), andra: upp (0%)–ner (100%). center = 50% */
-.parallax-signup .parallax-bg {
-    background-image: url('/images/saraklickar.jpg');
-    background-position: 55% 45%;
-}
-
 .parallax-1 .parallax-bg {
-    background-image: url('/images/Elevundervisasonline.jpg');
+    background-image: url('/images/saraklickar.jpg');
     background-position: 50% 30%;
 }
 
