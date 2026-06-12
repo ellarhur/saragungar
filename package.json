@@ -7,7 +7,9 @@
     "dev": "vite",
     "build": "vite build",
     "lint": "eslint .",
-    "preview": "vite preview"
+    "preview": "vite preview",
+    "preview:live": "npm run build && vite preview --host",
+    "deploy:check": "npm run build && node scripts/deploy-check.mjs"
   },
   "dependencies": {
     "react": "^19.2.0",
