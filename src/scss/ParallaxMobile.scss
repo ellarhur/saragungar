@@ -1,0 +1,11 @@
+/* Parallax mobil – efter responsive så reglerna inte skrivs över */
+
+@media (max-width: 768px) {
+  /* Efter teknisk sektion: dator.jpeg, nedre delen (skrivbord/fot) */
+  .parallax-2 .parallax-bg {
+    background-image: url('/images/dator.jpeg') !important;
+    background-size: cover;
+    background-position: center 88% !important;
+    background-repeat: no-repeat;
+  }
+}

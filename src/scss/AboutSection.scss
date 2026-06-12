@@ -103,6 +103,20 @@
 }
 
 @media (max-width: 767px) {
+    .page-container--about {
+        padding-left: 36px;
+        padding-right: 36px;
+        box-sizing: border-box;
+    }
+
+    #about-section {
+        width: 100%;
+        max-width: 100%;
+        margin: 0;
+        background: transparent;
+        overflow-x: hidden;
+    }
+
     #about-section .about-layout {
         grid-template-columns: 1fr;
         grid-template-areas:
@@ -110,22 +124,45 @@
             "text"
             "image";
         gap: 24px;
-        padding: 32px 16px 48px;
+        width: 100%;
+        max-width: 100%;
+        min-width: 0;
+        padding: 32px 0 48px;
         margin-bottom: 32px;
+        box-sizing: border-box;
     }
 
     #about-section .about-headline {
+        width: 100%;
         max-width: 100%;
+        height: auto;
+        object-fit: contain;
+    }
+
+    #about-section .about-col--text {
+        width: 100%;
+        max-width: 100%;
+        min-width: 0;
+        box-sizing: border-box;
+        overflow-wrap: break-word;
+        word-wrap: break-word;
+    }
+
+    #about-section .about-body p {
+        overflow-wrap: break-word;
+        word-break: break-word;
+        text-align: left;
     }
 
     #about-section .about-col--image {
         margin-top: 0;
         justify-self: center;
+        max-width: 100%;
     }
 
     #about-section .about-photo {
         width: 100%;
-        max-width: 320px;
+        max-width: 280px;
         transform: rotate(6deg);
     }
 

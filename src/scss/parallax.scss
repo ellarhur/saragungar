@@ -70,28 +70,20 @@
 @media (max-width: 768px) {
     .parallax-bg {
         background-attachment: scroll;
-        width: 100vw;
-        height: 100vh;
-        background-position: center center !important;
+        width: 100%;
+        height: 100%;
+        min-height: 100%;
     }
-    
-    .parallax-section {
-        width: 100vw;
-        height: 100vh;
-        min-height: 100vh;
+
+    .parallax-1 .parallax-bg {
+        background-position: 50% 30%;
     }
-    
+
     .parallax-content h2 {
         font-size: 1.7rem;
     }
-    
+
     .parallax-content p {
         font-size: 1.7rem;
-    }
-
-    /* Efter teknisk sektion: dator.jpeg istället för saraundervisaronline på mobil */
-    .parallax-2 .parallax-bg {
-        background-image: url('/images/dator.jpeg');
-        background-position: 50% 35%;
     }
 }

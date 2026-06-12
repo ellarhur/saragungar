@@ -10,9 +10,17 @@ export function initParallax() {
     function updateParallax() {
         const scrollTop = window.pageYOffset || document.documentElement.scrollTop;
 
+        const isMobile = window.innerWidth <= 768;
+
         parallaxElements.forEach((element) => {
             const section = element.closest('.parallax-section');
             if (!section) return;
+
+            // Mobil: parallax-2 ska visa fast utsnitt av dator.jpeg (ingen scroll-förskjutning)
+            if (isMobile && section.classList.contains('parallax-2')) {
+                element.style.transform = 'translate3d(0, 0, 0)';
+                return;
+            }
 
             const sectionTop = section.offsetTop;
 
