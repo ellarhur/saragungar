@@ -3,40 +3,48 @@ import { join } from 'node:path'
 
 const dist = join(process.cwd(), 'dist')
 const assetsDir = join(dist, 'assets')
-const imagesDir = join(dist, 'images')
 
-const [indexHtml, assetFiles, imageFiles] = await Promise.all([
+const [indexHtml, assetFiles] = await Promise.all([
   readFile(join(dist, 'index.html'), 'utf8'),
   readdir(assetsDir),
-  readdir(imagesDir),
 ])
 
 const buildMatch = indexHtml.match(/saragungar build: ([0-9T:.Z-]+)/)
-const cssFile = assetFiles.find((name) => name.endsWith('.css'))
-const jsFile = assetFiles.find((name) => name.startsWith('index-') && name.endsWith('.js'))
-const distStat = await stat(dist)
+const assetStats = await Promise.all(
+  assetFiles.map(async (name) => {
+    const fileStat = await stat(join(assetsDir, name))
+    return { name, bytes: fileStat.size }
+  }),
+)
+
+const formatKb = (bytes) => `${(bytes / 1024).toFixed(1)} KB`
 
 console.log('')
 console.log('=== Deploy-koll för saragungar.se ===')
 console.log('')
-console.log(`Byggtid:     ${buildMatch?.[1] ?? 'okänd'}`)
-console.log(`CSS på live: /assets/${cssFile}`)
-console.log(`JS på live:  /assets/${jsFile}`)
-console.log(`Bilder:      ${imageFiles.length} filer i dist/images/`)
+console.log(`Byggtid: ${buildMatch?.[1] ?? 'okänd'}`)
 console.log('')
-console.log('Ladda upp HELA innehållet i dist/ till public_html på Simply:')
-console.log('  - index.html (ersätt den gamla)')
-console.log('  - mappen assets/ (alla filer)')
-console.log('  - mappen images/ (alla filer)')
+console.log('Filer som ska ligga i public_html/assets/:')
+for (const { name, bytes } of assetStats.sort((a, b) => a.name.localeCompare(b.name))) {
+  console.log(`  ${name.padEnd(28)} ${formatKb(bytes)}`)
+}
 console.log('')
-console.log('Verifiera lokalt FÖRE uppladdning:')
-console.log('  npm run preview')
-console.log('  → öppna http://localhost:4173')
-console.log('  → det ska se ut EXAKT som live efter uppladdning')
+console.log('Uppladdning till public_html/:')
+console.log('  index.html')
+console.log('  assets/  (alla filer ovan)')
+console.log('  images/  (hela mappen)')
 console.log('')
-console.log('Verifiera EFTER uppladdning på saragungar.se:')
-console.log('  1. Högerklicka → Visa sidkälla')
-console.log(`  2. Leta efter: saragungar build: ${buildMatch?.[1] ?? ''}`)
-console.log(`  3. Leta efter: /assets/${cssFile}`)
-console.log('  4. Cmd+Shift+R (hård refresh)')
+console.log('Kontroll i webbläsaren på saragungar.se:')
+console.log('  1. Öppna Utvecklarverktyg → Nätverk (Network)')
+console.log('  2. Ladda om sidan (Cmd+Shift+R)')
+console.log('  3. Kontrollera att varje fil har rätt storlek:')
+for (const { name, bytes } of assetStats) {
+  console.log(`     ${name} → ca ${formatKb(bytes)} (status 200)`)
+}
+console.log('  4. Om en .js-fil är några KB eller "text/html" → ladda upp assets/ igen')
+console.log('')
+console.log('Jämför rätt:')
+console.log('  localhost:4173 (npm run preview) och saragungar.se')
+console.log('  → samma webbläsare, samma fönsterbredd, zoom 100 % (Cmd+0)')
+console.log('  → mobil: testa preview på mobilen med npm run preview:live')
 console.log('')

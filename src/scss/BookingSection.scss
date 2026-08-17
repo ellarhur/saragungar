@@ -132,3 +132,24 @@
     }
 
 }
+
+.booking-widget {
+    width: 100%;
+    max-width: 720px;
+    min-height: 560px;
+    margin: 0 auto 80px;
+    padding: 0;
+    box-sizing: border-box;
+    overflow: hidden;
+    background: #fff;
+    border-radius: 10px;
+}
+
+.booking-widget iframe,
+.booking-widget .sb-widget-iframe {
+    display: block;
+    width: 100% !important;
+    max-width: 100%;
+    min-height: 560px;
+    border: 0;
+}

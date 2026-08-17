@@ -14,9 +14,8 @@ export default function Footer() {
         <nav className="footer-nav" aria-label="Sidfotsnavigering">
           <p className="footer-label">Navigering</p>
           <ul className="footer-ul">
-            <li className="footer-list"><a href="#presentation-section">Hem</a></li>
-            <li className="footer-list"><a href="#booking-section">Boka</a></li>
-            <li className="footer-list"><a href="#signup-section">Skriv upp dig</a></li>
+            <li className="footer-list"><a href="#presentation-section">Gå tillbaka till toppen</a></li>
+            <li className="footer-list"><a href="#booking-section">Boka din lektion</a></li>
             <li className="footer-list"><a href="#about-section">Om mig</a></li>
             <li className="footer-list"><a href="#contact-section">Kontakt</a></li>
           </ul>
@@ -29,10 +28,7 @@ export default function Footer() {
               <a href="mailto:sara@tacksam.com">sara@tacksam.com</a>
             </li>
             <li className="footer-list">
-              <a href="https://linkedin.com/@dinkanal" target="_blank" rel="noreferrer">LinkedIn: @dinkanal</a>
-            </li>
-            <li className="footer-list">
-              <a href="https://instagram.com/@dinkanal" target="_blank" rel="noreferrer">Instagram: @dinkanal</a>
+              <a href="https://instagram.com/@dinkanal" target="_blank" rel="noreferrer">Instagram: @saragungar</a>
             </li>
           </ul>
         </div>
