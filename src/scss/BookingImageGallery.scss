@@ -1,19 +1,19 @@
 /* Tre bilder efter om mig – samma bredd som about, utan about-bakgrund */
 
 .page-container--gallery {
-    max-width: 1800px;
+    max-width: 1206px;
     width: 100%;
     align-self: stretch;
-    padding-left: 12px;
-    padding-right: 12px;
+    padding-left: 8px;
+    padding-right: 8px;
     box-sizing: border-box;
     background: transparent;
 }
 
 #booking-gallery {
-    width: calc(100% + 100px);
-    margin: 0 -50px;
-    padding: 0 16px 64px;
+    width: calc(100% + 67px);
+    margin: 0 -34px;
+    padding: 0 11px 43px;
     box-sizing: border-box;
     background: transparent;
 }
@@ -21,7 +21,7 @@
 #booking-gallery .booking-gallery__row {
     display: flex;
     flex-direction: row;
-    gap: 24px;
+    gap: 16px;
     align-items: center;
     justify-content: center;
     width: 100%;
@@ -38,7 +38,7 @@
 #booking-gallery .booking-gallery__item img {
     width: 100%;
     height: auto;
-    border-radius: 12px;
+    border-radius: 8px;
     object-fit: cover;
     display: block;
 }

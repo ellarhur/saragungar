@@ -1,11 +1,11 @@
 /* Bokningssektionen – text + formulär vänster, bild höger (#booking-section) */
 
 .page-container--boka {
-    max-width: 1800px;
+    max-width: 1206px;
     width: 100%;
     align-self: stretch;
-    padding-left: 12px;
-    padding-right: 12px;
+    padding-left: 8px;
+    padding-right: 8px;
 }
 
 #booking-section {
@@ -19,12 +19,12 @@
 #booking-section .booking-layout {
     display: grid;
     grid-template-columns: minmax(0, 1.25fr) auto;
-    gap: 150px;
+    gap: 100px;
     align-items: center;
     width: 100%;
     max-width: none;
-    margin: 0 auto 60px;
-    padding: 48px 16px;
+    margin: 0 auto 40px;
+    padding: 32px 11px;
     box-sizing: border-box;
     color: #fff;
 }
@@ -47,14 +47,14 @@
     line-height: 1.55;
     font-weight: 300;
     letter-spacing: 0.05em;
-    margin: 0 0 24px;
+    margin: 0 0 16px;
     max-width: var(--prose-max);
 }
 
 #booking-section .booking-cta {
     font-size: var(--text-lg);
     font-weight: 400;
-    margin-bottom: 32px;
+    margin-bottom: 21px;
     max-width: var(--prose-max);
 }
 
@@ -64,25 +64,25 @@
 }
 
 #booking-section .booking-image--desktop {
-    width: 420px;
+    width: 281px;
     max-width: 100%;
     aspect-ratio: 2 / 3;
     max-height: 75vh;
     max-height: 75dvh;
     object-fit: cover;
     object-position: 30% 20%;
-    border-radius: 10px;
+    border-radius: 7px;
     display: block;
 }
 
 @media (max-width: 991px) {
     #booking-section .booking-layout {
-        gap: 40px;
-        padding: 40px 24px;
+        gap: 27px;
+        padding: 27px 16px;
     }
 
     #booking-section .booking-image--desktop {
-        width: 360px;
+        width: 241px;
         max-height: 65vh;
         max-height: 65dvh;
     }
@@ -90,29 +90,29 @@
 
 @media (max-width: 768px) {
     .page-container--boka {
-        padding-left: 44px;
-        padding-right: 44px;
+        padding-left: 30px;
+        padding-right: 30px;
         box-sizing: border-box;
     }
 
     #booking-section {
-        padding-top: 40px;
-        padding-bottom: 40px;
+        padding-top: 27px;
+        padding-bottom: 27px;
     }
 
     #booking-section .booking-layout {
         grid-template-columns: 1fr;
-        gap: 12px;
-        padding: 48px 0 56px;
-        margin-bottom: 56px;
+        gap: 8px;
+        padding: 32px 0 38px;
+        margin-bottom: 38px;
     }
 
     #booking-section h1 {
-        margin-bottom: 24px;
+        margin-bottom: 16px;
     }
 
     #booking-section .booking-body p {
-        margin-bottom: 22px;
+        margin-bottom: 15px;
     }
 
     #booking-section .booking-col--image-desktop {
@@ -121,8 +121,8 @@
 
     #booking-section .booking-col--image-mobile {
         display: block;
-        margin: 0 -44px 32px;
-        width: calc(100% + 88px);
+        margin: 0 -30px 21px;
+        width: calc(100% + 60px);
         max-width: none;
     }
 
@@ -137,14 +137,14 @@
 
 .booking-widget {
     width: 100%;
-    max-width: 1500px;
-    min-height: 560px;
-    margin: 0 auto 80px;
+    max-width: 1005px;
+    min-height: 375px;
+    margin: 0 auto 54px;
     padding: 0;
     box-sizing: border-box;
     overflow: hidden;
     background: #fff;
-    border-radius: 10px;
+    border-radius: 7px;
 }
 
 .booking-widget iframe,
@@ -152,6 +152,6 @@
     display: block;
     width: 100% !important;
     max-width: 100%;
-    min-height: 560px;
+    min-height: 375px;
     border: 0;
 }

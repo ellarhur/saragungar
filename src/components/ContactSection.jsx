@@ -27,8 +27,8 @@ export default function ContactSection() {
               </p>
               <p>Men du får också gärna följa mig på instagram:</p>
               <p>
-                <a href="https://instagram.com/saragungar.se" target="_blank" rel="noopener noreferrer">
-                  @saragungar.se
+                <a href="https://instagram.com/saragungar" target="_blank" rel="noopener noreferrer">
+                  @saragungar
                 </a>
               </p>
               <p>Jag svarar i mån av tid.</p>

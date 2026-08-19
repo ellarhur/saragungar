@@ -3,20 +3,23 @@
 /* Fixar offset för ankarlänkar så headern inte täcker innehållet */
 #presentation-section,
 #booking-section,
-#signup-section,
-#about-section,
-#contact-section {
-    scroll-margin-top: 140px;
+#signup-section {
+    scroll-margin-top: calc(var(--header-height) + 16px);
 }
 
-/* Presentation Section */
+#about-section,
+#contact-section {
+    scroll-margin-top: calc(var(--header-height) + 80px);
+}
+
+/* Presentation Section – hero fyller hela skärmhöjden */
 .presentation-section {
     position: relative;
     width: 100%;
     max-width: none;
-    min-height: calc(var(--viewport-full) - 220px);
-    margin-top: 160px; /* Plats för headern */
-    padding: 60px 20px;
+    min-height: var(--viewport-full);
+    margin-top: 0;
+    padding: var(--header-height) 13px 0;
     display: flex;
     align-items: center;
     justify-content: flex-end;
@@ -44,10 +47,10 @@
 .presentation-content {
     position: relative;
     z-index: 2;
-    padding: 28px 24px;
-    border-radius: 10px;
-    margin: 80px 50px 80px auto;
-    max-width: 480px;
+    padding: 19px 16px;
+    border-radius: 7px;
+    margin: 54px 34px 54px auto;
+    max-width: 322px;
     color: #fff;
     text-align: right;
     -webkit-backdrop-filter: blur(2px);
@@ -63,7 +66,7 @@
 .presentation-content-image {
     display: block;
     max-width: 100%;
-    width: 600px;
+    width: 402px;
     height: auto;
     margin-bottom: 16px;
 }

@@ -28,7 +28,7 @@ export default function Footer() {
               <a href="mailto:sara@tacksam.com">sara@tacksam.com</a>
             </li>
             <li className="footer-list">
-              <a href="https://instagram.com/@saragungar.se" target="_blank" rel="noreferrer">Instagram: @saragungar</a>
+              <a href="https://instagram.com/saragungar" target="_blank" rel="noreferrer">Instagram: @saragungar</a>
             </li>
           </ul>
         </div>

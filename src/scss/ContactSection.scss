@@ -1,11 +1,11 @@
 /* Kontakt – text vänster, bild höger (#contact-section) */
 
 .page-container--contact {
-    max-width: 1800px;
+    max-width: 1206px;
     width: 100%;
     align-self: stretch;
-    padding-left: 12px;
-    padding-right: 12px;
+    padding-left: 8px;
+    padding-right: 8px;
     box-sizing: border-box;
 }
 
@@ -22,12 +22,12 @@
 #contact-section .contact-layout {
     display: grid;
     grid-template-columns: minmax(0, 1fr) auto;
-    gap: 40px;
+    gap: 27px;
     align-items: center;
     width: 100%;
-    max-width: 1040px;
-    margin: 0 auto 60px;
-    padding: 48px 16px;
+    max-width: 697px;
+    margin: 0 auto 40px;
+    padding: 32px 11px;
     box-sizing: border-box;
     color: #fff;
 }
@@ -38,10 +38,10 @@
 
 #contact-section .contact-headline {
     width: auto;
-    max-width: 480px;
+    max-width: 322px;
     height: auto;
     display: block;
-    margin: 0 0 32px;
+    margin: 0 0 21px;
 }
 
 #contact-section .contact-body {
@@ -53,7 +53,7 @@
     line-height: 1.55;
     font-weight: 300;
     letter-spacing: 0.05em;
-    margin: 0 0 24px;
+    margin: 0 0 16px;
     text-align: left;
 }
 
@@ -69,37 +69,37 @@
 
 #contact-section .contact-image {
     display: block;
-    width: 520px;
+    width: 348px;
     max-width: 100%;
     height: auto;
-    border-radius: 16px;
+    border-radius: 11px;
     object-fit: cover;
-    box-shadow: 0 12px 32px rgba(0, 0, 0, 0.35);
+    box-shadow: 0 8px 21px rgba(0, 0, 0, 0.35);
 }
 
 @media (max-width: 991px) {
     #contact-section .contact-layout {
-        max-width: 920px;
-        gap: 32px;
-        padding: 40px 24px;
+        max-width: 616px;
+        gap: 21px;
+        padding: 27px 16px;
     }
 
     #contact-section .contact-image {
-        width: 440px;
+        width: 295px;
     }
 }
 
 @media (max-width: 768px) {
     #contact-section .contact-layout {
         grid-template-columns: 1fr;
-        gap: 28px;
-        padding: 32px 16px 48px;
-        margin-bottom: 32px;
+        gap: 19px;
+        padding: 21px 11px 32px;
+        margin-bottom: 21px;
     }
 
     #contact-section .contact-headline {
         max-width: 100%;
-        margin-bottom: 24px;
+        margin-bottom: 16px;
     }
 
     #contact-section .contact-col--image {
