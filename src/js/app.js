@@ -20,7 +20,7 @@ export function initApp() {
         headerElement.dataset.navDefaultBg || window.getComputedStyle(headerElement).backgroundColor;
 
     const updateHeaderImage = () => {
-        const isMobile = window.innerWidth <= 767;
+        const isMobile = window.innerWidth <= 768;
         const headerOffset = (headerElement?.offsetHeight || 0) + 12;
         const triggerLeeway = isMobile
             ? Math.max(window.innerHeight * 0.35, 320)

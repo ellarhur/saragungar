@@ -69,6 +69,7 @@
     max-width: 100%;
     aspect-ratio: 2 / 3;
     max-height: 80vh;
+    max-height: 80dvh;
     object-fit: cover;
     object-position: 50% 30%;
     border-radius: 10px;
@@ -86,10 +87,11 @@
     #teknisk-info .technical-image {
         width: 400px;
         max-height: 70vh;
+        max-height: 70dvh;
     }
 }
 
-@media (max-width: 767px) {
+@media (max-width: 768px) {
     #teknisk-info .technical-layout {
         grid-template-columns: 1fr;
         grid-template-areas:

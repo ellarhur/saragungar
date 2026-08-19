@@ -2,9 +2,9 @@
 
 .parallax-section {
     position: relative;
-    width: 100vw;
-    height: 100vh;
-    min-height: 100vh;
+    width: 100%;
+    height: var(--viewport-full);
+    min-height: var(--viewport-full);
     overflow: hidden;
     display: flex;
     align-items: center;
@@ -15,8 +15,8 @@
     position: absolute;
     top: 0;
     left: 0;
-    width: 100vw;
-    height: 100vh;
+    width: 100%;
+    height: var(--viewport-full);
     background-attachment: scroll;
     background-position: center center;
     background-repeat: no-repeat;

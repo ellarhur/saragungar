@@ -25,7 +25,7 @@
     box-shadow: 0 4px 15px rgba(0,0,0,0.2);
     padding: 10px 20px;
     text-align: center;
-    font-family: 'Roboto', sans-serif;
+    font-family: var(--font-sans);
     cursor: pointer;
     white-space: nowrap;
     flex-shrink: 0;

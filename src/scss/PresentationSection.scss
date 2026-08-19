@@ -59,12 +59,12 @@
     }
 }
 
-@media (max-width: 767px) {
+@media (max-width: 768px) {
     /* margin-top = headerhöjd, padding 0 så bilden börjar direkt under headern */
     #presentation-section {
         margin-top: 100px;
         padding: 0;
-        min-height: calc(100vh - 100px);
+        min-height: calc(var(--viewport-full) - 100px);
         justify-content: flex-start;
         align-items: center;
     }
@@ -137,6 +137,6 @@
 @media (max-width: 480px) {
     #presentation-section {
         margin-top: 80px;
-        min-height: calc(100vh - 80px);
+        min-height: calc(var(--viewport-full) - 80px);
     }
 }

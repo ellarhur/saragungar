@@ -14,7 +14,7 @@
     position: relative;
     width: 100%;
     max-width: none;
-    min-height: calc(100vh - 220px);
+    min-height: calc(var(--viewport-full) - 220px);
     margin-top: 160px; /* Plats för headern */
     padding: 60px 20px;
     display: flex;

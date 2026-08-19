@@ -18,7 +18,8 @@ header {
     justify-content: center;
     overflow: hidden;
     min-height: 100px;
-  font-family: "Pliant", sans-serif;    line-height: 1.0;
+    padding-top: env(safe-area-inset-top, 0);
+    font-family: var(--font-sans);    line-height: 1.0;
     font-weight: 300;
     letter-spacing: 0.05em;
     transition: background-color 200ms ease;

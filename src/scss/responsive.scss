@@ -15,6 +15,7 @@
     .presentation-section {
         margin-top: 140px;
         min-height: calc(80vh - 140px);
+        min-height: calc(80dvh - 140px);
         padding: 40px 24px;
     }
 
@@ -72,7 +73,7 @@
         left: 0;
         right: 0;
         bottom: 0;
-        padding: 120px 24px 32px;
+        padding: calc(120px + env(safe-area-inset-top, 0)) 24px calc(32px + env(safe-area-inset-bottom, 0));
         flex-direction: column;
         align-items: stretch;
         gap: 0;
@@ -143,8 +144,8 @@
     }
 }
 
-/* ========== Mobil (≤767px) ========== */
-@media (max-width: 767px) {
+/* ========== Mobil (≤768px) ========== */
+@media (max-width: 768px) {
     header {
         padding: 8px 0;
         min-height: 100px;
@@ -167,7 +168,7 @@
         left: 0;
         right: 0;
         bottom: 0;
-        padding: 120px 24px 32px;
+        padding: calc(120px + env(safe-area-inset-top, 0)) 24px calc(32px + env(safe-area-inset-bottom, 0));
         flex-direction: column;
         align-items: stretch;
         gap: 0;
@@ -240,7 +241,7 @@
     /* Presentation – centrerad, mindre marginal */
     .presentation-section {
         margin-top: 0px;
-        min-height: calc(100vh - 100px);
+        min-height: calc(var(--viewport-full) - 100px);
         padding: 20px 16px;
         justify-content: center;
         align-items: center;
@@ -525,7 +526,9 @@
     /* Parallax – något lägre på mobil för att spara plats */
     .parallax-section {
         min-height: 50vh;
+        min-height: 50dvh;
         height: 50vh;
+        height: 50dvh;
     }
 
     .parallax-content h2 {
@@ -591,7 +594,7 @@
 @media (max-width: 480px) {
     .presentation-section {
         margin-top: 88px;
-        min-height: calc(100vh - 88px);
+        min-height: calc(var(--viewport-full) - 88px);
         padding: 16px 12px;
     }
 
@@ -611,13 +614,8 @@
 
     header {
         min-height: 64px;
+        padding-top: env(safe-area-inset-top, 0);
     }
-
-    .nav-links {
-        top: 100%;
-    }
-
-
 
     .page-container {
         padding: 16px 10px;
@@ -644,6 +642,8 @@
 
     .parallax-section {
         min-height: 40vh;
+        min-height: 40dvh;
         height: 40vh;
+        height: 40dvh;
     }
 }
