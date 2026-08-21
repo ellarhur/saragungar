@@ -28,7 +28,7 @@ export default function AboutSection() {
                 Länge hade jag siktet på att bli musiker och nådde efter studier på Edsbergs musikinstitut och Mälardalens högskola fram till en fil. kand. i kammarmusik. Studerade även två somrar för John D. Kendall i USA.
               </p>
               <p>
-                Men det visade sig att det var som fiollärare jag trivdes bäst. Att kombinera de metodiker jag själv undervisats i med elevernas skiftande förutsättningar inspirerade mer än en karriär som solomusiker. Sedan dess har jag arbetat på olika musik- och kulturskolor runtom i Sverige.
+                Men det visade sig att det var som fiollärare jag trivdes bäst. Att kombinera de metodiker jag själv undervisats i med elevernas skiftande förutsättningar inspirerade mer än en karriär som yrkesmusiker. Sedan dess har jag arbetat på olika musik- och kulturskolor runtom i Sverige.
               </p>
               <p>
                 Givetvis fortsätter jag spela själv. Och när jag säger ”själv” menar jag oftast med andra. Både på konserter och i studio. Att hålla liv i spelandet är livsviktigt för mig.
