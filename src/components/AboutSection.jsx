@@ -5,7 +5,7 @@ export default function AboutSection() {
     <div className="page-container page-container--flush-top page-container--about">
       <div
         className="section-header"
-        data-header-image="/images/ommig.png"
+        data-header-image="/images/saraommigsmal.png"
         data-header-image-mobile="/images/ommig-mobile.png"
         data-nav-bg="#851F19"
       />

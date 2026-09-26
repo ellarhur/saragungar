@@ -6,7 +6,7 @@ export default function Signup() {
     <div className="page-container page-container--boka page-container--flush-top">
       <div
         className="section-header"
-        data-header-image="/images/boka.png"
+        data-header-image="/images/sarabokasmal.png"
         data-header-image-mobile="/images/boka-mobile.png"
         data-nav-bg="#16213B"
       />

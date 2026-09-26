@@ -5,7 +5,7 @@ export default function TechnicalSection() {
     <div className="page-container page-container--flush-top page-container--technical">
       <div
         className="section-header"
-        data-header-image="/images/boka.png"
+        data-header-image="/images/sarabokasmal.png"
         data-header-image-mobile="/images/boka-mobile.png"
         data-nav-bg="#16213B"
       />

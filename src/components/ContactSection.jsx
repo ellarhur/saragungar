@@ -5,7 +5,7 @@ export default function ContactSection() {
     <div className="page-container page-container--flush-top page-container--contact">
       <div
         className="section-header"
-        data-header-image="/images/kontakt.png"
+        data-header-image="/images/sarakontaktsmal.png"
         data-header-image-mobile="/images/kontakt-mobile.png"
         data-nav-bg="#851F19"
       />
