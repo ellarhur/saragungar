@@ -8,7 +8,7 @@ header {
     right: 0;
     width: 100%;
     margin: 0;
-    gap: 5px;
+    gap: 0;
     z-index: 100;
     background: #000;
     background-position: center;
@@ -41,7 +41,9 @@ header {
     z-index: 1;
     display: flex;
     justify-content: center;
-    align-items: center;
+    align-items: flex-end;
+    line-height: 0;
+    overflow: hidden;
 }
 
 .header-image {
@@ -49,17 +51,22 @@ header {
     height: auto;
     max-height: 134px;
     object-fit: contain;
+    object-position: center bottom;
     display: block;
+    margin: 0;
+    padding: 0;
+    border: 0;
+    vertical-align: bottom;
 }
 
 /* Navigation */
 .nav-links {
     display: flex;
     flex-direction: row;
-    gap: 10px;
+    gap: 36px;
     list-style: none;
     margin: 0 auto;
-    margin-top: 2px;
+    margin-top: 0;
     margin-bottom: 12px;
     padding: 0;
     width: 100%;
