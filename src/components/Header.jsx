@@ -2,7 +2,7 @@ import React from 'react'
 
 export default function Header() {
   return (
-    <header data-nav-default-bg="#C66A27" data-header-default-image-mobile="/images/saragungarsmal.png">
+    <header data-nav-default-bg="#C66A27" data-header-default-image-mobile="/images/saragungar-mobile.png">
       <div className="Sarasheader">
         <img src="/images/saragungarsmal.png" alt="Sara gungar" className="header-image" />
       </div>
