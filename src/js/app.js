@@ -51,6 +51,7 @@ export function initApp() {
         }
 
         if (activeNavBg) {
+            headerElement.style.setProperty('--nav-background', activeNavBg);
             if (headerElement.style.backgroundColor !== activeNavBg) {
                 headerElement.style.backgroundColor = activeNavBg;
             }

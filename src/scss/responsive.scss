@@ -107,10 +107,10 @@
         height: 44px;
         align-items: center;
         justify-content: center;
-        background: #fff;
+        background: var(--nav-background, #C66A27);
         border-radius: 10px;
-        box-shadow: 0 4px 12px rgba(0,0,0,0.15);
-        border: 1px solid rgba(0,0,0,0.06);
+        box-shadow: 0 0 0 3px var(--nav-background, #C66A27);
+        border: 2px solid #fff;
         gap: 5px;
     }
 
@@ -118,8 +118,21 @@
         display: block;
         width: 24px;
         height: 1px;
-        background: #000;
+        background: #fff;
         border-radius: 2px;
+        transition: transform 180ms ease, opacity 180ms ease;
+    }
+
+    .nav-toggle:checked + .nav-toggle-label span:first-child {
+        transform: translateY(6px) rotate(45deg);
+    }
+
+    .nav-toggle:checked + .nav-toggle-label span:nth-child(2) {
+        opacity: 0;
+    }
+
+    .nav-toggle:checked + .nav-toggle-label span:last-child {
+        transform: translateY(-6px) rotate(-45deg);
     }
 
     .nav-toggle:checked ~ .nav-links {
