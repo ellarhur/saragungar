@@ -8,7 +8,7 @@ export function initApp() {
     const navTargets = Array.from(document.querySelectorAll('[data-nav-bg]'));
     const navToggle = document.getElementById('nav-toggle');
     const navLinksMenu = document.querySelector('.nav-links');
-    const navLinks = Array.from(document.querySelectorAll('.nav-links a'));
+    const navLinks = Array.from(document.querySelectorAll('.nav-links a, .header-home-link'));
 
     if (!headerElement) {
         return;

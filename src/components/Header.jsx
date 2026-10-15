@@ -4,7 +4,9 @@ export default function Header() {
   return (
     <header data-nav-default-bg="#C66A27" data-header-default-image-mobile="/images/saragungar-mobile.png">
       <div className="Sarasheader">
-        <img src="/images/saragungarsmal.png" alt="Sara gungar" className="header-image" />
+        <a href="#presentation-section" className="header-home-link" aria-label="Till startsidan">
+          <img src="/images/saragungarsmal.png" alt="Sara gungar" className="header-image" />
+        </a>
       </div>
       <input type="checkbox" id="nav-toggle" className="nav-toggle" aria-label="Öppna navigationsmeny" />
       <label htmlFor="nav-toggle" className="nav-toggle-label">
@@ -17,7 +19,7 @@ export default function Header() {
           <a href="#presentation-section">hem</a>
         </li>
         <li className="nav-link">
-          <a href="#booking-section">boka</a>
+          <a href="#booking-form">boka</a>
         </li>
         <li className="nav-link">
           <a href="#about-section">om mig</a>

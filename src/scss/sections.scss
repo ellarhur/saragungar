@@ -3,6 +3,7 @@
 /* Fixar offset för ankarlänkar så headern inte täcker innehållet */
 #presentation-section,
 #booking-section,
+#booking-form,
 #signup-section {
     scroll-margin-top: calc(var(--header-height) + 16px);
 }

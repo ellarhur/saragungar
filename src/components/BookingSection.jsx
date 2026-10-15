@@ -109,7 +109,6 @@ export default function BookingSection() {
               <p>Det du behöver göra är att ge dig själv tiden att utvecklas. Jag ser till att hjälpa dig nå målen.</p>
             </div>
           </div>
-
           <div className="booking-col booking-col--image booking-col--image-desktop">
             <img
               className="booking-image booking-image--desktop"
@@ -119,6 +118,7 @@ export default function BookingSection() {
           </div>
         </div>
       </section>
+      <div id="booking-form"><h1>Boka din tid i bokningsschemat.</h1></div>
 
       <section className="booking-widget" ref={widgetRef} />
     </div>
